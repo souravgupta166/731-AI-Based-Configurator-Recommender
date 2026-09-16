@@ -1,5 +1,5 @@
 
-# 731 AI-Based Configurator Recommender
+# 731 AI-Based Configurator Recommender (https://souravgupta166-731-ai-base-srcui731-poc-configurator-app-gitsyl.streamlit.app/)
 
 An AI-assisted configuration recommendation system developed as part of a Master's thesis in Data Science, AI, and Digital Business.
 
