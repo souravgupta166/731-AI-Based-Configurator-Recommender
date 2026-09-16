@@ -1,0 +1,10 @@
+packageFixed_dev,row_count,dataInterface_unique_count,stromSchaltbar_unique_count,stromEingaenge_unique_count,temperaturEingaenge_unique_count,binaerDigitalOpenColl_MN_unique_count,binaerOpenColl_MP_unique_count,certification_unique_count,waveInjector_unique_count,housing_unique_count,explosionApproval_unique_count,dynamicGasMaster_unique_count,dev_advMeterVerification_unique_count,customUserFluid_unique_count,numberOfChannels_unique_count,powerSupply_unique_count
+"in {NOVALUE, 'x731'}",696,7,5,8,8,2,2,5,2,2,5,2,2,2,1,2
+"in {NOVALUE, 'G731ST-LT'}",133,5,5,5,5,2,2,3,1,1,4,1,1,1,1,1
+"in {NOVALUE, 'G731ST-HT'}",133,5,5,5,5,2,2,3,1,1,4,1,1,1,1,1
+"in {NOVALUE, 'F731TE'}",26,7,4,1,2,2,2,3,1,1,4,1,1,1,2,1
+"in {NOVALUE, 'G731CA'}",24,7,2,2,2,2,2,3,1,1,4,1,1,1,2,1
+"in {NOVALUE, 'F731PW'}",20,8,4,1,1,5,5,2,1,1,3,1,1,1,1,1
+"in {NOVALUE, 'F731WD_DualChannel'}",12,3,4,3,1,1,2,2,1,1,1,1,1,1,1,2
+"in {NOVALUE, 'F731WD_SingleChannel'}",8,3,2,2,1,1,2,2,1,1,1,1,1,1,1,2
+"in {NOVALUE, 'G731VG'}",4,2,3,2,2,2,1,1,1,1,1,1,1,1,1,1

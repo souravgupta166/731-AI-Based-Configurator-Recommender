@@ -1,0 +1,6 @@
+check,status,details
+ground_truth_id_present,CHECK,Ground-truth ID is retained in candidate output for evaluation. It must be excluded from ML features.
+ground_truth_flag_present,CHECK,"5,000 candidate rows are explicitly marked as GT for evaluation. Exclude this column from ML features."
+gt_forced_as_engineer_choice,PASS,Ground truth selected by synthetic engineer in 30.86% of RFQs.
+engineer_choice_equals_ground_truth,PASS,Synthetic engineer choice equals GT in 30.86% of RFQs.
+gt_related_candidate_columns,CHECK,"['ground_truth_configuration_id', 'is_ground_truth_configuration']"

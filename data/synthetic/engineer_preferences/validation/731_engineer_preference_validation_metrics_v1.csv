@@ -1,0 +1,27 @@
+metric,value,interpretation
+rfq_count,5000.0,Number of RFQs represented.
+candidate_rows,17153.0,Total candidate-preference rows.
+ranking_rows,5000.0,One synthetic engineer ranking summary per RFQ.
+pairwise_rows,40627.0,Synthetic pairwise preference examples.
+mean_candidates_per_rfq,3.4306,Average valid candidate pool size.
+median_candidates_per_rfq,2.0,Median valid candidate pool size.
+gt_top1_rate,0.3086,GT configuration ranked first by synthetic engineer.
+gt_top3_rate,0.7734,GT configuration ranked in Top-3.
+gt_top5_rate,0.8802,GT configuration ranked in Top-5.
+gt_top10_rate,0.9774,GT configuration ranked in Top-10.
+gt_mean_rank,2.9236,Mean synthetic engineer rank of GT.
+gt_median_rank,2.0,Median synthetic engineer rank of GT.
+missing_gt_rank_count,0.0,RFQs where GT has no engineer rank.
+candidate_duplicate_count,0.0,Should be zero.
+ranking_duplicate_count,0.0,Should be zero.
+invalid_rank_count,0.0,Should be zero.
+invalid_candidate_count_rows,0.0,Should be zero.
+rank_sequence_invalid_rfqs,0.0,Should be zero.
+candidate_unique_id_mismatch_rfqs,0.0,Should be zero when candidate_count represents unique configurations.
+rfqs_without_single_engineer_choice,0.0,Should be zero.
+engineer_choice_equals_gt_rate,0.3086,Rate at which synthetic engineer chooses GT exactly.
+gt_selected_by_engineer_rate,0.3086,Rate at which GT is selected by synthetic engineer.
+pairwise_rank_consistency,1.0,Preferred configuration should have better rank.
+pairwise_score_consistency,1.0,Preferred score should be >= rejected score.
+pairwise_positive_label_rate,1.0,Share of pairwise labels equal to 1.
+pairwise_zero_margin_rate,0.0,Rate of exact score ties.

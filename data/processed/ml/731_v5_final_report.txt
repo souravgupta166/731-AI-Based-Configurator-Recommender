@@ -1,0 +1,76 @@
+731 V5 — FINAL EXPERIMENTAL EVALUATION REPORT
+=============================================
+
+Purpose
+-------
+Final evaluation and model-selection stage following the frozen V4.5
+pairwise learning-to-rank experiment.
+
+Dataset
+-------
+Test RFQs: 732
+Candidate rows: 17,153
+Prediction rows: 22,248
+
+Best overall frozen pairwise model
+----------------------------------
+Regime: MECHANISTIC_UPPER_BOUND
+Model: HIST_GRADIENT_BOOSTING
+Top-1: 0.9358
+Top-3: 0.9986
+Top-5: 1.0000
+Top-10: 1.0000
+MRR: 0.9676
+NDCG@5: 0.9760
+Mean true rank: 1.0669
+Median true rank: 1.0000
+
+Governance-selected primary model
+---------------------------------
+Regime: REALISTIC_BASELINE
+Model: HIST_GRADIENT_BOOSTING
+Top-1: 0.9057
+MRR: 0.9514
+NDCG@5: 0.9640
+
+Sensitivity
+-----------
+PROVENANCE_AWARE best model:
+HIST_GRADIENT_BOOSTING
+Top-1: 0.9358
+MRR: 0.9676
+
+MECHANISTIC_UPPER_BOUND best model:
+HIST_GRADIENT_BOOSTING
+Top-1: 0.9358
+MRR: 0.9676
+
+Interpretation
+--------------
+The realistic baseline is the preferred primary model because it does not
+depend on synthetic preference-generation metadata. Provenance-aware and
+mechanistic models are retained as sensitivity and upper-bound analyses.
+
+The exact configuration identity is evaluated separately from requirement
+equivalence. A configuration may differ from the synthetic engineer's
+selected ID while still satisfying the mandatory and preferred RFQ
+requirements.
+
+The RFQ-level bootstrap treats RFQs, not candidate rows, as the independent
+sampling unit.
+
+Synthetic-label caveat
+----------------------
+All engineer-preference labels are synthetic. Therefore these results
+measure recovery of the synthetic preference-generation mechanism, not
+historical human engineer behaviour.
+
+Final recommendation
+--------------------
+Freeze REALISTIC_BASELINE / HIST_GRADIENT_BOOSTING as the primary
+decision-support model unless the paired statistical comparison demonstrates
+a clearly justified reason to prefer an alternative regime.
+
+Do not add further ML algorithms merely to increase the numerical score.
+The next work should be thesis figures, results tables, discussion, and
+limitations.

@@ -1,0 +1,9 @@
+metric,value
+failed_exact_rfqs,2471.0
+mean_top1_characteristic_differences,1.5605018211250505
+median_top1_characteristic_differences,1.0
+max_top1_characteristic_differences,5.0
+failed_cases_with_1_or_less_difference,1333.0
+failed_cases_with_2_or_less_differences,2242.0
+failed_cases_with_top1_mandatory_valid,2471.0
+failed_cases_with_top1_mandatory_preferred_valid,2471.0

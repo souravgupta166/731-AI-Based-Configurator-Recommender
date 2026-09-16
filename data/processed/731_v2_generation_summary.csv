@@ -1,0 +1,10 @@
+metric,value
+source_records,1056.0
+real_canonical_configurations,412.0
+target_synthetic_records,5000.0
+generated_synthetic_records,0.0
+generation_attempts,250000.0
+acceptance_rate_percent,0.0
+synthetic_unique_canonical_ids,0.0
+existing_configuration_records,0.0
+novel_configuration_records,0.0

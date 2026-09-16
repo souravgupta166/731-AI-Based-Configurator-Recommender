@@ -1,0 +1,38 @@
+metric,value
+Oracle RFQs analyzed,5000.0
+Exact ID Top-1 accuracy,0.5058
+Exact ID Top-3 accuracy,0.8442
+Exact ID Top-5 accuracy,0.9336
+Exact ID Top-10 accuracy,0.9902
+Exact ID MRR,0.6936596903623767
+Mean exact ID rank,2.091496667339931
+Median exact ID rank,1.0
+Technical-equivalence Top-1 accuracy,0.5058
+Technical-equivalence Top-3 accuracy,0.8442
+Technical-equivalence Top-5 accuracy,0.9336
+Technical-equivalence Top-10 accuracy,0.9902
+Technical-equivalence MRR,0.6936596903623767
+Mean technical-equivalence rank,2.091496667339931
+Median technical-equivalence rank,1.0
+Package + technical-equivalence Top-1,0.5058
+Package + technical-equivalence Top-3,0.8442
+Package + technical-equivalence Top-5,0.9336
+Package + technical-equivalence Top-10,0.9902
+Package + technical-equivalence MRR,0.6936596903623767
+Exact ID Top-1 cases,2529.0
+Technically equivalent Top-1 cases,0.0
+Extra optional feature Top-1 cases,2471.0
+True technical difference Top-1 cases,0.0
+Apparent ID-level failures,2471.0
+Top-1 exact-or-equivalent cases,2529.0
+Top-1 exact-or-equivalent rate,0.5058
+Characteristic difference rows,3856.0
+Mandatory difference rows,0.0
+Preferred difference rows,0.0
+Not-mentioned difference rows,3856.0
+Predicted extra values not required,3856.0
+Configuration rows,5000.0
+Unique canonical IDs,1979.0
+Exact duplicate canonical IDs,1097.0
+Same technical signature / multiple packages,0.0
+IDs with multiple technical signatures,0.0

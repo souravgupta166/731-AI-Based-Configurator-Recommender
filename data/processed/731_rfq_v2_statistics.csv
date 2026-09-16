@@ -1,0 +1,9 @@
+metric,value
+rfq_count,5000.0
+requirement_count,70478.0
+average_requirements_per_rfq,14.1
+customer_count_used,250.0
+target_package_count,9.0
+implicit_requirement_percentage,4.66
+mandatory_percentage,74.58
+preferred_percentage,25.42

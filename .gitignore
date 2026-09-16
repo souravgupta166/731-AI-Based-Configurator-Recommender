@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS/editor files
+.DS_Store
+.vscode/
+.idea/
+
+# Temporary files
+*.log
+tmp/
+temp/
+
+# Python cache
+.pytest_cache/
+
+# Large temporary exports
+*.html

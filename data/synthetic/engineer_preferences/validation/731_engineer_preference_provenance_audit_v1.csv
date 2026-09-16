@@ -1,0 +1,7 @@
+dataset,column,status,unique_values
+candidates,preference_label_provenance,PASS,SYNTHETIC
+candidates,preference_generation_method,PASS,synthetic_engineer_v1
+rankings,preference_label_provenance,PASS,SYNTHETIC
+rankings,preference_generation_method,PASS,synthetic_engineer_v1
+pairwise,preference_label_provenance,PASS,SYNTHETIC
+pairwise,preference_generation_method,PASS,synthetic_engineer_v1

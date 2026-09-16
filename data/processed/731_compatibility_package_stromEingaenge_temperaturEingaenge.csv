@@ -1,0 +1,43 @@
+packageFixed_dev,stromEingaenge,temperaturEingaenge,occurrences
+"in {NOVALUE, 'F731PW'}",NOVALUE,NOVALUE,20
+"in {NOVALUE, 'F731TE'}",NOVALUE,'TT2',13
+"in {NOVALUE, 'F731TE'}",NOVALUE,"in {'TT2', 'TT4'}",13
+"in {NOVALUE, 'F731WD_DualChannel'}",NOVALUE,NOVALUE,2
+"in {NOVALUE, 'F731WD_DualChannel'}","in {NOVALUE, 'IS1', 'IS2'}",NOVALUE,4
+"in {NOVALUE, 'F731WD_DualChannel'}","in {NOVALUE, 'IS1'}",NOVALUE,6
+"in {NOVALUE, 'F731WD_SingleChannel'}","in {NOVALUE, 'IS1', 'IS2'}",NOVALUE,4
+"in {NOVALUE, 'F731WD_SingleChannel'}","in {NOVALUE, 'IS1'}",NOVALUE,4
+"in {NOVALUE, 'G731CA'}",'IS1','TT1',4
+"in {NOVALUE, 'G731CA'}",'IS1',"in {'TT1', 'TT2'}",4
+"in {NOVALUE, 'G731CA'}","in {'IS1', 'IS2'}",'TT1',8
+"in {NOVALUE, 'G731CA'}","in {'IS1', 'IS2'}","in {'TT1', 'TT2'}",8
+"in {NOVALUE, 'G731ST-HT'}",NOVALUE,NOVALUE,7
+"in {NOVALUE, 'G731ST-HT'}",NOVALUE,"in {NOVALUE, 'TT1', 'TT2', 'TT3', 'TT4'}",21
+"in {NOVALUE, 'G731ST-HT'}",NOVALUE,"in {NOVALUE, 'TT1', 'TT2'}",21
+"in {NOVALUE, 'G731ST-HT'}","in {NOVALUE, 'IS1', 'IS2', 'IS3', 'IS4'}",NOVALUE,14
+"in {NOVALUE, 'G731ST-HT'}","in {NOVALUE, 'IS1', 'IS2', 'IS3'}","in {NOVALUE, 'TT1'}",21
+"in {NOVALUE, 'G731ST-HT'}","in {NOVALUE, 'IS1', 'IS2'}","in {NOVALUE, 'TT1', 'TT2'}",21
+"in {NOVALUE, 'G731ST-HT'}","in {NOVALUE, 'IS1'}","in {NOVALUE, 'TT1', 'TT2', 'TT3'}",21
+"in {NOVALUE, 'G731ST-HT'}","in {NOVALUE, 'IS1'}","in {NOVALUE, 'TT1'}",7
+"in {NOVALUE, 'G731ST-LT'}",NOVALUE,NOVALUE,7
+"in {NOVALUE, 'G731ST-LT'}",NOVALUE,"in {NOVALUE, 'TT1', 'TT2', 'TT3', 'TT4'}",21
+"in {NOVALUE, 'G731ST-LT'}",NOVALUE,"in {NOVALUE, 'TT1', 'TT2'}",21
+"in {NOVALUE, 'G731ST-LT'}","in {NOVALUE, 'IS1', 'IS2', 'IS3', 'IS4'}",NOVALUE,14
+"in {NOVALUE, 'G731ST-LT'}","in {NOVALUE, 'IS1', 'IS2', 'IS3'}","in {NOVALUE, 'TT1'}",21
+"in {NOVALUE, 'G731ST-LT'}","in {NOVALUE, 'IS1', 'IS2'}","in {NOVALUE, 'TT1', 'TT2'}",21
+"in {NOVALUE, 'G731ST-LT'}","in {NOVALUE, 'IS1'}","in {NOVALUE, 'TT1', 'TT2', 'TT3'}",21
+"in {NOVALUE, 'G731ST-LT'}","in {NOVALUE, 'IS1'}","in {NOVALUE, 'TT1'}",7
+"in {NOVALUE, 'G731VG'}",'IS1','TT1',2
+"in {NOVALUE, 'G731VG'}",'IS2',"in {NOVALUE, 'TT1'}",2
+"in {NOVALUE, 'x731'}",'IS1','TT1',24
+"in {NOVALUE, 'x731'}",'IS1',"in {'TT1', 'TT2', 'TT3'}",72
+"in {NOVALUE, 'x731'}",NOVALUE,NOVALUE,24
+"in {NOVALUE, 'x731'}",NOVALUE,"in {NOVALUE, 'TT1', 'TT2', 'TT3', 'TT4'}",72
+"in {NOVALUE, 'x731'}",NOVALUE,"in {NOVALUE, 'TT1', 'TT2'}",72
+"in {NOVALUE, 'x731'}","in {'IS1', 'IS2', 'IS3'}",'TT1',72
+"in {NOVALUE, 'x731'}","in {'IS1', 'IS2'}","in {'TT1', 'TT2'}",72
+"in {NOVALUE, 'x731'}","in {NOVALUE, 'IS1', 'IS2', 'IS3', 'IS4'}",NOVALUE,48
+"in {NOVALUE, 'x731'}","in {NOVALUE, 'IS1', 'IS2', 'IS3'}","in {NOVALUE, 'TT1'}",72
+"in {NOVALUE, 'x731'}","in {NOVALUE, 'IS1', 'IS2'}","in {NOVALUE, 'TT1', 'TT2'}",72
+"in {NOVALUE, 'x731'}","in {NOVALUE, 'IS1'}","in {NOVALUE, 'TT1', 'TT2', 'TT3'}",72
+"in {NOVALUE, 'x731'}","in {NOVALUE, 'IS1'}","in {NOVALUE, 'TT1'}",24

@@ -1,0 +1,35 @@
+packageFixed_dev,explosionApproval,certification,occurrences
+"in {NOVALUE, 'F731PW'}",'F','NN',4
+"in {NOVALUE, 'F731PW'}",'K',"in {'NN', 'WN'}",8
+"in {NOVALUE, 'F731PW'}","in {'A', 'E', 'P', 'J', 'S'}","in {'NN', 'WN'}",8
+"in {NOVALUE, 'F731TE'}",'F','NN',6
+"in {NOVALUE, 'F731TE'}",'K',"in {'NN', 'WN'}",6
+"in {NOVALUE, 'F731TE'}",'N',"in {'NN', 'WN', 'FN'}",8
+"in {NOVALUE, 'F731TE'}","in {'A', 'E', 'P', 'J', 'S'}","in {'NN', 'WN'}",6
+"in {NOVALUE, 'F731WD_DualChannel'}",'N','CN',6
+"in {NOVALUE, 'F731WD_DualChannel'}",'N',"in {'NN', 'WN', 'FN'}",6
+"in {NOVALUE, 'F731WD_SingleChannel'}",'N','CN',4
+"in {NOVALUE, 'F731WD_SingleChannel'}",'N',"in {'NN', 'WN', 'FN'}",4
+"in {NOVALUE, 'G731CA'}",'F','NN',6
+"in {NOVALUE, 'G731CA'}",'K',"in {'NN', 'WN'}",6
+"in {NOVALUE, 'G731CA'}",'N',"in {'NN', 'WN', 'FN'}",6
+"in {NOVALUE, 'G731CA'}","in {'A', 'E', 'P', 'J', 'S'}","in {'NN', 'WN'}",6
+"in {NOVALUE, 'G731ST-HT'}",'F','NN',19
+"in {NOVALUE, 'G731ST-HT'}",'K',"in {'NN', 'WN'}",38
+"in {NOVALUE, 'G731ST-HT'}",'N',"in {'NN', 'WN', 'FN'}",38
+"in {NOVALUE, 'G731ST-HT'}","in {'A', 'E', 'P', 'J', 'S'}","in {'NN', 'WN'}",38
+"in {NOVALUE, 'G731ST-LT'}",'F','NN',19
+"in {NOVALUE, 'G731ST-LT'}",'K',"in {'NN', 'WN'}",38
+"in {NOVALUE, 'G731ST-LT'}",'N',"in {'NN', 'WN', 'FN'}",38
+"in {NOVALUE, 'G731ST-LT'}","in {'A', 'E', 'P', 'J', 'S'}","in {'NN', 'WN'}",38
+"in {NOVALUE, 'G731VG'}",'F','NN',4
+"in {NOVALUE, 'x731'}",'A','MN',116
+"in {NOVALUE, 'x731'}",'F','MN',58
+"in {NOVALUE, 'x731'}",'F','NN',58
+"in {NOVALUE, 'x731'}",'K','NN',40
+"in {NOVALUE, 'x731'}",'K',"in {'NN', 'WN'}",76
+"in {NOVALUE, 'x731'}",'N','MN',116
+"in {NOVALUE, 'x731'}",'N',"in {'NN', 'FN'}",40
+"in {NOVALUE, 'x731'}",'N',"in {'NN', 'WN', 'FN'}",76
+"in {NOVALUE, 'x731'}","in {'A', 'E', 'P', 'J', 'S'}",'NN',40
+"in {NOVALUE, 'x731'}","in {'A', 'E', 'P', 'J', 'S'}","in {'NN', 'WN'}",76

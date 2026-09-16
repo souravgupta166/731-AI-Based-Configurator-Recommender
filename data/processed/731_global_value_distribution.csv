@@ -1,0 +1,119 @@
+characteristic,value,count,percentage
+devCategory,G,522,49.43181818181818
+devCategory,F,294,27.84090909090909
+devCategory,H,120,11.363636363636363
+devCategory,S,120,11.363636363636363
+characteristic,GP,696,65.9090909090909
+characteristic,ST,266,25.189393939393938
+characteristic,TE,26,2.462121212121212
+characteristic,CA,24,2.272727272727273
+characteristic,WD,20,1.893939393939394
+characteristic,PW,20,1.893939393939394
+characteristic,VG,4,0.3787878787878788
+housing,"in {'ST', 'AL'}",766,72.53787878787878
+housing,ST,290,27.46212121212121
+powerSupply,"in {'1', '4'}",756,71.5909090909091
+powerSupply,4,290,27.46212121212121
+powerSupply,1,10,0.946969696969697
+numberOfChannels,"in {1, 2}",849,80.39772727272727
+numberOfChannels,2,174,16.477272727272727
+numberOfChannels,1,33,3.125
+explosionApproval,N,342,32.38636363636363
+explosionApproval,"in {'A', 'E', 'P', 'J', 'S'}",212,20.075757575757574
+explosionApproval,K,212,20.075757575757574
+explosionApproval,F,174,16.477272727272727
+explosionApproval,A,116,10.984848484848484
+protectionArea,2,714,67.61363636363636
+protectionArea,N,342,32.38636363636363
+certification,"in {'NN', 'WN'}",344,32.57575757575758
+certification,MN,290,27.46212121212121
+certification,NN,196,18.560606060606062
+certification,"in {'NN', 'WN', 'FN'}",176,16.666666666666664
+certification,"in {'NN', 'FN'}",40,3.787878787878788
+certification,CN,10,0.946969696969697
+dataInterface,HS,279,26.420454545454547
+dataInterface,"in {'NN', 'PA', 'MR', 'FF', 'BM'}",260,24.62121212121212
+dataInterface,NN,160,15.151515151515152
+dataInterface,"in {'NN', 'MT', 'BT'}",130,12.31060606060606
+dataInterface,"in {'NN', 'PA', 'MR', 'FF', 'DB', 'BM'}",96,9.090909090909092
+dataInterface,"in {'NN', 'PA', 'MR', 'FF'}",48,4.545454545454546
+dataInterface,"in {'NN', 'MT'}",18,1.7045454545454544
+dataInterface,"in {'PA', 'MR', 'FF', 'BM', 'HS'}",10,0.946969696969697
+dataInterface,"in {'NN', 'PA', 'MT', 'MR', 'FF', 'DB', 'BM', 'BT'}",8,0.7575757575757576
+dataInterface,"in {'NN', 'PA', 'MR', 'FF', 'BM', 'HS'}",6,0.5681818181818182
+dataInterface,"in {'PA', 'MT', 'MR', 'FF', 'DB', 'BM', 'BT'}",4,0.3787878787878788
+dataInterface,"in {'NN', 'MR', 'BM', 'FF', 'PA'}",4,0.3787878787878788
+dataInterface,"in {'NN', 'MR', 'BM', 'FF', 'PA', 'HS'}",4,0.3787878787878788
+dataInterface,"in {'MR', 'BM', 'FF', 'PA'}",4,0.3787878787878788
+dataInterface,"in {'MR', 'BM', 'FF', 'PA', 'HS'}",4,0.3787878787878788
+dataInterface,"in {'MT', 'BT', 'PA', 'MR', 'FF', 'BM', 'HS'}",3,0.2840909090909091
+dataInterface,"in {'MT', 'BT'}",2,0.1893939393939394
+dataInterface,"in {'NN', 'PA', 'MR', 'FF', 'DB', 'BM', 'HS'}",2,0.1893939393939394
+dataInterface,"in {'PA', 'MR', 'FF', 'DB', 'BM', 'HS'}",2,0.1893939393939394
+dataInterface,"in {'NN', 'MT', 'BT', 'PA', 'MR', 'FF', 'DB', 'BM'}",2,0.1893939393939394
+dataInterface,"in {'MT', 'BT', 'PA', 'MR', 'FF', 'DB', 'BM', 'HS'}",2,0.1893939393939394
+dataInterface,"in {'NN', 'MT', 'BT', 'PA', 'MR', 'FF', 'BM'}",2,0.1893939393939394
+dataInterface,"in {'NN', 'MT', 'MR'}",2,0.1893939393939394
+dataInterface,"in {'NN', 'MT', 'MR', 'BM', 'BT', 'FF', 'PA'}",1,0.0946969696969697
+dataInterface,"in {'NN', 'MT', 'MR', 'BM', 'BT', 'FF', 'PA', 'HS'}",1,0.0946969696969697
+dataInterface,"in {'MT', 'MR', 'BM', 'BT', 'FF', 'PA'}",1,0.0946969696969697
+dataInterface,"in {'MT', 'MR', 'BM', 'BT', 'FF', 'PA', 'HS'}",1,0.0946969696969697
+stromSchaltbar,"in {NOVALUE, 'CS1', 'CS2'}",329,31.155303030303028
+stromSchaltbar,"in {NOVALUE, 'CS1', 'CS2', 'CS3'}",238,22.53787878787879
+stromSchaltbar,"in {NOVALUE, 'CS1'}",186,17.613636363636363
+stromSchaltbar,NOVALUE,164,15.530303030303031
+stromSchaltbar,"in {NOVALUE, 'CS1', 'CS2', 'CS3', 'CS4'}",76,7.196969696969697
+stromSchaltbar,CS2,30,2.840909090909091
+stromSchaltbar,"in {'CS2', 'CS3'}",11,1.0416666666666665
+stromSchaltbar,"in {'CS2', 'CS4'}",6,0.5681818181818182
+stromSchaltbar,"in {'CS1', 'CS2', 'CS4'}",5,0.4734848484848485
+stromSchaltbar,"in {'CS1', 'CS2'}",5,0.4734848484848485
+stromSchaltbar,"in {NOVALUE, 'CS1', 'CS2', 'CS4'}",5,0.4734848484848485
+stromSchaltbar,CS1,1,0.0946969696969697
+stromEingaenge,NOVALUE,314,29.734848484848484
+stromEingaenge,"in {NOVALUE, 'IS1'}",162,15.340909090909092
+stromEingaenge,"in {NOVALUE, 'IS1', 'IS2'}",122,11.553030303030303
+stromEingaenge,"in {NOVALUE, 'IS1', 'IS2', 'IS3'}",114,10.795454545454545
+stromEingaenge,IS1,106,10.037878787878787
+stromEingaenge,"in {'IS1', 'IS2'}",88,8.333333333333332
+stromEingaenge,"in {NOVALUE, 'IS1', 'IS2', 'IS3', 'IS4'}",76,7.196969696969697
+stromEingaenge,"in {'IS1', 'IS2', 'IS3'}",72,6.8181818181818175
+stromEingaenge,IS2,2,0.1893939393939394
+temperaturEingaenge,"in {NOVALUE, 'TT1', 'TT2'}",228,21.59090909090909
+temperaturEingaenge,"in {NOVALUE, 'TT1'}",154,14.583333333333334
+temperaturEingaenge,NOVALUE,154,14.583333333333334
+temperaturEingaenge,"in {NOVALUE, 'TT1', 'TT2', 'TT3', 'TT4'}",114,10.795454545454545
+temperaturEingaenge,"in {NOVALUE, 'TT1', 'TT2', 'TT3'}",114,10.795454545454545
+temperaturEingaenge,TT1,110,10.416666666666668
+temperaturEingaenge,"in {'TT1', 'TT2'}",84,7.954545454545454
+temperaturEingaenge,"in {'TT1', 'TT2', 'TT3'}",72,6.8181818181818175
+temperaturEingaenge,TT2,13,1.231060606060606
+temperaturEingaenge,"in {'TT2', 'TT4'}",13,1.231060606060606
+binaerDigitalOpenColl_MN,"in {NOVALUE, 'MN1', 'MN2', 'MN3', 'MN4'}",558,52.84090909090909
+binaerDigitalOpenColl_MN,NOVALUE,474,44.88636363636363
+binaerDigitalOpenColl_MN,MN4,8,0.7575757575757576
+binaerDigitalOpenColl_MN,"in {'MN2', 'MN4'}",6,0.5681818181818182
+binaerDigitalOpenColl_MN,MN2,4,0.3787878787878788
+binaerDigitalOpenColl_MN,"in {NOVALUE, 'MN2', 'MN4'}",3,0.2840909090909091
+binaerDigitalOpenColl_MN,"in {NOVALUE, 'MN2'}",3,0.2840909090909091
+binaerOpenColl_MP,NOVALUE,608,57.57575757575758
+binaerOpenColl_MP,"in {NOVALUE, 'MP1', 'MP2', 'MP3', 'MP4'}",404,38.25757575757576
+binaerOpenColl_MP,MP4,36,3.4090909090909087
+binaerOpenColl_MP,"in {'MP2', 'MP4'}",2,0.1893939393939394
+binaerOpenColl_MP,MP2,2,0.1893939393939394
+binaerOpenColl_MP,"in {NOVALUE, 'MP2', 'MP4'}",2,0.1893939393939394
+binaerOpenColl_MP,"in {NOVALUE, 'MP2'}",2,0.1893939393939394
+waveInjector,"in {'FWI', 'FWY', NOVALUE}",576,54.54545454545454
+waveInjector,"in {'FWI', NOVALUE}",253,23.958333333333336
+waveInjector,NOVALUE,227,21.49621212121212
+dev_advMeterVerification,"in {NOVALUE, 1}",679,64.29924242424242
+dev_advMeterVerification,NOVALUE,373,35.321969696969695
+dev_advMeterVerification,1,4,0.3787878787878788
+dynamicGasMaster,NOVALUE,824,78.03030303030303
+dynamicGasMaster,"in {NOVALUE, 1}",228,21.59090909090909
+dynamicGasMaster,1,4,0.3787878787878788
+customUserFluid,"in {NOVALUE, 1}",722,68.37121212121212
+customUserFluid,NOVALUE,334,31.62878787878788
+steamApplication,NOVALUE,790,74.81060606060606
+steamApplication,N,133,12.594696969696969
+steamApplication,H,133,12.594696969696969

@@ -1,0 +1,9 @@
+metric,value
+pairwise_rows,40627.0
+unique_rfqs,3767.0
+preferred_rank_is_better_rate,1.0
+preferred_score_ge_rejected_score_rate,1.0
+positive_label_rate,1.0
+mean_score_margin,0.2805488230194992
+median_score_margin,0.2595596449484117
+zero_score_margin_rate,0.0

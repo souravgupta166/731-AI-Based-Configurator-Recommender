@@ -1,0 +1,7 @@
+metric,value
+requested_rfqs,5000
+generated_rfqs,5000
+requirements,70478
+customers_used,250
+unique_target_packages,9
+validation_passed,True

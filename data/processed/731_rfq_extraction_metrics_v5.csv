@@ -1,0 +1,2 @@
+version,predicted_requirements,ground_truth_requirements,true_positive,false_positive,false_negative,precision,recall,f1
+V5,70902,70478,63047,7855,7431,0.8892132803023892,0.8945628423054003,0.8918800396095629

@@ -1,0 +1,9 @@
+characteristic,changed_pairs,additional_predicted_value,missing_predicted_value,value_conflict,mandatory_differences,preferred_differences,not_mentioned_differences,extra_not_required
+stromSchaltbar,855,855,0,0,0,0,855,855
+temperaturEingaenge,780,780,0,0,0,0,780,780
+stromEingaenge,683,683,0,0,0,0,683,683
+dev_advMeterVerification,386,386,0,0,0,0,386,386
+customUserFluid,360,360,0,0,0,0,360,360
+binaerOpenColl_MP,329,329,0,0,0,0,329,329
+binaerDigitalOpenColl_MN,271,271,0,0,0,0,271,271
+dynamicGasMaster,192,192,0,0,0,0,192,192

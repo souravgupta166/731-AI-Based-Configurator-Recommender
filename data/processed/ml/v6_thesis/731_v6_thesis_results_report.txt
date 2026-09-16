@@ -1,0 +1,101 @@
+731 V6 — THESIS RESULTS, EXPLAINABILITY & FINAL EVIDENCE PACKAGE
+================================================================
+
+Scope
+-----
+V6 is an evaluation-only stage using the frozen V4.5 pairwise predictions.
+No model is retrained.
+
+Test RFQs: 732
+Candidate rows: 17,153
+Prediction rows: 22,248
+
+PRIMARY MODEL
+-------------
+REALISTIC_BASELINE / LOGISTIC_REGRESSION
+
+Top-1: 0.9057
+Top-3: 0.9986
+Top-5: 1.0000
+Top-10: 1.0000
+MRR: 0.9514
+NDCG@5: 0.9640
+
+SENSITIVITY MODEL
+-----------------
+PROVENANCE_AWARE / HIST_GRADIENT_BOOSTING
+
+Top-1: 0.9358
+MRR: 0.9676
+
+Improvement over realistic primary:
+Top-1 difference: +0.0301
+Percentage-point improvement: +3.01
+
+UPPER-BOUND MODEL
+-----------------
+MECHANISTIC_UPPER_BOUND / HIST_GRADIENT_BOOSTING
+
+Top-1: 0.9358
+MRR: 0.9676
+
+Additional improvement over provenance-aware:
+Top-1 difference: +0.0000
+
+The mechanistic upper-bound model provides no additional Top-1 improvement
+over the provenance-aware model in the frozen V4.5 results.
+
+STATISTICAL INTERPRETATION
+--------------------------
+The paired bootstrap comparison between the realistic primary model and
+the provenance-aware HGB model is reported separately in the statistical
+comparison table. The provenance-aware gain should be described as
+statistically supported only according to that paired confidence interval
+and p-value.
+
+REQUIREMENT EQUIVALENCE
+-----------------------
+Primary-model exact synthetic-engineer-choice share:
+0.9057
+
+Primary-model exact-or-mandatory+preferred-equivalent share:
+1.0000
+
+Exact ID recovery and technical requirement compliance are distinct
+evaluation concepts.
+
+CANDIDATE DIFFICULTY
+--------------------
+Candidate-set difficulty is evaluated using the number of distinct candidate
+configuration IDs per RFQ in the TEST split. Performance is reported by
+candidate-count bucket.
+
+PACKAGE ROBUSTNESS
+------------------
+Package-level performance is reported using the RFQ target package for
+post-hoc evaluation.
+
+EXPLAINABILITY
+--------------
+Feature importance is reported for all regimes/models and a dedicated
+realistic-baseline importance table is produced for the primary model.
+
+METHODOLOGICAL LIMITATION
+-------------------------
+The engineer-preference labels are synthetic. Therefore the results measure
+recovery of the synthetic preference-generation mechanism, not historical
+human engineer behaviour.
+
+FINAL MODEL RECOMMENDATION
+--------------------------
+Use REALISTIC_BASELINE / LOGISTIC_REGRESSION as the primary model for the
+thesis and decision-support framing because it uses the cleanest realistic
+information and is the strongest model within that regime.
+
+Retain PROVENANCE_AWARE / HIST_GRADIENT_BOOSTING as a sensitivity analysis
+and MECHANISTIC_UPPER_BOUND / HIST_GRADIENT_BOOSTING as an upper-bound
+experiment.
+
+Do not add further ML algorithms unless a thesis reviewer identifies a
+specific methodological gap. The next work is interpretation, discussion,
+limitations, and thesis writing.

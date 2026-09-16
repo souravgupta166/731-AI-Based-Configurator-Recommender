@@ -1,0 +1,118 @@
+731 V4.2 FEATURE & LEAKAGE AUDIT
+================================================================================
+
+Rows: 17,153
+RFQs: 5,000
+Candidate configuration IDs: 1,766
+
+FEATURE REGIMES
+REALISTIC_BASELINE: 4
+PROVENANCE_AWARE: 11
+MECHANISTIC_UPPER_BOUND: 17
+
+REALISTIC BASELINE FEATURES
+  - mandatory_satisfied
+  - mandatory_total
+  - preferred_satisfied
+  - preferred_total
+
+PROVENANCE / PROCESS FEATURES
+  - evidence_level
+  - evidence_score
+  - generation_method
+  - nearest_real_distance
+  - num_changed_characteristics
+  - record_type
+  - source_frequency
+
+SYNTHETIC MECHANISM FEATURES
+  - evidence_score_normalized
+  - low_change_score
+  - observed_configuration_score
+  - real_proximity_score
+  - source_frequency_score
+  - unmentioned_features
+
+FORBIDDEN FEATURES PRESENT IN DATASET
+  - ml_target
+
+UNCLASSIFIED FEATURES
+  - config_binaerDigitalOpenColl_MN
+  - config_binaerOpenColl_MP
+  - config_certification
+  - config_characteristic
+  - config_customUserFluid
+  - config_dataInterface
+  - config_devCategory
+  - config_dev_advMeterVerification
+  - config_dynamicGasMaster
+  - config_explosionApproval
+  - config_housing
+  - config_numberOfChannels
+  - config_powerSupply
+  - config_protectionArea
+  - config_steamApplication
+  - config_stromEingaenge
+  - config_stromSchaltbar
+  - config_temperaturEingaenge
+  - config_waveInjector
+  - rfq_ground_truth_evidence_level
+  - rfq_ground_truth_nearest_real_distance
+  - rfq_ground_truth_record_type
+  - rfq_mandatory_requirement_count
+  - rfq_preferred_requirement_count
+  - rfq_requirement_count
+  - rfq_unique_required_characteristics
+
+HIGH TARGET-ASSOCIATION FEATURES
+  - canonical_configuration_id | regime=EVALUATION_ONLY | pearson=nan | spearman=nan | categorical=0.8151820771934092
+
+HIGH NUMERIC CORRELATION PAIRS
+  - evidence_score <-> evidence_score_normalized | spearman=1.0
+  - mandatory_satisfied <-> mandatory_total | spearman=1.0
+  - low_change_score <-> num_changed_characteristics | spearman=-1.0
+  - nearest_real_distance <-> real_proximity_score | spearman=-1.0
+  - preferred_satisfied <-> preferred_total | spearman=1.0
+  - source_frequency <-> source_frequency_score | spearman=1.0
+  - observed_configuration_score <-> real_proximity_score | spearman=0.9637896861497789
+  - nearest_real_distance <-> observed_configuration_score | spearman=-0.9637896861497789
+  - low_change_score <-> observed_configuration_score | spearman=0.9574609571517149
+  - num_changed_characteristics <-> observed_configuration_score | spearman=-0.9574609571517149
+  - evidence_score <-> real_proximity_score | spearman=0.9476161632425121
+  - evidence_score_normalized <-> real_proximity_score | spearman=0.9476161632425121
+  - evidence_score_normalized <-> nearest_real_distance | spearman=-0.9476161632425121
+  - evidence_score <-> nearest_real_distance | spearman=-0.9476161632425121
+  - observed_configuration_score <-> source_frequency | spearman=0.9423447768866612
+  - observed_configuration_score <-> source_frequency_score | spearman=0.9423447768866612
+  - num_changed_characteristics <-> real_proximity_score | spearman=-0.9381250983490259
+  - low_change_score <-> nearest_real_distance | spearman=-0.9381250983490259
+  - low_change_score <-> real_proximity_score | spearman=0.9381250983490259
+  - nearest_real_distance <-> num_changed_characteristics | spearman=0.9381250983490259
+  - evidence_score <-> observed_configuration_score | spearman=0.9133026845619611
+  - evidence_score_normalized <-> observed_configuration_score | spearman=0.9133026845619611
+  - evidence_score_normalized <-> low_change_score | spearman=0.9085991454812714
+  - evidence_score <-> num_changed_characteristics | spearman=-0.9085991454812714
+  - evidence_score <-> low_change_score | spearman=0.9085991454812714
+  - evidence_score_normalized <-> num_changed_characteristics | spearman=-0.9085991454812714
+  - nearest_real_distance <-> source_frequency_score | spearman=-0.908222176760482
+  - nearest_real_distance <-> source_frequency | spearman=-0.908222176760482
+  - real_proximity_score <-> source_frequency | spearman=0.9082221767604818
+  - real_proximity_score <-> source_frequency_score | spearman=0.9082221767604818
+  - num_changed_characteristics <-> source_frequency_score | spearman=-0.902258332044835
+  - low_change_score <-> source_frequency | spearman=0.902258332044835
+  - low_change_score <-> source_frequency_score | spearman=0.902258332044835
+  - num_changed_characteristics <-> source_frequency | spearman=-0.902258332044835
+
+LEAKAGE VALIDATION
+Forbidden in realistic baseline: []
+Forbidden in provenance-aware: []
+Forbidden in mechanistic upper bound: []
+Evaluation-only fields in realistic baseline: []
+
+METHODOLOGICAL INTERPRETATION
+REALISTIC_BASELINE is the primary thesis feature regime.
+PROVENANCE_AWARE is a sensitivity/upper-bound experiment.
+MECHANISTIC_UPPER_BOUND evaluates recovery of the known synthetic preference-generation mechanism.
+Synthetic engineer labels do not represent historical engineer decisions.
+Strong target association is a screening signal, not automatic proof of leakage.
+Features directly used by the synthetic label generator must not be interpreted as independent evidence of real engineer behaviour.

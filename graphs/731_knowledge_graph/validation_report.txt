@@ -1,0 +1,30 @@
+731 KNOWLEDGE GRAPH V1 VALIDATION
+======================================================================
+
+Real workbook rows are RuleRow knowledge, not historical orders.
+Synthetic configurations are explicitly SYNTHETIC.
+Undocumented technical-code meanings are not invented.
+
+NODE COUNTS:
+  Characteristic: 30
+  CharacteristicValue: 182
+  Configuration: 1,979
+  ConfigurationFamily: 18
+  Product: 1
+  RuleRow: 1,056
+
+RELATIONSHIP COUNTS:
+  BELONGS_TO_FAMILY: 1,979
+  HAS_CHARACTERISTIC: 30
+  HAS_CONFIGURATION: 1,979
+  HAS_RULE_ROW: 1,056
+  HAS_VALUE: 37,783
+  RULE_APPLIES_TO_FAMILY: 1,056
+  RULE_SPECIFIES: 29,568
+
+Total nodes: 3,266
+Total relationships: 73,451
+Orphan nodes: 0
+Invalid edge references: 0
+
+VALIDATION STATUS: PASS

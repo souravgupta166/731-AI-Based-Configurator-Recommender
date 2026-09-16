@@ -1,0 +1,25 @@
+{
+  "version": "V1",
+  "node_types": [
+    "Characteristic",
+    "CharacteristicValue",
+    "Configuration",
+    "ConfigurationFamily",
+    "Product",
+    "RuleRow"
+  ],
+  "relationship_types": [
+    "BELONGS_TO_FAMILY",
+    "HAS_CHARACTERISTIC",
+    "HAS_CONFIGURATION",
+    "HAS_RULE_ROW",
+    "HAS_VALUE",
+    "RULE_APPLIES_TO_FAMILY",
+    "RULE_SPECIFIES"
+  ],
+  "provenance": [
+    "OBSERVED_731",
+    "DERIVED",
+    "SYNTHETIC"
+  ]
+}

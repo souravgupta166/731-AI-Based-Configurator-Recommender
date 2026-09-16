@@ -1,0 +1,8 @@
+check,expected,actual,passed
+RFQ header count,5000,5000,True
+Unique RFQ IDs,5000,5000,True
+RFQ documents,5000,5000,True
+Ground truth records,5000,5000,True
+Requirements linked to RFQs,5000,5000,True
+Ground truth IDs unique,5000,5000,True
+Internal syntax leakage,0,0,True

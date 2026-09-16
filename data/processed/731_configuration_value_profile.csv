@@ -1,0 +1,130 @@
+characteristic,raw_value,occurrences,percentage
+OrgUnitAreaOfDocument,"in {0, 1, 2, 3}",840,79.55
+OrgUnitAreaOfDocument,3,216,20.45
+packageFixed_dev,"in {NOVALUE, 'x731'}",696,65.91
+packageFixed_dev,"in {NOVALUE, 'G731ST-LT'}",133,12.59
+packageFixed_dev,"in {NOVALUE, 'G731ST-HT'}",133,12.59
+packageFixed_dev,"in {NOVALUE, 'F731TE'}",26,2.46
+packageFixed_dev,"in {NOVALUE, 'G731CA'}",24,2.27
+packageFixed_dev,"in {NOVALUE, 'F731PW'}",20,1.89
+packageFixed_dev,"in {NOVALUE, 'F731WD_DualChannel'}",12,1.14
+packageFixed_dev,"in {NOVALUE, 'F731WD_SingleChannel'}",8,0.76
+packageFixed_dev,"in {NOVALUE, 'G731VG'}",4,0.38
+devCategory,'G',522,49.43
+devCategory,'F',294,27.84
+devCategory,'H',120,11.36
+devCategory,'S',120,11.36
+characteristic,'GP',696,65.91
+characteristic,'ST',266,25.19
+characteristic,'TE',26,2.46
+characteristic,'CA',24,2.27
+characteristic,'WD',20,1.89
+characteristic,'PW',20,1.89
+characteristic,'VG',4,0.38
+housing,"in {'ST', 'AL'}",766,72.54
+housing,'ST',290,27.46
+powerSupply,"in {'1', '4'}",756,71.59
+powerSupply,'4',290,27.46
+powerSupply,'1',10,0.95
+numberOfChannels,"in {1, 2}",849,80.4
+numberOfChannels,2,174,16.48
+numberOfChannels,1,33,3.12
+explosionApproval,'N',342,32.39
+explosionApproval,"in {'A', 'E', 'P', 'J', 'S'}",212,20.08
+explosionApproval,'K',212,20.08
+explosionApproval,'F',174,16.48
+explosionApproval,'A',116,10.98
+protectionArea,'2',714,67.61
+protectionArea,'N',342,32.39
+certification,"in {'NN', 'WN'}",344,32.58
+certification,'MN',290,27.46
+certification,'NN',196,18.56
+certification,"in {'NN', 'WN', 'FN'}",176,16.67
+certification,"in {'NN', 'FN'}",40,3.79
+certification,'CN',10,0.95
+dataInterface,'HS',279,26.42
+dataInterface,"in {'NN', 'PA', 'MR', 'FF', 'BM'}",260,24.62
+dataInterface,'NN',160,15.15
+dataInterface,"in {'NN', 'MT', 'BT'}",130,12.31
+dataInterface,"in {'NN', 'PA', 'MR', 'FF', 'DB', 'BM'}",96,9.09
+dataInterface,"in {'NN', 'PA', 'MR', 'FF'}",48,4.55
+dataInterface,"in {'NN', 'MT'}",18,1.7
+dataInterface,"in {'PA', 'MR', 'FF', 'BM', 'HS'}",10,0.95
+dataInterface,"in {'NN', 'PA', 'MT', 'MR', 'FF', 'DB', 'BM', 'BT'}",8,0.76
+dataInterface,"in {'NN', 'PA', 'MR', 'FF', 'BM', 'HS'}",6,0.57
+dataInterface,"in {'PA', 'MT', 'MR', 'FF', 'DB', 'BM', 'BT'}",4,0.38
+dataInterface,"in {'NN', 'MR', 'BM', 'FF', 'PA'}",4,0.38
+dataInterface,"in {'NN', 'MR', 'BM', 'FF', 'PA', 'HS'}",4,0.38
+dataInterface,"in {'MR', 'BM', 'FF', 'PA'}",4,0.38
+dataInterface,"in {'MR', 'BM', 'FF', 'PA', 'HS'}",4,0.38
+dataInterface,"in {'MT', 'BT', 'PA', 'MR', 'FF', 'BM', 'HS'}",3,0.28
+dataInterface,"in {'MT', 'BT'}",2,0.19
+dataInterface,"in {'NN', 'PA', 'MR', 'FF', 'DB', 'BM', 'HS'}",2,0.19
+dataInterface,"in {'PA', 'MR', 'FF', 'DB', 'BM', 'HS'}",2,0.19
+dataInterface,"in {'NN', 'MT', 'BT', 'PA', 'MR', 'FF', 'DB', 'BM'}",2,0.19
+dataInterface,"in {'MT', 'BT', 'PA', 'MR', 'FF', 'DB', 'BM', 'HS'}",2,0.19
+dataInterface,"in {'NN', 'MT', 'BT', 'PA', 'MR', 'FF', 'BM'}",2,0.19
+dataInterface,"in {'NN', 'MT', 'MR'}",2,0.19
+dataInterface,"in {'NN', 'MT', 'MR', 'BM', 'BT', 'FF', 'PA'}",1,0.09
+dataInterface,"in {'NN', 'MT', 'MR', 'BM', 'BT', 'FF', 'PA', 'HS'}",1,0.09
+dataInterface,"in {'MT', 'MR', 'BM', 'BT', 'FF', 'PA'}",1,0.09
+dataInterface,"in {'MT', 'MR', 'BM', 'BT', 'FF', 'PA', 'HS'}",1,0.09
+binaerDigitalOpenColl_MN,"in {NOVALUE, 'MN1', 'MN2', 'MN3', 'MN4'}",558,52.84
+binaerDigitalOpenColl_MN,NOVALUE,474,44.89
+binaerDigitalOpenColl_MN,'MN4',8,0.76
+binaerDigitalOpenColl_MN,"in {'MN2', 'MN4'}",6,0.57
+binaerDigitalOpenColl_MN,'MN2',4,0.38
+binaerDigitalOpenColl_MN,"in {NOVALUE, 'MN2', 'MN4'}",3,0.28
+binaerDigitalOpenColl_MN,"in {NOVALUE, 'MN2'}",3,0.28
+binaerOpenColl_MP,NOVALUE,608,57.58
+binaerOpenColl_MP,"in {NOVALUE, 'MP1', 'MP2', 'MP3', 'MP4'}",404,38.26
+binaerOpenColl_MP,'MP4',36,3.41
+binaerOpenColl_MP,"in {'MP2', 'MP4'}",2,0.19
+binaerOpenColl_MP,'MP2',2,0.19
+binaerOpenColl_MP,"in {NOVALUE, 'MP2', 'MP4'}",2,0.19
+binaerOpenColl_MP,"in {NOVALUE, 'MP2'}",2,0.19
+stromSchaltbar,"in {NOVALUE, 'CS1', 'CS2'}",329,31.16
+stromSchaltbar,"in {NOVALUE, 'CS1', 'CS2', 'CS3'}",238,22.54
+stromSchaltbar,"in {NOVALUE, 'CS1'}",186,17.61
+stromSchaltbar,NOVALUE,164,15.53
+stromSchaltbar,"in {NOVALUE, 'CS1', 'CS2', 'CS3', 'CS4'}",76,7.2
+stromSchaltbar,'CS2',30,2.84
+stromSchaltbar,"in {'CS2', 'CS3'}",11,1.04
+stromSchaltbar,"in {'CS2', 'CS4'}",6,0.57
+stromSchaltbar,"in {'CS1', 'CS2', 'CS4'}",5,0.47
+stromSchaltbar,"in {'CS1', 'CS2'}",5,0.47
+stromSchaltbar,"in {NOVALUE, 'CS1', 'CS2', 'CS4'}",5,0.47
+stromSchaltbar,'CS1',1,0.09
+stromEingaenge,NOVALUE,314,29.73
+stromEingaenge,"in {NOVALUE, 'IS1'}",162,15.34
+stromEingaenge,"in {NOVALUE, 'IS1', 'IS2'}",122,11.55
+stromEingaenge,"in {NOVALUE, 'IS1', 'IS2', 'IS3'}",114,10.8
+stromEingaenge,'IS1',106,10.04
+stromEingaenge,"in {'IS1', 'IS2'}",88,8.33
+stromEingaenge,"in {NOVALUE, 'IS1', 'IS2', 'IS3', 'IS4'}",76,7.2
+stromEingaenge,"in {'IS1', 'IS2', 'IS3'}",72,6.82
+stromEingaenge,'IS2',2,0.19
+temperaturEingaenge,"in {NOVALUE, 'TT1', 'TT2'}",228,21.59
+temperaturEingaenge,"in {NOVALUE, 'TT1'}",154,14.58
+temperaturEingaenge,NOVALUE,154,14.58
+temperaturEingaenge,"in {NOVALUE, 'TT1', 'TT2', 'TT3', 'TT4'}",114,10.8
+temperaturEingaenge,"in {NOVALUE, 'TT1', 'TT2', 'TT3'}",114,10.8
+temperaturEingaenge,'TT1',110,10.42
+temperaturEingaenge,"in {'TT1', 'TT2'}",84,7.95
+temperaturEingaenge,"in {'TT1', 'TT2', 'TT3'}",72,6.82
+temperaturEingaenge,'TT2',13,1.23
+temperaturEingaenge,"in {'TT2', 'TT4'}",13,1.23
+steamApplication,NOVALUE,790,74.81
+steamApplication,'N',133,12.59
+steamApplication,'H',133,12.59
+waveInjector,"in {'FWI', 'FWY', NOVALUE}",576,54.55
+waveInjector,"in {'FWI', NOVALUE}",253,23.96
+waveInjector,NOVALUE,227,21.5
+dev_advMeterVerification,"in {NOVALUE, 1}",679,64.3
+dev_advMeterVerification,NOVALUE,373,35.32
+dev_advMeterVerification,1,4,0.38
+dynamicGasMaster,NOVALUE,824,78.03
+dynamicGasMaster,"in {NOVALUE, 1}",228,21.59
+dynamicGasMaster,1,4,0.38
+customUserFluid,"in {NOVALUE, 1}",722,68.37
+customUserFluid,NOVALUE,334,31.63

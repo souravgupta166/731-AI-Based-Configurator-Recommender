@@ -1,0 +1,44 @@
+731 V4.5 PAIRWISE LEARNING-TO-RANK REPORT
+
+Data
+----
+Original pairwise comparisons: 40,627
+Symmetric supervised comparisons: 81,254
+Candidate rows: 17,153
+Candidate RFQs: 5,000
+Pairwise RFQs: 3,767
+
+Method
+------
+Pairwise binary preference learning with symmetric augmentation.
+For each RFQ, candidate A is compared with candidate B in both directions.
+Inference aggregates pairwise win probabilities into a candidate ranking.
+
+Primary result
+--------------
+Best frozen pairwise model: PROVENANCE_AWARE / HIST_GRADIENT_BOOSTING
+Top-1: 0.9358
+Top-3: 0.9986
+Top-5: 1.0000
+Top-10: 1.0000
+MRR: 0.9676
+NDCG@5: 0.9760
+
+Interpretation
+--------------
+The pairwise model estimates preference ordering among candidate
+configurations. Labels are synthetic engineer preferences and therefore
+measure recovery of the synthetic preference-generation mechanism, not
+historical human engineer decisions.
+
+The RFQ-level split is inherited from V4.1, so candidates from one RFQ do
+not cross train/validation/test boundaries.
+
+Requirement-equivalence results must be interpreted separately from exact
+configuration identity. A prediction can differ from the synthetic
+engineer's selected ID while still satisfying all mandatory and preferred
+requirements.
+
+The realistic baseline is the cleanest primary model regime. Provenance-aware
+and mechanistic regimes are sensitivity/upper-bound analyses because their
+additional variables are related to synthetic-data generation.

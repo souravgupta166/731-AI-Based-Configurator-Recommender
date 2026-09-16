@@ -1,0 +1,7 @@
+metric,value
+real_canonical_configurations,412
+feasible_derived_configurations,3141
+total_candidate_attempts,52992
+constraint_rejections,35456
+existing_real_rejections,5308
+duplicate_rejections,9087

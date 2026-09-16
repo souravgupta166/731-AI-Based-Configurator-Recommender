@@ -1,0 +1,246 @@
+
+======================================================================
+1. BASIC GRAPH INVENTORY
+======================================================================
+Nodes:         3,266
+Relationships: 73,451
+Node columns:  node_id, node_type, label, provenance, source, source_type, field_name, source_row, characteristic, value, package_context, canonical_configuration_id, record_type, generation_method
+Edge columns:  source_id, target_id, relation, provenance, source, source_row, characteristic
+
+======================================================================
+2. NODE TYPE INVENTORY
+======================================================================
+Characteristic                  30
+CharacteristicValue            182
+Configuration                1,979
+ConfigurationFamily             18
+Product                          1
+RuleRow                      1,056
+
+======================================================================
+3. PROVENANCE INVENTORY
+======================================================================
+DERIVED                          2
+OBSERVED_731                 1,218
+SYNTHETIC                    2,046
+
+Provenance by node type:
+  Characteristic            DERIVED                     2
+  Characteristic            OBSERVED_731               28
+  CharacteristicValue       OBSERVED_731              124
+  CharacteristicValue       SYNTHETIC                  58
+  Configuration             SYNTHETIC               1,979
+  ConfigurationFamily       OBSERVED_731                9
+  ConfigurationFamily       SYNTHETIC                   9
+  Product                   OBSERVED_731                1
+  RuleRow                   OBSERVED_731            1,056
+
+======================================================================
+4. CONFIGURATION FAMILIES
+======================================================================
+Total configuration-family nodes: 18
+  in {NOVALUE, 'F731PW'}              | provenance=OBSERVED_731    | source=data/raw/x731_allgemein_Rev24.xlsx
+  in {NOVALUE, 'F731TE'}              | provenance=OBSERVED_731    | source=data/raw/x731_allgemein_Rev24.xlsx
+  in {NOVALUE, 'F731WD_DualChannel'}  | provenance=OBSERVED_731    | source=data/raw/x731_allgemein_Rev24.xlsx
+  in {NOVALUE, 'F731WD_SingleChannel'} | provenance=OBSERVED_731    | source=data/raw/x731_allgemein_Rev24.xlsx
+  in {NOVALUE, 'G731CA'}              | provenance=OBSERVED_731    | source=data/raw/x731_allgemein_Rev24.xlsx
+  in {NOVALUE, 'G731ST-HT'}           | provenance=OBSERVED_731    | source=data/raw/x731_allgemein_Rev24.xlsx
+  in {NOVALUE, 'G731ST-LT'}           | provenance=OBSERVED_731    | source=data/raw/x731_allgemein_Rev24.xlsx
+  in {NOVALUE, 'G731VG'}              | provenance=OBSERVED_731    | source=data/raw/x731_allgemein_Rev24.xlsx
+  in {NOVALUE, 'x731'}                | provenance=OBSERVED_731    | source=data/raw/x731_allgemein_Rev24.xlsx
+  F731PW                              | provenance=SYNTHETIC       | source=data/synthetic/configurations/731_synthetic_configurations_v5.csv
+  F731TE                              | provenance=SYNTHETIC       | source=data/synthetic/configurations/731_synthetic_configurations_v5.csv
+  F731WD_DualChannel                  | provenance=SYNTHETIC       | source=data/synthetic/configurations/731_synthetic_configurations_v5.csv
+  F731WD_SingleChannel                | provenance=SYNTHETIC       | source=data/synthetic/configurations/731_synthetic_configurations_v5.csv
+  G731CA                              | provenance=SYNTHETIC       | source=data/synthetic/configurations/731_synthetic_configurations_v5.csv
+  G731ST-HT                           | provenance=SYNTHETIC       | source=data/synthetic/configurations/731_synthetic_configurations_v5.csv
+  G731ST-LT                           | provenance=SYNTHETIC       | source=data/synthetic/configurations/731_synthetic_configurations_v5.csv
+  G731VG                              | provenance=SYNTHETIC       | source=data/synthetic/configurations/731_synthetic_configurations_v5.csv
+  x731                                | provenance=SYNTHETIC       | source=data/synthetic/configurations/731_synthetic_configurations_v5.csv
+
+======================================================================
+5. TECHNICAL CHARACTERISTICS
+======================================================================
+Total characteristics: 30
+  OrgUnitAreaOfDocument                    | OBSERVED_731
+  binaerDigitalOpenColl_MN                 | DERIVED
+  binaerOpenColl_MP                        | DERIVED
+  carryingCase                             | OBSERVED_731
+  certification                            | OBSERVED_731
+  characteristic                           | OBSERVED_731
+  customUserFluid                          | OBSERVED_731
+  dataInterface                            | OBSERVED_731
+  devCategory                              | OBSERVED_731
+  dev_advMeterVerification                 | OBSERVED_731
+  dynamicGasMaster                         | OBSERVED_731
+  explosionApproval                        | OBSERVED_731
+  housing                                  | OBSERVED_731
+  inclusiveManual                          | OBSERVED_731
+  installationsart                         | OBSERVED_731
+  intrinsicSafety                          | OBSERVED_731
+  marke                                    | OBSERVED_731
+  measuringTape                            | OBSERVED_731
+  numberOfChannels                         | OBSERVED_731
+  packageFixed_dev                         | OBSERVED_731
+  powerCable                               | OBSERVED_731
+  powerSupply                              | OBSERVED_731
+  protectionArea                           | OBSERVED_731
+  steamApplication                         | OBSERVED_731
+  stromEingaenge                           | OBSERVED_731
+  stromSchaltbar                           | OBSERVED_731
+  tagPlate                                 | OBSERVED_731
+  temperaturEingaenge                      | OBSERVED_731
+  type                                     | OBSERVED_731
+  waveInjector                             | OBSERVED_731
+
+======================================================================
+6. CHARACTERISTIC VALUES
+======================================================================
+Total characteristic-value nodes: 182
+Value labels occurring more than once: 14
+
+Most repeated value labels:
+  NOVALUE                                      21
+  1                                             8
+  'N'                                           4
+  in {NOVALUE, 1}                               4
+  2                                             3
+  N                                             3
+  'F'                                           2
+  'NN'                                          2
+  'H'                                           2
+  'ST'                                          2
+  ST                                            2
+  F                                             2
+  NN                                            2
+  H                                             2
+
+======================================================================
+7. REAL CONFIGURATOR RULE ROWS
+======================================================================
+RuleRow nodes: 1,056
+These represent rows from the real 731 configurator workbook.
+They must NOT be interpreted as historical customer orders or historical engineer decisions.
+Unique rule source labels: 1
+
+======================================================================
+8. SYNTHETIC CONFIGURATION NODES
+======================================================================
+Configuration nodes: 1,979
+These are canonical configuration entities represented in the synthetic configuration catalogue.
+
+======================================================================
+9. CONFIGURATION IDENTITY CHECK
+======================================================================
+Duplicate Configuration node IDs: 0
+
+======================================================================
+10. SOURCE ROW / PROVENANCE CHECK
+======================================================================
+Characteristic            missing source_row: 30 / 30
+CharacteristicValue       missing source_row: 182 / 182
+Configuration             missing source_row: 0 / 1,979
+ConfigurationFamily       missing source_row: 18 / 18
+Product                   missing source_row: 1 / 1
+RuleRow                   missing source_row: 0 / 1,056
+
+======================================================================
+11. RELATIONSHIP INVENTORY
+======================================================================
+BELONGS_TO_FAMILY                        1,979
+HAS_CHARACTERISTIC                          30
+HAS_CONFIGURATION                        1,979
+HAS_RULE_ROW                             1,056
+HAS_VALUE                               37,783
+RULE_APPLIES_TO_FAMILY                   1,056
+RULE_SPECIFIES                          29,568
+
+======================================================================
+12. RELATIONSHIP PROVENANCE
+======================================================================
+DERIVED                            2
+OBSERVED_731                  31,832
+SYNTHETIC                     41,617
+
+======================================================================
+13. RELATIONSHIP INTEGRITY
+======================================================================
+Invalid source references: 0
+Invalid target references: 0
+
+======================================================================
+14. ORPHAN NODE CHECK
+======================================================================
+Orphan nodes: 0
+
+======================================================================
+15. RELATIONSHIP STRUCTURE
+======================================================================
+
+BELONGS_TO_FAMILY
+  source types: ['Configuration']
+  target types: ['ConfigurationFamily']
+
+HAS_CHARACTERISTIC
+  source types: ['Product']
+  target types: ['Characteristic']
+
+HAS_CONFIGURATION
+  source types: ['Product']
+  target types: ['Configuration']
+
+HAS_RULE_ROW
+  source types: ['Product']
+  target types: ['RuleRow']
+
+HAS_VALUE
+  source types: ['Characteristic', 'Configuration']
+  target types: ['CharacteristicValue']
+
+RULE_APPLIES_TO_FAMILY
+  source types: ['RuleRow']
+  target types: ['ConfigurationFamily']
+
+RULE_SPECIFIES
+  source types: ['RuleRow']
+  target types: ['CharacteristicValue']
+
+======================================================================
+16. CONFIGURATION CONNECTIVITY
+======================================================================
+Relationships touching Configuration nodes: 41,559
+  HAS_VALUE                               37,601
+  HAS_CONFIGURATION                        1,979
+  BELONGS_TO_FAMILY                        1,979
+
+======================================================================
+17. CONFIGURATION CHARACTERISTIC COVERAGE
+======================================================================
+Configuration → HAS_VALUE relationships: 37,601
+Configurations with at least one technical value: 1,979 / 1,979
+Mean values per configuration: 19.00
+Median values per configuration: 19.00
+Maximum values per configuration: 19
+
+======================================================================
+18. CHARACTERISTIC CONNECTIVITY
+======================================================================
+Relationships touching characteristics: 212
+
+======================================================================
+19. CONFIGURATION FAMILY CONNECTIVITY
+======================================================================
+Relationships touching family nodes: 3,035
+  BELONGS_TO_FAMILY                        1,979
+  RULE_APPLIES_TO_FAMILY                   1,056
+
+======================================================================
+20. V2 DESIGN FLAGS
+======================================================================
+- PASS: all relationship references point to existing nodes.
+- PASS: no orphan nodes.
+- IMPORTANT: Configuration nodes are fewer than the 5,000 synthetic configuration rows. V2 should explicitly preserve row-level configuration-record provenance rather than silently collapsing records.
+- IMPORTANT: More configuration-family nodes exist in the KG than the previously observed set of real package expressions. V2 should separate observed family knowledge from synthetic package-context values.
+- IMPORTANT: Do not assign undocumented expansions to internal technical codes without source evidence.
+- IMPORTANT: Real RuleRows represent configurator knowledge, not historical customer orders.
+- V2 goal: explicitly represent requirements, constraints, configuration records, provenance and explainable validity relationships.

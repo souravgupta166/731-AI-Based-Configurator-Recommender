@@ -1,0 +1,21 @@
+================================================================================
+731 V4.2.1 FEATURE & LEAKAGE AUDIT REPORT
+================================================================================
+
+Rows: 17,153
+RFQs: 5,000
+Realistic baseline features: 23
+Provenance-aware features: 7
+Mechanistic upper-bound features: 35
+Unclassified features: 4
+
+Governance decisions:
+- target_package/package_context are pre-choice context.
+- hidden ground-truth context is excluded from predictive regimes.
+- provenance metadata is sensitivity-only.
+- synthetic utility components are mechanistic-only.
+- identifiers/post-choice fields are evaluation-only.
+
+Leakage governance: PASS
+
+V4.3 should use RFQ-level splits and ranking metrics such as Top-K, MRR and NDCG.

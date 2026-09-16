@@ -1,0 +1,15 @@
+metric,value
+candidate_rows,17153.0
+candidate_rfqs,5000.0
+pairwise_rows,40627.0
+pairwise_rfqs,3767.0
+unique_candidate_configuration_ids,1766.0
+approved_baseline_feature_count,47.0
+unclassified_feature_count,3.0
+train_rfqs,3534.0
+validation_rfqs,734.0
+test_rfqs,732.0
+positive_target_rows,5000.0
+negative_target_rows,12153.0
+missing_target_rows,0.0
+missing_rate_all_approved_features_mean,0.0

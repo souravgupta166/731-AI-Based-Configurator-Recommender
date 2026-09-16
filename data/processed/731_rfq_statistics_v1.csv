@@ -1,0 +1,9 @@
+metric,value
+rfq_count,5000.0
+unique_customers,250.0
+unique_target_configurations,1557.0
+total_requirements,70396.0
+average_requirements_per_rfq,14.08
+mandatory_requirements,57845.0
+preferred_requirements,12551.0
+average_rfq_text_length,1261.29

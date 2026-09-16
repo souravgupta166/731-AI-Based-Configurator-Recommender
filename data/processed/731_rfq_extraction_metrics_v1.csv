@@ -1,0 +1,10 @@
+metric,value
+RFQ_count,5000.0
+True_positives,28403.0
+False_positives,14779.0
+False_negatives,29827.0
+Precision,0.6577509147329906
+Recall,0.4877726257942641
+F1,0.5601506725042401
+Exact_RFQ_match_count,0.0
+Exact_RFQ_match_rate,0.0

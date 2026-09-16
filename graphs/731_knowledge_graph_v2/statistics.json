@@ -1,0 +1,64 @@
+{
+  "graph_version": "V2",
+  "real_source": "/home/e1546562/thesis-configurator/data/raw/x731_allgemein_Rev24.xlsx",
+  "synthetic_source": "/home/e1546562/thesis-configurator/data/synthetic/configurations/731_synthetic_configurations_v5.csv",
+  "output_directory": "/home/e1546562/thesis-configurator/graphs/731_knowledge_graph_v2",
+  "source_rows": {
+    "real_workbook": 1056,
+    "synthetic_configuration_records": 5000
+  },
+  "nodes": {
+    "total": 8261,
+    "by_type": {
+      "Product": 1,
+      "Characteristic": 28,
+      "CharacteristicValue": 170,
+      "ConfigurationFamily": 9,
+      "FamilyEvidence": 18,
+      "RuleRow": 1056,
+      "CanonicalConfiguration": 1979,
+      "ConfigurationRecord": 5000
+    },
+    "by_provenance": {
+      "OBSERVED_731": 1227,
+      "SYNTHETIC": 7034
+    }
+  },
+  "relationships": {
+    "total": 140808,
+    "by_type": {
+      "HAS_CHARACTERISTIC": 28,
+      "HAS_ALLOWED_VALUE": 124,
+      "HAS_OBSERVED_EXPRESSION": 9,
+      "HAS_RULE_ROW": 1056,
+      "RULE_APPLIES_TO_FAMILY": 1056,
+      "RULE_SPECIFIES": 29568,
+      "HAS_SYNTHETIC_PACKAGE_CONTEXT": 9,
+      "REPRESENTS_CANONICAL_CONFIGURATION": 5000,
+      "HAS_PACKAGE_CONTEXT": 5000,
+      "HAS_TECHNICAL_VALUE": 95000,
+      "HAS_CANONICAL_CONFIGURATION": 1979,
+      "BELONGS_TO_FAMILY": 1979
+    },
+    "by_provenance": {
+      "OBSERVED_731": 59886,
+      "SYNTHETIC": 80922
+    }
+  },
+  "configuration_model": {
+    "configuration_records": 5000,
+    "canonical_configurations": 1979,
+    "record_to_canonical_relationships": 5000
+  },
+  "family_model": {
+    "canonical_families": 9,
+    "observed_families": 9,
+    "synthetic_family_nodes": 0
+  },
+  "validation": {
+    "invalid_source_references": 0,
+    "invalid_target_references": 0,
+    "orphan_nodes": 0,
+    "status": "PASS"
+  }
+}

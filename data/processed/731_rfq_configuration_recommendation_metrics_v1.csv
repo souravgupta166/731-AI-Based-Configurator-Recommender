@@ -1,0 +1,9 @@
+metric,value
+top1_accuracy,0.2096
+top3_accuracy,0.4512
+top5_accuracy,0.5828
+top10_accuracy,0.7436
+MRR,0.3775864878049234
+package_accuracy,1.0
+mean_true_rank,13.5408
+median_true_rank,4.0

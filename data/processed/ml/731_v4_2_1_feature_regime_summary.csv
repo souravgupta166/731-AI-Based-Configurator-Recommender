@@ -1,0 +1,4 @@
+regime,feature_count,contains_forbidden,contains_evaluation_only
+REALISTIC_BASELINE,23,False,False
+PROVENANCE_AWARE,7,False,False
+MECHANISTIC_UPPER_BOUND,35,False,False

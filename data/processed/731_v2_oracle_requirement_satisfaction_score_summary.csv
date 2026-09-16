@@ -1,0 +1,3 @@
+mandatory_fully_satisfied,candidate_count,mean_score,median_score,mean_mandatory_violations,mean_preferred_satisfied
+False,23501,19.833512521654477,19.366763643830904,1.154674269180035,3.230841240798264
+True,26289,21.40325942824579,20.779614991975777,0.0,3.4273270189052454

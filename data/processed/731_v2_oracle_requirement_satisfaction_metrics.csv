@@ -1,0 +1,11 @@
+metric,value
+total_rfqs,5000.0
+top1_mandatory_satisfaction_rate,1.0
+top1_mandatory_violation_rate,0.0
+top3_mandatory_satisfaction_rate,1.0
+top5_mandatory_satisfaction_rate,1.0
+top10_mandatory_satisfaction_rate,1.0
+mean_first_mandatory_satisfying_rank,1.0
+ground_truth_mandatory_satisfaction_rate,1.0
+top1_preferred_satisfaction_rate,1.0
+ground_truth_preferred_satisfaction_rate,1.0

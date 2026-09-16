@@ -1,0 +1,109 @@
+source_node,target_node,relationship,observed_state,support_rate,sample_size,evidence_level,evidence_strength,constraint_status
+x731,characteristic,observed_consistent_rule,'GP',1.0,696,strong,high_sample,observed_association
+x731,numberOfChannels,observed_consistent_rule,"in {1, 2}",1.0,696,strong,high_sample,observed_association
+G731ST-LT,devCategory,observed_consistent_rule,'G',1.0,133,strong,high_sample,observed_association
+G731ST-LT,characteristic,observed_consistent_rule,'ST',1.0,133,strong,high_sample,observed_association
+G731ST-LT,housing,observed_consistent_rule,"in {'ST', 'AL'}",1.0,133,strong,high_sample,observed_association
+G731ST-LT,powerSupply,observed_consistent_rule,"in {'1', '4'}",1.0,133,strong,high_sample,observed_association
+G731ST-LT,numberOfChannels,observed_consistent_rule,"in {1, 2}",1.0,133,strong,high_sample,observed_association
+G731ST-HT,devCategory,observed_consistent_rule,'G',1.0,133,strong,high_sample,observed_association
+G731ST-HT,characteristic,observed_consistent_rule,'ST',1.0,133,strong,high_sample,observed_association
+G731ST-HT,housing,observed_consistent_rule,"in {'ST', 'AL'}",1.0,133,strong,high_sample,observed_association
+G731ST-HT,powerSupply,observed_consistent_rule,"in {'1', '4'}",1.0,133,strong,high_sample,observed_association
+G731ST-HT,numberOfChannels,observed_consistent_rule,2,1.0,133,strong,high_sample,observed_association
+F731TE,devCategory,observed_consistent_rule,'F',1.0,26,strong_but_small_sample,small_sample,observed_association
+F731TE,characteristic,observed_consistent_rule,'TE',1.0,26,strong_but_small_sample,small_sample,observed_association
+F731TE,housing,observed_consistent_rule,"in {'ST', 'AL'}",1.0,26,strong_but_small_sample,small_sample,observed_association
+F731TE,powerSupply,observed_consistent_rule,"in {'1', '4'}",1.0,26,strong_but_small_sample,small_sample,observed_association
+F731TE,stromEingaenge,observed_consistent_rule,NOVALUE,1.0,26,strong_but_small_sample,small_sample,observed_association
+G731CA,devCategory,observed_consistent_rule,'G',1.0,24,strong_but_small_sample,small_sample,observed_association
+G731CA,characteristic,observed_consistent_rule,'CA',1.0,24,strong_but_small_sample,small_sample,observed_association
+G731CA,housing,observed_consistent_rule,"in {'ST', 'AL'}",1.0,24,strong_but_small_sample,small_sample,observed_association
+G731CA,powerSupply,observed_consistent_rule,"in {'1', '4'}",1.0,24,strong_but_small_sample,small_sample,observed_association
+F731PW,devCategory,observed_consistent_rule,'F',1.0,20,strong_but_small_sample,small_sample,observed_association
+F731PW,characteristic,observed_consistent_rule,'PW',1.0,20,strong_but_small_sample,small_sample,observed_association
+F731PW,housing,observed_consistent_rule,"in {'ST', 'AL'}",1.0,20,strong_but_small_sample,small_sample,observed_association
+F731PW,powerSupply,observed_consistent_rule,"in {'1', '4'}",1.0,20,strong_but_small_sample,small_sample,observed_association
+F731PW,numberOfChannels,observed_consistent_rule,"in {1, 2}",1.0,20,strong_but_small_sample,small_sample,observed_association
+F731PW,protectionArea,observed_consistent_rule,'2',1.0,20,strong_but_small_sample,small_sample,observed_association
+F731PW,stromEingaenge,observed_consistent_rule,NOVALUE,1.0,20,strong_but_small_sample,small_sample,observed_association
+F731PW,temperaturEingaenge,observed_consistent_rule,NOVALUE,1.0,20,strong_but_small_sample,small_sample,observed_association
+F731WD_DualChannel,devCategory,observed_consistent_rule,'F',1.0,12,strong_but_small_sample,small_sample,observed_association
+F731WD_DualChannel,characteristic,observed_consistent_rule,'WD',1.0,12,strong_but_small_sample,small_sample,observed_association
+F731WD_DualChannel,housing,observed_consistent_rule,"in {'ST', 'AL'}",1.0,12,strong_but_small_sample,small_sample,observed_association
+F731WD_DualChannel,numberOfChannels,observed_consistent_rule,2,1.0,12,strong_but_small_sample,small_sample,observed_association
+F731WD_DualChannel,explosionApproval,observed_consistent_rule,'N',1.0,12,strong_but_small_sample,small_sample,observed_association
+F731WD_DualChannel,protectionArea,observed_consistent_rule,'N',1.0,12,strong_but_small_sample,small_sample,observed_association
+F731WD_DualChannel,temperaturEingaenge,observed_consistent_rule,NOVALUE,1.0,12,strong_but_small_sample,small_sample,observed_association
+F731WD_SingleChannel,devCategory,observed_consistent_rule,'F',1.0,8,strong_but_small_sample,small_sample,observed_association
+F731WD_SingleChannel,characteristic,observed_consistent_rule,'WD',1.0,8,strong_but_small_sample,small_sample,observed_association
+F731WD_SingleChannel,housing,observed_consistent_rule,"in {'ST', 'AL'}",1.0,8,strong_but_small_sample,small_sample,observed_association
+F731WD_SingleChannel,numberOfChannels,observed_consistent_rule,1,1.0,8,strong_but_small_sample,small_sample,observed_association
+F731WD_SingleChannel,explosionApproval,observed_consistent_rule,'N',1.0,8,strong_but_small_sample,small_sample,observed_association
+F731WD_SingleChannel,protectionArea,observed_consistent_rule,'N',1.0,8,strong_but_small_sample,small_sample,observed_association
+F731WD_SingleChannel,temperaturEingaenge,observed_consistent_rule,NOVALUE,1.0,8,strong_but_small_sample,small_sample,observed_association
+G731VG,devCategory,observed_consistent_rule,'G',1.0,4,strong_but_small_sample,small_sample,observed_association
+G731VG,characteristic,observed_consistent_rule,'VG',1.0,4,strong_but_small_sample,small_sample,observed_association
+G731VG,housing,observed_consistent_rule,"in {'ST', 'AL'}",1.0,4,strong_but_small_sample,small_sample,observed_association
+G731VG,powerSupply,observed_consistent_rule,"in {'1', '4'}",1.0,4,strong_but_small_sample,small_sample,observed_association
+G731VG,numberOfChannels,observed_consistent_rule,2,1.0,4,strong_but_small_sample,small_sample,observed_association
+G731VG,explosionApproval,observed_consistent_rule,'F',1.0,4,strong_but_small_sample,small_sample,observed_association
+G731VG,protectionArea,observed_consistent_rule,'2',1.0,4,strong_but_small_sample,small_sample,observed_association
+G731VG,certification,observed_consistent_rule,'NN',1.0,4,strong_but_small_sample,small_sample,observed_association
+F731PW,certification,observed_moderate_support,"in {'NN', 'WN'}",0.8,20,moderate,small_sample,observed_association
+G731CA,protectionArea,observed_moderate_support,'2',0.75,24,moderate,small_sample,observed_association
+G731ST-LT,protectionArea,observed_weak_association,'2',0.7143,133,weak,high_sample,observed_association
+G731ST-HT,protectionArea,observed_weak_association,'2',0.7143,133,weak,high_sample,observed_association
+F731TE,protectionArea,observed_weak_association,'2',0.6923,26,weak,small_sample,observed_association
+x731,protectionArea,observed_weak_association,'2',0.6667,696,weak,high_sample,observed_association
+G731CA,stromSchaltbar,observed_weak_association,'CS2',0.6667,24,weak,small_sample,observed_association
+G731CA,stromEingaenge,observed_weak_association,"in {'IS1', 'IS2'}",0.6667,24,weak,small_sample,observed_association
+x731,housing,observed_weak_association,"in {'ST', 'AL'}",0.5833,696,weak,high_sample,observed_association
+x731,powerSupply,observed_weak_association,"in {'1', '4'}",0.5833,696,weak,high_sample,observed_association
+G731ST-LT,certification,observed_weak_association,"in {'NN', 'WN'}",0.5714,133,weak,high_sample,observed_association
+G731ST-HT,certification,observed_weak_association,"in {'NN', 'WN'}",0.5714,133,weak,high_sample,observed_association
+F731TE,numberOfChannels,observed_weak_association,1,0.5,26,weak,small_sample,observed_association
+F731TE,temperaturEingaenge,observed_weak_association,'TT2',0.5,26,weak,small_sample,observed_association
+G731CA,numberOfChannels,observed_weak_association,1,0.5,24,weak,small_sample,observed_association
+G731CA,certification,observed_weak_association,"in {'NN', 'WN'}",0.5,24,weak,small_sample,observed_association
+G731CA,temperaturEingaenge,observed_weak_association,'TT1',0.5,24,weak,small_sample,observed_association
+F731WD_DualChannel,powerSupply,observed_weak_association,"in {'1', '4'}",0.5,12,weak,small_sample,observed_association
+F731WD_DualChannel,certification,observed_weak_association,"in {'NN', 'WN', 'FN'}",0.5,12,weak,small_sample,observed_association
+F731WD_DualChannel,dataInterface,observed_weak_association,"in {'NN', 'PA', 'MT', 'MR', 'FF', 'DB', 'BM', 'BT'}",0.5,12,weak,small_sample,observed_association
+F731WD_DualChannel,stromEingaenge,observed_weak_association,"in {NOVALUE, 'IS1'}",0.5,12,weak,small_sample,observed_association
+F731WD_SingleChannel,powerSupply,observed_weak_association,"in {'1', '4'}",0.5,8,weak,small_sample,observed_association
+F731WD_SingleChannel,certification,observed_weak_association,"in {'NN', 'WN', 'FN'}",0.5,8,weak,small_sample,observed_association
+F731WD_SingleChannel,dataInterface,observed_weak_association,'HS',0.5,8,weak,small_sample,observed_association
+F731WD_SingleChannel,stromSchaltbar,observed_weak_association,'CS2',0.5,8,weak,small_sample,observed_association
+F731WD_SingleChannel,stromEingaenge,observed_weak_association,"in {NOVALUE, 'IS1', 'IS2'}",0.5,8,weak,small_sample,observed_association
+G731VG,dataInterface,observed_weak_association,"in {'NN', 'MT', 'MR'}",0.5,4,weak,small_sample,observed_association
+G731VG,stromSchaltbar,observed_weak_association,'CS2',0.5,4,weak,small_sample,observed_association
+G731VG,stromEingaenge,observed_weak_association,'IS1',0.5,4,weak,small_sample,observed_association
+G731VG,temperaturEingaenge,observed_weak_association,'TT1',0.5,4,weak,small_sample,observed_association
+F731TE,certification,observed_weak_association,"in {'NN', 'WN'}",0.4615,26,weak,small_sample,observed_association
+x731,certification,observed_weak_association,'MN',0.4167,696,weak,high_sample,observed_association
+F731PW,explosionApproval,observed_weak_association,"in {'A', 'E', 'P', 'J', 'S'}",0.4,20,weak,small_sample,observed_association
+F731TE,stromSchaltbar,observed_weak_association,NOVALUE,0.3846,26,weak,small_sample,observed_association
+G731ST-LT,stromEingaenge,observed_weak_association,NOVALUE,0.3684,133,weak,high_sample,observed_association
+G731ST-HT,stromEingaenge,observed_weak_association,NOVALUE,0.3684,133,weak,high_sample,observed_association
+x731,stromSchaltbar,observed_weak_association,"in {NOVALUE, 'CS1', 'CS2'}",0.3448,696,weak,high_sample,observed_association
+x731,explosionApproval,observed_weak_association,'N',0.3333,696,weak,high_sample,observed_association
+F731WD_DualChannel,stromSchaltbar,observed_weak_association,'CS2',0.3333,12,weak,small_sample,observed_association
+x731,devCategory,observed_weak_association,'F',0.3276,696,weak,high_sample,observed_association
+G731ST-LT,stromSchaltbar,observed_weak_association,"in {NOVALUE, 'CS1', 'CS2'}",0.3158,133,weak,high_sample,observed_association
+G731ST-LT,temperaturEingaenge,observed_weak_association,"in {NOVALUE, 'TT1', 'TT2'}",0.3158,133,weak,high_sample,observed_association
+G731ST-HT,stromSchaltbar,observed_weak_association,"in {NOVALUE, 'CS1', 'CS2'}",0.3158,133,weak,high_sample,observed_association
+G731ST-HT,temperaturEingaenge,observed_weak_association,"in {NOVALUE, 'TT1', 'TT2'}",0.3158,133,weak,high_sample,observed_association
+F731TE,explosionApproval,observed_weak_association,'N',0.3077,26,weak,small_sample,observed_association
+G731ST-LT,dataInterface,observed_weak_association,"in {'NN', 'PA', 'MR', 'FF', 'BM'}",0.3008,133,weak,high_sample,observed_association
+G731ST-HT,dataInterface,observed_weak_association,"in {'NN', 'PA', 'MR', 'FF', 'BM'}",0.3008,133,weak,high_sample,observed_association
+G731CA,dataInterface,observed_weak_association,'HS',0.2917,24,weak,small_sample,observed_association
+G731ST-LT,explosionApproval,observed_weak_association,'N',0.2857,133,weak,high_sample,observed_association
+G731ST-HT,explosionApproval,observed_weak_association,'N',0.2857,133,weak,high_sample,observed_association
+x731,dataInterface,observed_weak_association,'HS',0.2759,696,weak,high_sample,observed_association
+G731CA,explosionApproval,observed_weak_association,'N',0.25,24,weak,small_sample,observed_association
+F731PW,stromSchaltbar,observed_weak_association,"in {'CS1', 'CS2', 'CS4'}",0.25,20,weak,small_sample,observed_association
+x731,stromEingaenge,observed_weak_association,NOVALUE,0.2414,696,weak,high_sample,observed_association
+F731TE,dataInterface,observed_weak_association,"in {'NN', 'PA', 'MR', 'FF', 'BM', 'HS'}",0.2308,26,weak,small_sample,observed_association
+x731,temperaturEingaenge,observed_weak_association,"in {NOVALUE, 'TT1', 'TT2'}",0.2069,696,weak,high_sample,observed_association
+F731PW,dataInterface,observed_weak_association,"in {'NN', 'MR', 'BM', 'FF', 'PA'}",0.2,20,weak,small_sample,observed_association

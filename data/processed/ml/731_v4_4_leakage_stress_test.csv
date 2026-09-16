@@ -1,0 +1,4 @@
+regime,feature_count,forbidden_hits,evaluation_only_hits,target_copy_hits,mechanistic_features,provenance_features,governance_pass
+REALISTIC_BASELINE,23,,,,1,0,True
+PROVENANCE_AWARE,30,,,,1,7,True
+MECHANISTIC_UPPER_BOUND,35,,,,6,7,True

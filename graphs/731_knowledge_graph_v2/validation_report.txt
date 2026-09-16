@@ -1,0 +1,81 @@
+===========================================================================
+731 KNOWLEDGE GRAPH V2 VALIDATION REPORT
+===========================================================================
+
+Nodes: 8,261
+Relationships: 140,808
+
+NODE TYPES
+----------------------------------------
+CanonicalConfiguration                   1,979
+Characteristic                              28
+CharacteristicValue                        170
+ConfigurationFamily                          9
+ConfigurationRecord                      5,000
+FamilyEvidence                              18
+Product                                      1
+RuleRow                                  1,056
+
+NODE PROVENANCE
+----------------------------------------
+OBSERVED_731                             1,227
+SYNTHETIC                                7,034
+
+RELATIONSHIP TYPES
+----------------------------------------
+BELONGS_TO_FAMILY                        1,979
+HAS_ALLOWED_VALUE                          124
+HAS_CANONICAL_CONFIGURATION              1,979
+HAS_CHARACTERISTIC                          28
+HAS_OBSERVED_EXPRESSION                      9
+HAS_PACKAGE_CONTEXT                      5,000
+HAS_RULE_ROW                             1,056
+HAS_SYNTHETIC_PACKAGE_CONTEXT                9
+HAS_TECHNICAL_VALUE                     95,000
+REPRESENTS_CANONICAL_CONFIGURATION       5,000
+RULE_APPLIES_TO_FAMILY                   1,056
+RULE_SPECIFIES                          29,568
+
+RELATIONSHIP PROVENANCE
+----------------------------------------
+OBSERVED_731                            59,886
+SYNTHETIC                               80,922
+
+CONFIGURATION RECORD PRESERVATION
+----------------------------------------
+Synthetic source rows: 5,000
+ConfigurationRecord nodes: 5,000
+CanonicalConfiguration nodes: 1,979
+Record → canonical relationships: 5,000
+PASS: all synthetic source rows have a ConfigurationRecord node.
+
+CONFIGURATION FAMILY MODEL
+----------------------------------------
+Canonical family nodes: 9
+Observed family nodes: 9
+Synthetic-only family nodes: 0
+
+GRAPH INTEGRITY
+----------------------------------------
+Invalid source references: 0
+Invalid target references: 0
+Orphan nodes: 0
+PASS: all relationship references point to existing nodes.
+PASS: no orphan nodes.
+
+METHODOLOGICAL SAFETY
+----------------------------------------
+PASS: real RuleRows are represented as configurator knowledge.
+PASS: real RuleRows are not represented as historical orders.
+PASS: real RuleRows are not represented as historical engineer decisions.
+PASS: synthetic configuration records retain SYNTHETIC provenance.
+PASS: undocumented technical-code meanings are not expanded.
+PASS: V1 graph is not modified.
+
+V2 DESIGN INTENT
+----------------------------------------
+ConfigurationRecord preserves source-row-level synthetic provenance.
+CanonicalConfiguration represents the configuration identity.
+FamilyEvidence preserves the distinction between observed workbook expressions and synthetic package context.
+CharacteristicValue identity is scoped by characteristic + value.
+V2 is designed to support future requirement, constraint, validity and explanation relationships.

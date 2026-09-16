@@ -1,0 +1,60 @@
+================================================================================
+731 V4.3 SYNTHETIC ENGINEER PREFERENCE MODEL REPORT
+================================================================================
+
+Task:
+Rank candidate configurations within each RFQ so that the
+synthetic engineer-selected candidate appears as high as possible.
+
+Dataset:
+\\wsl.localhost\Ubuntu\home\e1546562\thesis-configurator\data\processed\ml\731_v4_1_ml_candidate_dataset.csv
+
+Candidate rows: 17,153
+RFQs: 5,000
+
+RFQ-level split:
+  TRAIN:      3,534 RFQs / 12,083 rows
+  VALIDATION: 734 RFQs / 2,598 rows
+  TEST:       732 RFQs / 2,472 rows
+
+Feature regimes:
+  REALISTIC_BASELINE: 22 features
+  PROVENANCE_AWARE: 29 features
+  MECHANISTIC_UPPER_BOUND: 35 features
+
+Primary ranking metrics:
+  Top-1, Top-3, Top-5, Top-10, MRR, NDCG@3, NDCG@5, NDCG@10
+
+Model results:
+
+REALISTIC_BASELINE | LOGISTIC_REGRESSION | Top1=0.8839 | Top3=0.9973 | Top5=1.0000 | Top10=1.0000 | MRR=0.9401 | NDCG@5=0.9557
+REALISTIC_BASELINE | RANDOM_FOREST | Top1=0.9126 | Top3=0.9986 | Top5=1.0000 | Top10=1.0000 | MRR=0.9550 | NDCG@5=0.9667
+REALISTIC_BASELINE | HIST_GRADIENT_BOOSTING | Top1=0.9153 | Top3=1.0000 | Top5=1.0000 | Top10=1.0000 | MRR=0.9570 | NDCG@5=0.9682
+PROVENANCE_AWARE | LOGISTIC_REGRESSION | Top1=0.9030 | Top3=0.9986 | Top5=1.0000 | Top10=1.0000 | MRR=0.9505 | NDCG@5=0.9634
+PROVENANCE_AWARE | RANDOM_FOREST | Top1=0.9126 | Top3=0.9973 | Top5=1.0000 | Top10=1.0000 | MRR=0.9549 | NDCG@5=0.9666
+PROVENANCE_AWARE | HIST_GRADIENT_BOOSTING | Top1=0.9221 | Top3=1.0000 | Top5=1.0000 | Top10=1.0000 | MRR=0.9604 | NDCG@5=0.9707
+MECHANISTIC_UPPER_BOUND | LOGISTIC_REGRESSION | Top1=0.9030 | Top3=0.9986 | Top5=1.0000 | Top10=1.0000 | MRR=0.9505 | NDCG@5=0.9634
+MECHANISTIC_UPPER_BOUND | RANDOM_FOREST | Top1=0.9180 | Top3=0.9986 | Top5=1.0000 | Top10=1.0000 | MRR=0.9580 | NDCG@5=0.9689
+MECHANISTIC_UPPER_BOUND | HIST_GRADIENT_BOOSTING | Top1=0.9221 | Top3=0.9986 | Top5=1.0000 | Top10=1.0000 | MRR=0.9605 | NDCG@5=0.9708
+
+Best test model by Top-1, then MRR, then NDCG@5:
+  Regime: MECHANISTIC_UPPER_BOUND
+  Model: HIST_GRADIENT_BOOSTING
+  Top-1: 0.9221
+  Top-3: 0.9986
+  Top-5: 1.0000
+  Top-10: 1.0000
+  MRR: 0.9605
+  NDCG@5: 0.9708
+
+Interpretation:
+These models estimate the synthetic engineer preference mechanism.
+They do not represent historical human engineer decisions.
+The realistic baseline is the primary thesis result; provenance-aware
+and mechanistic models are sensitivity/upper-bound comparisons.
+
+Leakage controls:
+Ground-truth IDs, engineer ranks/scores/utilities, target labels,
+and hidden ground-truth context were excluded from predictive features.
+RFQ-level splitting prevents candidates from the same RFQ crossing
+train/validation/test partitions.

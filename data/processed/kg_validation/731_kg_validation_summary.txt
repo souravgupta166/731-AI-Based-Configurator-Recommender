@@ -1,0 +1,20 @@
+731 Knowledge Graph Validation Test Suite
+==================================================
+Total tests: 3
+Passed:      3
+Failed:      0
+Pass rate:   100.00%
+
+Interpretation:
+PASS means KG-valid canonical configuration IDs exactly match
+the deterministic mandatory-filter IDs for that test case.
+This validates the consistency of the KG adapter against the
+deterministic candidate filter; it does not establish historical
+engineering accuracy or historical order ground truth.
+
+Test results:
+
+                                  test package                        requirements  mandatory_count  package_candidates  kg_candidates  deterministic_candidates  kg_only_count  deterministic_only_count  expected_candidates  expected_count_match status kg_only_examples deterministic_only_examples
+              T01_no_requirements_x731    x731                                NONE                0                1549           1549                      1549              0                         0                 1549                  True   PASS                                             
+        T03_two_channels_x731_conflict    x731                  numberOfChannels=2                1                1549              0                         0              0                         0                    0                  True   PASS                                             
+T04_ST_plus_two_channels_x731_conflict    x731 housing=None AND numberOfChannels=2                2                1549              0                         0              0                         0                    0                  True   PASS                                             

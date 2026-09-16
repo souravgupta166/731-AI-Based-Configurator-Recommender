@@ -1,0 +1,7 @@
+metric,value
+customer_count,250
+country_count,10
+industry_count,10
+project_customer_count,74
+separate_end_user_count,84
+suspicious_order_default_count,6

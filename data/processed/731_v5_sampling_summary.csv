@@ -1,0 +1,10 @@
+metric,value
+requested_records,5000
+generated_records,5000
+candidate_pool_size,3553
+real_observed_candidates,412
+derived_candidates,3141
+final_observed_records,1690
+final_derived_records,3310
+final_distance_1,2529
+final_distance_2,781

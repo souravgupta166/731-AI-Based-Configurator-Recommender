@@ -1,0 +1,2 @@
+predicted_requirements,ground_truth_requirements,true_positive,false_positive,false_negative,precision,recall,f1
+71315,70478,63188,8127,7290,0.8860408048797588,0.896563466613695,0.8912710782619734

@@ -1,0 +1,13 @@
+metric,value
+RFQs analyzed,5000.0
+Top-1 accuracy,0.5058
+Top-3 accuracy,0.8442
+Top-5 accuracy,0.9336
+Top-10 accuracy,0.9902
+MRR,0.6936596903623767
+Mean true rank,2.091496667339931
+Median true rank,1.0
+Unranked RFQs,49.0
+Mean changed characteristics for failed Top-1,1.5605018211250505
+Median changed characteristics for failed Top-1,1.0
+Failed Top-1 cases,2471.0

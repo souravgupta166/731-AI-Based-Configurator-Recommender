@@ -1,0 +1,17 @@
+metric,value
+rfqs_with_valid_preference_pool,5000
+candidate_preference_rows,17153
+pairwise_preference_rows,40627
+mean_valid_preference_candidates,3.4306
+median_valid_preference_candidates,2.0
+ground_truth_selected_by_synthetic_engineer,0.3086
+ground_truth_mean_engineer_rank,2.9236
+ground_truth_median_engineer_rank,2.0
+weight_unmentioned_features,0.3
+weight_real_proximity,0.2
+weight_low_change,0.15
+weight_observed,0.15
+weight_frequency,0.1
+weight_evidence,0.1
+preference_label_provenance,SYNTHETIC
+preference_generation_method,synthetic_engineer_v1

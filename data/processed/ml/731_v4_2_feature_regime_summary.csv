@@ -1,0 +1,5 @@
+feature_regime,feature_count,interpretation,thesis_role
+REALISTIC_BASELINE,4,Primary thesis feature set using technical candidate attributes and requirement-derived features available before engineer choice.,MAIN_EXPERIMENT
+PROVENANCE_AWARE,11,Adds synthetic provenance/process metadata. Use as sensitivity/upper-bound analysis.,SENSITIVITY_EXPERIMENT
+MECHANISTIC_UPPER_BOUND,17,Adds variables directly involved in the synthetic engineer preference mechanism.,MECHANISM_RECOVERY_BENCHMARK
+FORBIDDEN,1,"Direct target, post-choice or ground-truth information.",NEVER_MODEL

@@ -1,0 +1,44 @@
+731 V3 SYNTHETIC ENGINEER PREFERENCE VALIDATION
+======================================================================
+
+RFQs: 5,000
+Candidate rows: 17,153
+Ranking rows: 5,000
+Pairwise rows: 40,627
+
+CANDIDATE POOL
+Mean candidates/RFQ: 3.43
+Median candidates/RFQ: 2.00
+Min candidates/RFQ: 1
+Max candidates/RFQ: 24
+
+GROUND-TRUTH ENGINEER RANK
+Top-1: 30.86%
+Top-3: 77.34%
+Top-5: 88.02%
+Top-10: 97.74%
+Mean rank: 2.92
+Median rank: 2.00
+
+DATA INTEGRITY
+Duplicate candidate pairs: 0
+Duplicate RFQ ranking rows: 0
+Invalid ranks: 0
+Invalid candidate-count rows: 0
+Invalid rank sequences: 0
+Candidate unique-ID mismatches: 0
+RFQs without one engineer choice: 0
+
+LEAKAGE CHECK
+GT selected by engineer: 30.86%
+Engineer choice equals GT: 30.86%
+
+PROVENANCE
+Preference labels: SYNTHETIC
+Generation method: synthetic_engineer_v1
+
+IMPORTANT INTERPRETATION
+These are synthetic engineer-preference labels.
+They are not historical engineer decisions.
+They should be used as a reproducible baseline for ranking-model development and evaluation.
+Ground-truth configuration identity should not be used as an ML feature.

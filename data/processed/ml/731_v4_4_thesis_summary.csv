@@ -1,0 +1,10 @@
+finding,value,interpretation
+best_model,MECHANISTIC_UPPER_BOUND / HIST_GRADIENT_BOOSTING,"Best frozen V4.3 test model by Top-1, then MRR/NDCG@5."
+best_top1,0.9221311475409836,Exact recovery of the synthetic engineer-selected candidate.
+realistic_hgb_top1,0.9153005464480874,Primary thesis result under the strict realistic feature regime.
+provenance_gain_over_realistic,0.006830601092896127,Incremental Top-1 gain from provenance/process information.
+mechanistic_gain_over_provenance,0.0,Incremental gain from direct synthetic-mechanism variables.
+best_mandatory_equivalent_rate,1.0,Top-1 predictions satisfying all mandatory requirements.
+best_mandatory_preferred_equivalent_rate,1.0,Top-1 predictions satisfying mandatory and preferred requirements.
+test_rfqs,732,RFQs evaluated in frozen V4.3 predictions.
+bootstrap_replicates,2000,RFQ-level bootstrap replicates.

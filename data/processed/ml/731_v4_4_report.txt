@@ -1,0 +1,68 @@
+================================================================================
+731 V4.4 MODEL INTERPRETABILITY / ROBUSTNESS / ERROR ANALYSIS
+================================================================================
+
+V4.4 consumes frozen V4.3 predictions; no models are retrained.
+
+Methodological interpretation:
+The target is a SYNTHETIC engineer choice. Results measure recovery
+of the synthetic preference mechanism, not historical human decisions.
+Exact configuration identity is separated from requirement-equivalent
+validity because multiple technically compliant alternatives can exist.
+
+Test RFQs: 732
+Bootstrap replicates: 2,000
+
+MODEL COMPARISON
+REALISTIC_BASELINE | LOGISTIC_REGRESSION | Top1=0.8839 | Top3=0.9973 | Top5=1.0000 | Top10=1.0000 | MRR=0.9401 | NDCG@5=0.9557
+REALISTIC_BASELINE | RANDOM_FOREST | Top1=0.9126 | Top3=0.9986 | Top5=1.0000 | Top10=1.0000 | MRR=0.9550 | NDCG@5=0.9667
+REALISTIC_BASELINE | HIST_GRADIENT_BOOSTING | Top1=0.9153 | Top3=1.0000 | Top5=1.0000 | Top10=1.0000 | MRR=0.9570 | NDCG@5=0.9682
+PROVENANCE_AWARE | LOGISTIC_REGRESSION | Top1=0.9030 | Top3=0.9986 | Top5=1.0000 | Top10=1.0000 | MRR=0.9505 | NDCG@5=0.9634
+PROVENANCE_AWARE | RANDOM_FOREST | Top1=0.9126 | Top3=0.9973 | Top5=1.0000 | Top10=1.0000 | MRR=0.9549 | NDCG@5=0.9666
+PROVENANCE_AWARE | HIST_GRADIENT_BOOSTING | Top1=0.9221 | Top3=1.0000 | Top5=1.0000 | Top10=1.0000 | MRR=0.9604 | NDCG@5=0.9707
+MECHANISTIC_UPPER_BOUND | LOGISTIC_REGRESSION | Top1=0.9030 | Top3=0.9986 | Top5=1.0000 | Top10=1.0000 | MRR=0.9505 | NDCG@5=0.9634
+MECHANISTIC_UPPER_BOUND | RANDOM_FOREST | Top1=0.9180 | Top3=0.9986 | Top5=1.0000 | Top10=1.0000 | MRR=0.9580 | NDCG@5=0.9689
+MECHANISTIC_UPPER_BOUND | HIST_GRADIENT_BOOSTING | Top1=0.9221 | Top3=0.9986 | Top5=1.0000 | Top10=1.0000 | MRR=0.9605 | NDCG@5=0.9708
+
+PRIMARY HGB ABLATION
+Realistic Top-1: 0.9153
+Provenance Top-1: 0.9221
+Mechanistic Top-1: 0.9221
+Provenance gain: +0.0068
+Mechanistic gain over provenance: +0.0000
+
+BEST-MODEL BOOTSTRAP
+Top-1: 0.9222 (95% CI 0.8968–0.9468)
+Top-3: 0.9985 (95% CI 0.9960–1.0000)
+Top-5: 1.0000 (95% CI 1.0000–1.0000)
+MRR: 0.9605 (95% CI 0.9474–0.9732)
+NDCG@5: 0.9708 (95% CI 0.9611–0.9802)
+
+BEST-MODEL OUTCOME TAXONOMY
+REQUIREMENT_EQUIVALENT_ALTERNATIVE: 0.7022
+EXACT_SYNTHETIC_ENGINEER_CHOICE: 0.2978
+
+INTERPRETATION
+1. Exact Top-1 measures recovery of the synthetic engineer choice.
+2. Requirement-equivalent outcomes identify acceptable alternatives.
+3. Package and candidate-count analyses reveal difficult operating regions.
+4. RFQ-level bootstrap preserves within-RFQ candidate dependence.
+5. Regime ablation separates realistic information from synthetic metadata.
+6. Mechanistic variables are an upper-bound recovery experiment, not a
+   deployment recommendation.
+
+LEAKAGE GOVERNANCE
+REALISTIC_BASELINE: PASS=True; forbidden=none; evaluation_only=none
+PROVENANCE_AWARE: PASS=True; forbidden=none; evaluation_only=none
+MECHANISTIC_UPPER_BOUND: PASS=True; forbidden=none; evaluation_only=none
+
+LIMITATION
+The synthetic preference labels are not historical engineer decisions.
+Real engineer decision logs would be required to establish real-world
+human decision prediction performance.
+
+FIGURES
+\\wsl.localhost\Ubuntu\home\e1546562\thesis-configurator\data\processed\ml\figures\731_v4_4_model_comparison_top1.png
+\\wsl.localhost\Ubuntu\home\e1546562\thesis-configurator\data\processed\ml\figures\731_v4_4_candidate_difficulty.png
+\\wsl.localhost\Ubuntu\home\e1546562\thesis-configurator\data\processed\ml\figures\731_v4_4_package_performance.png
+\\wsl.localhost\Ubuntu\home\e1546562\thesis-configurator\data\processed\ml\figures\731_v4_4_feature_importance_top15.png

@@ -1,0 +1,15 @@
+metric,value
+strict_precision,0.900601465180582
+strict_recall,0.896563466613695
+strict_f1,0.8985779294653015
+characteristic_precision,0.9524777306927268
+characteristic_recall,0.937611736995942
+characteristic_f1,0.9449862715936392
+steam_characteristic_precision,1.0
+steam_characteristic_recall,1.0
+steam_characteristic_f1,1.0
+steam_value_precision,0.0
+steam_value_recall,0.0
+steam_value_f1,0.0
+steam_value_abstentions,1153.0
+steam_characteristic_detections,1153.0

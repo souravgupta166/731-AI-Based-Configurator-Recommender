@@ -1,0 +1,109 @@
+package,package_rule,characteristic,sample_size,distinct_states,dominant_state,dominant_count,support_rate,evidence_level
+x731,"in {NOVALUE, 'x731'}",devCategory,696,4,'F',228,0.3276,weak
+x731,"in {NOVALUE, 'x731'}",characteristic,696,1,'GP',696,1.0,strong
+x731,"in {NOVALUE, 'x731'}",housing,696,2,"in {'ST', 'AL'}",406,0.5833,weak
+x731,"in {NOVALUE, 'x731'}",powerSupply,696,2,"in {'1', '4'}",406,0.5833,weak
+x731,"in {NOVALUE, 'x731'}",numberOfChannels,696,1,"in {1, 2}",696,1.0,strong
+x731,"in {NOVALUE, 'x731'}",explosionApproval,696,5,'N',232,0.3333,weak
+x731,"in {NOVALUE, 'x731'}",protectionArea,696,2,'2',464,0.6667,weak
+x731,"in {NOVALUE, 'x731'}",certification,696,5,'MN',290,0.4167,weak
+x731,"in {NOVALUE, 'x731'}",dataInterface,696,7,'HS',192,0.2759,weak
+x731,"in {NOVALUE, 'x731'}",stromSchaltbar,696,5,"in {NOVALUE, 'CS1', 'CS2'}",240,0.3448,weak
+x731,"in {NOVALUE, 'x731'}",stromEingaenge,696,8,NOVALUE,168,0.2414,weak
+x731,"in {NOVALUE, 'x731'}",temperaturEingaenge,696,8,"in {NOVALUE, 'TT1', 'TT2'}",144,0.2069,weak
+G731ST-LT,"in {NOVALUE, 'G731ST-LT'}",devCategory,133,1,'G',133,1.0,strong
+G731ST-LT,"in {NOVALUE, 'G731ST-LT'}",characteristic,133,1,'ST',133,1.0,strong
+G731ST-LT,"in {NOVALUE, 'G731ST-LT'}",housing,133,1,"in {'ST', 'AL'}",133,1.0,strong
+G731ST-LT,"in {NOVALUE, 'G731ST-LT'}",powerSupply,133,1,"in {'1', '4'}",133,1.0,strong
+G731ST-LT,"in {NOVALUE, 'G731ST-LT'}",numberOfChannels,133,1,"in {1, 2}",133,1.0,strong
+G731ST-LT,"in {NOVALUE, 'G731ST-LT'}",explosionApproval,133,4,'N',38,0.2857,weak
+G731ST-LT,"in {NOVALUE, 'G731ST-LT'}",protectionArea,133,2,'2',95,0.7143,weak
+G731ST-LT,"in {NOVALUE, 'G731ST-LT'}",certification,133,3,"in {'NN', 'WN'}",76,0.5714,weak
+G731ST-LT,"in {NOVALUE, 'G731ST-LT'}",dataInterface,133,5,"in {'NN', 'PA', 'MR', 'FF', 'BM'}",40,0.3008,weak
+G731ST-LT,"in {NOVALUE, 'G731ST-LT'}",stromSchaltbar,133,5,"in {NOVALUE, 'CS1', 'CS2'}",42,0.3158,weak
+G731ST-LT,"in {NOVALUE, 'G731ST-LT'}",stromEingaenge,133,5,NOVALUE,49,0.3684,weak
+G731ST-LT,"in {NOVALUE, 'G731ST-LT'}",temperaturEingaenge,133,5,"in {NOVALUE, 'TT1', 'TT2'}",42,0.3158,weak
+G731ST-HT,"in {NOVALUE, 'G731ST-HT'}",devCategory,133,1,'G',133,1.0,strong
+G731ST-HT,"in {NOVALUE, 'G731ST-HT'}",characteristic,133,1,'ST',133,1.0,strong
+G731ST-HT,"in {NOVALUE, 'G731ST-HT'}",housing,133,1,"in {'ST', 'AL'}",133,1.0,strong
+G731ST-HT,"in {NOVALUE, 'G731ST-HT'}",powerSupply,133,1,"in {'1', '4'}",133,1.0,strong
+G731ST-HT,"in {NOVALUE, 'G731ST-HT'}",numberOfChannels,133,1,2,133,1.0,strong
+G731ST-HT,"in {NOVALUE, 'G731ST-HT'}",explosionApproval,133,4,'N',38,0.2857,weak
+G731ST-HT,"in {NOVALUE, 'G731ST-HT'}",protectionArea,133,2,'2',95,0.7143,weak
+G731ST-HT,"in {NOVALUE, 'G731ST-HT'}",certification,133,3,"in {'NN', 'WN'}",76,0.5714,weak
+G731ST-HT,"in {NOVALUE, 'G731ST-HT'}",dataInterface,133,5,"in {'NN', 'PA', 'MR', 'FF', 'BM'}",40,0.3008,weak
+G731ST-HT,"in {NOVALUE, 'G731ST-HT'}",stromSchaltbar,133,5,"in {NOVALUE, 'CS1', 'CS2'}",42,0.3158,weak
+G731ST-HT,"in {NOVALUE, 'G731ST-HT'}",stromEingaenge,133,5,NOVALUE,49,0.3684,weak
+G731ST-HT,"in {NOVALUE, 'G731ST-HT'}",temperaturEingaenge,133,5,"in {NOVALUE, 'TT1', 'TT2'}",42,0.3158,weak
+F731TE,"in {NOVALUE, 'F731TE'}",devCategory,26,1,'F',26,1.0,strong_but_small_sample
+F731TE,"in {NOVALUE, 'F731TE'}",characteristic,26,1,'TE',26,1.0,strong_but_small_sample
+F731TE,"in {NOVALUE, 'F731TE'}",housing,26,1,"in {'ST', 'AL'}",26,1.0,strong_but_small_sample
+F731TE,"in {NOVALUE, 'F731TE'}",powerSupply,26,1,"in {'1', '4'}",26,1.0,strong_but_small_sample
+F731TE,"in {NOVALUE, 'F731TE'}",numberOfChannels,26,2,1,13,0.5,weak
+F731TE,"in {NOVALUE, 'F731TE'}",explosionApproval,26,4,'N',8,0.3077,weak
+F731TE,"in {NOVALUE, 'F731TE'}",protectionArea,26,2,'2',18,0.6923,weak
+F731TE,"in {NOVALUE, 'F731TE'}",certification,26,3,"in {'NN', 'WN'}",12,0.4615,weak
+F731TE,"in {NOVALUE, 'F731TE'}",dataInterface,26,7,"in {'NN', 'PA', 'MR', 'FF', 'BM', 'HS'}",6,0.2308,weak
+F731TE,"in {NOVALUE, 'F731TE'}",stromSchaltbar,26,4,NOVALUE,10,0.3846,weak
+F731TE,"in {NOVALUE, 'F731TE'}",stromEingaenge,26,1,NOVALUE,26,1.0,strong_but_small_sample
+F731TE,"in {NOVALUE, 'F731TE'}",temperaturEingaenge,26,2,'TT2',13,0.5,weak
+G731CA,"in {NOVALUE, 'G731CA'}",devCategory,24,1,'G',24,1.0,strong_but_small_sample
+G731CA,"in {NOVALUE, 'G731CA'}",characteristic,24,1,'CA',24,1.0,strong_but_small_sample
+G731CA,"in {NOVALUE, 'G731CA'}",housing,24,1,"in {'ST', 'AL'}",24,1.0,strong_but_small_sample
+G731CA,"in {NOVALUE, 'G731CA'}",powerSupply,24,1,"in {'1', '4'}",24,1.0,strong_but_small_sample
+G731CA,"in {NOVALUE, 'G731CA'}",numberOfChannels,24,2,1,12,0.5,weak
+G731CA,"in {NOVALUE, 'G731CA'}",explosionApproval,24,4,'N',6,0.25,weak
+G731CA,"in {NOVALUE, 'G731CA'}",protectionArea,24,2,'2',18,0.75,moderate
+G731CA,"in {NOVALUE, 'G731CA'}",certification,24,3,"in {'NN', 'WN'}",12,0.5,weak
+G731CA,"in {NOVALUE, 'G731CA'}",dataInterface,24,7,'HS',7,0.2917,weak
+G731CA,"in {NOVALUE, 'G731CA'}",stromSchaltbar,24,2,'CS2',16,0.6667,weak
+G731CA,"in {NOVALUE, 'G731CA'}",stromEingaenge,24,2,"in {'IS1', 'IS2'}",16,0.6667,weak
+G731CA,"in {NOVALUE, 'G731CA'}",temperaturEingaenge,24,2,'TT1',12,0.5,weak
+F731PW,"in {NOVALUE, 'F731PW'}",devCategory,20,1,'F',20,1.0,strong_but_small_sample
+F731PW,"in {NOVALUE, 'F731PW'}",characteristic,20,1,'PW',20,1.0,strong_but_small_sample
+F731PW,"in {NOVALUE, 'F731PW'}",housing,20,1,"in {'ST', 'AL'}",20,1.0,strong_but_small_sample
+F731PW,"in {NOVALUE, 'F731PW'}",powerSupply,20,1,"in {'1', '4'}",20,1.0,strong_but_small_sample
+F731PW,"in {NOVALUE, 'F731PW'}",numberOfChannels,20,1,"in {1, 2}",20,1.0,strong_but_small_sample
+F731PW,"in {NOVALUE, 'F731PW'}",explosionApproval,20,3,"in {'A', 'E', 'P', 'J', 'S'}",8,0.4,weak
+F731PW,"in {NOVALUE, 'F731PW'}",protectionArea,20,1,'2',20,1.0,strong_but_small_sample
+F731PW,"in {NOVALUE, 'F731PW'}",certification,20,2,"in {'NN', 'WN'}",16,0.8,moderate
+F731PW,"in {NOVALUE, 'F731PW'}",dataInterface,20,8,"in {'NN', 'MR', 'BM', 'FF', 'PA'}",4,0.2,weak
+F731PW,"in {NOVALUE, 'F731PW'}",stromSchaltbar,20,4,"in {'CS1', 'CS2', 'CS4'}",5,0.25,weak
+F731PW,"in {NOVALUE, 'F731PW'}",stromEingaenge,20,1,NOVALUE,20,1.0,strong_but_small_sample
+F731PW,"in {NOVALUE, 'F731PW'}",temperaturEingaenge,20,1,NOVALUE,20,1.0,strong_but_small_sample
+F731WD_DualChannel,"in {NOVALUE, 'F731WD_DualChannel'}",devCategory,12,1,'F',12,1.0,strong_but_small_sample
+F731WD_DualChannel,"in {NOVALUE, 'F731WD_DualChannel'}",characteristic,12,1,'WD',12,1.0,strong_but_small_sample
+F731WD_DualChannel,"in {NOVALUE, 'F731WD_DualChannel'}",housing,12,1,"in {'ST', 'AL'}",12,1.0,strong_but_small_sample
+F731WD_DualChannel,"in {NOVALUE, 'F731WD_DualChannel'}",powerSupply,12,2,"in {'1', '4'}",6,0.5,weak
+F731WD_DualChannel,"in {NOVALUE, 'F731WD_DualChannel'}",numberOfChannels,12,1,2,12,1.0,strong_but_small_sample
+F731WD_DualChannel,"in {NOVALUE, 'F731WD_DualChannel'}",explosionApproval,12,1,'N',12,1.0,strong_but_small_sample
+F731WD_DualChannel,"in {NOVALUE, 'F731WD_DualChannel'}",protectionArea,12,1,'N',12,1.0,strong_but_small_sample
+F731WD_DualChannel,"in {NOVALUE, 'F731WD_DualChannel'}",certification,12,2,"in {'NN', 'WN', 'FN'}",6,0.5,weak
+F731WD_DualChannel,"in {NOVALUE, 'F731WD_DualChannel'}",dataInterface,12,3,"in {'NN', 'PA', 'MT', 'MR', 'FF', 'DB', 'BM', 'BT'}",6,0.5,weak
+F731WD_DualChannel,"in {NOVALUE, 'F731WD_DualChannel'}",stromSchaltbar,12,4,'CS2',4,0.3333,weak
+F731WD_DualChannel,"in {NOVALUE, 'F731WD_DualChannel'}",stromEingaenge,12,3,"in {NOVALUE, 'IS1'}",6,0.5,weak
+F731WD_DualChannel,"in {NOVALUE, 'F731WD_DualChannel'}",temperaturEingaenge,12,1,NOVALUE,12,1.0,strong_but_small_sample
+F731WD_SingleChannel,"in {NOVALUE, 'F731WD_SingleChannel'}",devCategory,8,1,'F',8,1.0,strong_but_small_sample
+F731WD_SingleChannel,"in {NOVALUE, 'F731WD_SingleChannel'}",characteristic,8,1,'WD',8,1.0,strong_but_small_sample
+F731WD_SingleChannel,"in {NOVALUE, 'F731WD_SingleChannel'}",housing,8,1,"in {'ST', 'AL'}",8,1.0,strong_but_small_sample
+F731WD_SingleChannel,"in {NOVALUE, 'F731WD_SingleChannel'}",powerSupply,8,2,"in {'1', '4'}",4,0.5,weak
+F731WD_SingleChannel,"in {NOVALUE, 'F731WD_SingleChannel'}",numberOfChannels,8,1,1,8,1.0,strong_but_small_sample
+F731WD_SingleChannel,"in {NOVALUE, 'F731WD_SingleChannel'}",explosionApproval,8,1,'N',8,1.0,strong_but_small_sample
+F731WD_SingleChannel,"in {NOVALUE, 'F731WD_SingleChannel'}",protectionArea,8,1,'N',8,1.0,strong_but_small_sample
+F731WD_SingleChannel,"in {NOVALUE, 'F731WD_SingleChannel'}",certification,8,2,"in {'NN', 'WN', 'FN'}",4,0.5,weak
+F731WD_SingleChannel,"in {NOVALUE, 'F731WD_SingleChannel'}",dataInterface,8,3,'HS',4,0.5,weak
+F731WD_SingleChannel,"in {NOVALUE, 'F731WD_SingleChannel'}",stromSchaltbar,8,2,'CS2',4,0.5,weak
+F731WD_SingleChannel,"in {NOVALUE, 'F731WD_SingleChannel'}",stromEingaenge,8,2,"in {NOVALUE, 'IS1', 'IS2'}",4,0.5,weak
+F731WD_SingleChannel,"in {NOVALUE, 'F731WD_SingleChannel'}",temperaturEingaenge,8,1,NOVALUE,8,1.0,strong_but_small_sample
+G731VG,"in {NOVALUE, 'G731VG'}",devCategory,4,1,'G',4,1.0,strong_but_small_sample
+G731VG,"in {NOVALUE, 'G731VG'}",characteristic,4,1,'VG',4,1.0,strong_but_small_sample
+G731VG,"in {NOVALUE, 'G731VG'}",housing,4,1,"in {'ST', 'AL'}",4,1.0,strong_but_small_sample
+G731VG,"in {NOVALUE, 'G731VG'}",powerSupply,4,1,"in {'1', '4'}",4,1.0,strong_but_small_sample
+G731VG,"in {NOVALUE, 'G731VG'}",numberOfChannels,4,1,2,4,1.0,strong_but_small_sample
+G731VG,"in {NOVALUE, 'G731VG'}",explosionApproval,4,1,'F',4,1.0,strong_but_small_sample
+G731VG,"in {NOVALUE, 'G731VG'}",protectionArea,4,1,'2',4,1.0,strong_but_small_sample
+G731VG,"in {NOVALUE, 'G731VG'}",certification,4,1,'NN',4,1.0,strong_but_small_sample
+G731VG,"in {NOVALUE, 'G731VG'}",dataInterface,4,2,"in {'NN', 'MT', 'MR'}",2,0.5,weak
+G731VG,"in {NOVALUE, 'G731VG'}",stromSchaltbar,4,3,'CS2',2,0.5,weak
+G731VG,"in {NOVALUE, 'G731VG'}",stromEingaenge,4,2,'IS1',2,0.5,weak
+G731VG,"in {NOVALUE, 'G731VG'}",temperaturEingaenge,4,2,'TT1',2,0.5,weak

@@ -1,0 +1,67 @@
+column,role,use_in_baseline_ml,rationale,dtype,missing_count,missing_rate,nunique
+rfq_id,IDENTIFIER,NO,Identifier/context/provenance field; not a raw predictive feature.,object,0,0.0,5000
+target_package,CONTEXT,NO,Identifier/context/provenance field; not a raw predictive feature.,string,0,0.0,9
+canonical_configuration_id,IDENTIFIER,NO,Identifier/context/provenance field; not a raw predictive feature.,string,0,0.0,1766
+ground_truth_configuration_id,GROUND_TRUTH_LEAKAGE,NO,"Direct target, post-outcome, or ground-truth evaluation field.",string,0,0.0,1563
+package_context,CONTEXT_IDENTIFIER,NO,Identifier/context/provenance field; not a raw predictive feature.,string,0,0.0,9
+record_type,SYNTHETIC_PROCESS_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",string,0,0.0,2
+generation_method,SYNTHETIC_PROCESS_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",string,0,0.0,4
+evidence_level,SYNTHETIC_PROCESS_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",string,0,0.0,5
+source_frequency,SYNTHETIC_PROCESS_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",int64,0,0.0,5
+nearest_real_distance,SYNTHETIC_PROCESS_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",int64,0,0.0,3
+num_changed_characteristics,SYNTHETIC_PROCESS_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",int64,0,0.0,3
+evidence_score,SYNTHETIC_PROCESS_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",float64,0,0.0,64
+mandatory_total,REQUIREMENT_DERIVED_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",int64,0,0.0,13
+mandatory_satisfied,REQUIREMENT_DERIVED_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",int64,0,0.0,13
+mandatory_violations,REQUIREMENT_DERIVED_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",int64,0,0.0,1
+preferred_total,REQUIREMENT_DERIVED_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",int64,0,0.0,11
+preferred_satisfied,REQUIREMENT_DERIVED_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",int64,0,0.0,11
+preferred_differences,REQUIREMENT_DERIVED_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",int64,0,0.0,1
+unmentioned_features,REQUIREMENT_DERIVED_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",int64,0,0.0,8
+mandatory_valid,REQUIREMENT_DERIVED_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",bool,0,0.0,1
+mandatory_preferred_valid,REQUIREMENT_DERIVED_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",bool,0,0.0,1
+source_frequency_score,SYNTHETIC_PROCESS_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",float64,0,0.0,5
+real_proximity_score,SYNTHETIC_PROCESS_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",float64,0,0.0,3
+low_change_score,SYNTHETIC_PROCESS_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",float64,0,0.0,3
+observed_configuration_score,SYNTHETIC_PROCESS_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",float64,0,0.0,2
+evidence_score_normalized,SYNTHETIC_PROCESS_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",float64,0,0.0,64
+synthetic_engineer_utility,POST_OUTCOME,NO,"Direct target, post-outcome, or ground-truth evaluation field.",float64,0,0.0,253
+tie_break_jitter,POST_OUTCOME,NO,"Direct target, post-outcome, or ground-truth evaluation field.",float64,0,0.0,17004
+synthetic_engineer_score,POST_OUTCOME,NO,"Direct target, post-outcome, or ground-truth evaluation field.",float64,0,0.0,17149
+preference_label_provenance,PROVENANCE,NO,Identifier/context/provenance field; not a raw predictive feature.,string,0,0.0,1
+preference_generation_method,PROVENANCE,NO,Identifier/context/provenance field; not a raw predictive feature.,string,0,0.0,1
+is_ground_truth_configuration,GROUND_TRUTH_LEAKAGE,NO,"Direct target, post-outcome, or ground-truth evaluation field.",bool,0,0.0,2
+engineer_rank,POST_OUTCOME,NO,"Direct target, post-outcome, or ground-truth evaluation field.",int64,0,0.0,24
+candidate_count,UNCLASSIFIED,NO,Not approved until manually reviewed.,int64,0,0.0,24
+is_synthetic_engineer_choice,TARGET,NO,"Direct target, post-outcome, or ground-truth evaluation field.",bool,0,0.0,2
+pairwise_comparison_count,UNCLASSIFIED,NO,Not approved until manually reviewed.,int64,0,0.0,24
+customer_id,IDENTIFIER,NO,Identifier/context/provenance field; not a raw predictive feature.,str,0,0.0,250
+rfq_ground_truth_record_type,SYNTHETIC_PROCESS_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",string,0,0.0,2
+rfq_ground_truth_evidence_level,SYNTHETIC_PROCESS_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",string,0,0.0,5
+rfq_ground_truth_nearest_real_distance,SYNTHETIC_PROCESS_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",int64,0,0.0,3
+rfq_requirement_count,REQUIREMENT_DERIVED_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",int64,0,0.0,8
+rfq_mandatory_requirement_count,REQUIREMENT_DERIVED_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",int64,0,0.0,13
+rfq_preferred_requirement_count,REQUIREMENT_DERIVED_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",int64,0,0.0,11
+rfq_unique_required_characteristics,REQUIREMENT_DERIVED_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",int64,0,0.0,8
+config_package_context,UNCLASSIFIED,NO,Not approved until manually reviewed.,string,0,0.0,9
+config_devCategory,CANDIDATE_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",str,0,0.0,4
+config_characteristic,CANDIDATE_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",str,0,0.0,7
+config_housing,CANDIDATE_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",str,0,0.0,1
+config_powerSupply,CANDIDATE_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",int64,0,0.0,2
+config_numberOfChannels,CANDIDATE_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",int64,0,0.0,2
+config_explosionApproval,CANDIDATE_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",str,0,0.0,4
+config_protectionArea,CANDIDATE_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",str,0,0.0,2
+config_certification,CANDIDATE_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",str,0,0.0,3
+config_dataInterface,CANDIDATE_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",str,0,0.0,5
+config_stromSchaltbar,CANDIDATE_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",str,0,0.0,3
+config_stromEingaenge,CANDIDATE_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",str,0,0.0,3
+config_temperaturEingaenge,CANDIDATE_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",str,0,0.0,3
+config_binaerDigitalOpenColl_MN,CANDIDATE_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",str,0,0.0,4
+config_binaerOpenColl_MP,CANDIDATE_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",str,0,0.0,4
+config_waveInjector,CANDIDATE_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",str,0,0.0,2
+config_dev_advMeterVerification,CANDIDATE_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",str,0,0.0,2
+config_dynamicGasMaster,CANDIDATE_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",str,0,0.0,2
+config_customUserFluid,CANDIDATE_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",str,0,0.0,2
+config_steamApplication,CANDIDATE_FEATURE,YES,"Available before engineer selection, subject to synthetic-data caveat.",str,0,0.0,3
+ml_split,SPLIT,NO,Identifier/context/provenance field; not a raw predictive feature.,str,0,0.0,3
+ml_target,TARGET,NO,"Direct target, post-outcome, or ground-truth evaluation field.",Int64,0,0.0,2

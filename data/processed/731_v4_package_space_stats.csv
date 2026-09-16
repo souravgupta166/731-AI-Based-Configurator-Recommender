@@ -1,0 +1,9 @@
+package,feasible_configurations,one_characteristic,two_characteristic,minimum_distance,maximum_distance
+F731PW,5,0,5,1,2
+F731TE,12,6,6,1,1
+F731WD_DualChannel,10,3,7,1,1
+F731WD_SingleChannel,2,1,1,1,1
+G731CA,24,11,13,1,1
+G731ST-HT,123,18,105,1,2
+G731ST-LT,123,18,105,1,2
+x731,2842,215,2627,1,2

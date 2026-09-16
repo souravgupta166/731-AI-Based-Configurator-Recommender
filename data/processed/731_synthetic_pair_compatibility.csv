@@ -1,0 +1,408 @@
+package,characteristic_a,characteristic_b,value_a,value_b,joint_count,joint_probability,conditional_b_given_a,conditional_a_given_b
+"in {NOVALUE, 'F731PW'}",explosionApproval,certification,F,NN,4,0.2,1.0,1.0
+"in {NOVALUE, 'F731PW'}",explosionApproval,certification,K,"in {'NN', 'WN'}",8,0.4,1.0,0.5
+"in {NOVALUE, 'F731PW'}",explosionApproval,certification,"in {'A', 'E', 'P', 'J', 'S'}","in {'NN', 'WN'}",8,0.4,1.0,0.5
+"in {NOVALUE, 'F731PW'}",stromEingaenge,temperaturEingaenge,NOVALUE,NOVALUE,20,1.0,1.0,1.0
+"in {NOVALUE, 'F731PW'}",stromSchaltbar,stromEingaenge,"in {'CS1', 'CS2', 'CS4'}",NOVALUE,5,0.25,1.0,0.25
+"in {NOVALUE, 'F731PW'}",stromSchaltbar,stromEingaenge,"in {'CS1', 'CS2'}",NOVALUE,5,0.25,1.0,0.25
+"in {NOVALUE, 'F731PW'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS4'}",NOVALUE,5,0.25,1.0,0.25
+"in {NOVALUE, 'F731PW'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1', 'CS2'}",NOVALUE,5,0.25,1.0,0.25
+"in {NOVALUE, 'F731PW'}",stromSchaltbar,temperaturEingaenge,"in {'CS1', 'CS2', 'CS4'}",NOVALUE,5,0.25,1.0,0.25
+"in {NOVALUE, 'F731PW'}",stromSchaltbar,temperaturEingaenge,"in {'CS1', 'CS2'}",NOVALUE,5,0.25,1.0,0.25
+"in {NOVALUE, 'F731PW'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS4'}",NOVALUE,5,0.25,1.0,0.25
+"in {NOVALUE, 'F731PW'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2'}",NOVALUE,5,0.25,1.0,0.25
+"in {NOVALUE, 'F731PW'}",housing,powerSupply,"in {'ST', 'AL'}","in {'1', '4'}",20,1.0,1.0,1.0
+"in {NOVALUE, 'F731PW'}",numberOfChannels,temperaturEingaenge,"in {1, 2}",NOVALUE,20,1.0,1.0,1.0
+"in {NOVALUE, 'F731PW'}",dataInterface,certification,"in {'MR', 'BM', 'FF', 'PA', 'HS'}","in {'NN', 'WN'}",4,0.2,1.0,0.25
+"in {NOVALUE, 'F731PW'}",dataInterface,certification,"in {'MR', 'BM', 'FF', 'PA'}","in {'NN', 'WN'}",4,0.2,1.0,0.25
+"in {NOVALUE, 'F731PW'}",dataInterface,certification,"in {'MT', 'MR', 'BM', 'BT', 'FF', 'PA', 'HS'}",NN,1,0.05,1.0,0.25
+"in {NOVALUE, 'F731PW'}",dataInterface,certification,"in {'MT', 'MR', 'BM', 'BT', 'FF', 'PA'}",NN,1,0.05,1.0,0.25
+"in {NOVALUE, 'F731PW'}",dataInterface,certification,"in {'NN', 'MR', 'BM', 'FF', 'PA', 'HS'}","in {'NN', 'WN'}",4,0.2,1.0,0.25
+"in {NOVALUE, 'F731PW'}",dataInterface,certification,"in {'NN', 'MR', 'BM', 'FF', 'PA'}","in {'NN', 'WN'}",4,0.2,1.0,0.25
+"in {NOVALUE, 'F731PW'}",dataInterface,certification,"in {'NN', 'MT', 'MR', 'BM', 'BT', 'FF', 'PA', 'HS'}",NN,1,0.05,1.0,0.25
+"in {NOVALUE, 'F731PW'}",dataInterface,certification,"in {'NN', 'MT', 'MR', 'BM', 'BT', 'FF', 'PA'}",NN,1,0.05,1.0,0.25
+"in {NOVALUE, 'F731PW'}",protectionArea,certification,2,NN,4,0.2,0.2,1.0
+"in {NOVALUE, 'F731PW'}",protectionArea,certification,2,"in {'NN', 'WN'}",16,0.8,0.8,1.0
+"in {NOVALUE, 'F731PW'}",explosionApproval,protectionArea,F,2,4,0.2,1.0,0.2
+"in {NOVALUE, 'F731PW'}",explosionApproval,protectionArea,K,2,8,0.4,1.0,0.4
+"in {NOVALUE, 'F731PW'}",explosionApproval,protectionArea,"in {'A', 'E', 'P', 'J', 'S'}",2,8,0.4,1.0,0.4
+"in {NOVALUE, 'F731PW'}",binaerDigitalOpenColl_MN,binaerOpenColl_MP,MN2,NOVALUE,3,0.15,1.0,0.25
+"in {NOVALUE, 'F731PW'}",binaerDigitalOpenColl_MN,binaerOpenColl_MP,NOVALUE,MP2,2,0.1,0.25,1.0
+"in {NOVALUE, 'F731PW'}",binaerDigitalOpenColl_MN,binaerOpenColl_MP,NOVALUE,"in {'MP2', 'MP4'}",2,0.1,0.25,1.0
+"in {NOVALUE, 'F731PW'}",binaerDigitalOpenColl_MN,binaerOpenColl_MP,NOVALUE,"in {NOVALUE, 'MP2', 'MP4'}",2,0.1,0.25,1.0
+"in {NOVALUE, 'F731PW'}",binaerDigitalOpenColl_MN,binaerOpenColl_MP,NOVALUE,"in {NOVALUE, 'MP2'}",2,0.1,0.25,1.0
+"in {NOVALUE, 'F731PW'}",binaerDigitalOpenColl_MN,binaerOpenColl_MP,"in {'MN2', 'MN4'}",NOVALUE,3,0.15,1.0,0.25
+"in {NOVALUE, 'F731PW'}",binaerDigitalOpenColl_MN,binaerOpenColl_MP,"in {NOVALUE, 'MN2', 'MN4'}",NOVALUE,3,0.15,1.0,0.25
+"in {NOVALUE, 'F731PW'}",binaerDigitalOpenColl_MN,binaerOpenColl_MP,"in {NOVALUE, 'MN2'}",NOVALUE,3,0.15,1.0,0.25
+"in {NOVALUE, 'F731TE'}",explosionApproval,certification,F,NN,6,0.23076923076923078,1.0,1.0
+"in {NOVALUE, 'F731TE'}",explosionApproval,certification,K,"in {'NN', 'WN'}",6,0.23076923076923078,1.0,0.5
+"in {NOVALUE, 'F731TE'}",explosionApproval,certification,N,"in {'NN', 'WN', 'FN'}",8,0.3076923076923077,1.0,1.0
+"in {NOVALUE, 'F731TE'}",explosionApproval,certification,"in {'A', 'E', 'P', 'J', 'S'}","in {'NN', 'WN'}",6,0.23076923076923078,1.0,0.5
+"in {NOVALUE, 'F731TE'}",stromEingaenge,temperaturEingaenge,NOVALUE,TT2,13,0.5,0.5,1.0
+"in {NOVALUE, 'F731TE'}",stromEingaenge,temperaturEingaenge,NOVALUE,"in {'TT2', 'TT4'}",13,0.5,0.5,1.0
+"in {NOVALUE, 'F731TE'}",stromSchaltbar,stromEingaenge,CS2,NOVALUE,4,0.15384615384615385,1.0,0.15384615384615385
+"in {NOVALUE, 'F731TE'}",stromSchaltbar,stromEingaenge,NOVALUE,NOVALUE,10,0.38461538461538464,1.0,0.38461538461538464
+"in {NOVALUE, 'F731TE'}",stromSchaltbar,stromEingaenge,"in {'CS2', 'CS3'}",NOVALUE,8,0.3076923076923077,1.0,0.3076923076923077
+"in {NOVALUE, 'F731TE'}",stromSchaltbar,stromEingaenge,"in {'CS2', 'CS4'}",NOVALUE,4,0.15384615384615385,1.0,0.15384615384615385
+"in {NOVALUE, 'F731TE'}",stromSchaltbar,temperaturEingaenge,CS2,"in {'TT2', 'TT4'}",4,0.15384615384615385,1.0,0.3076923076923077
+"in {NOVALUE, 'F731TE'}",stromSchaltbar,temperaturEingaenge,NOVALUE,TT2,5,0.19230769230769232,0.5,0.38461538461538464
+"in {NOVALUE, 'F731TE'}",stromSchaltbar,temperaturEingaenge,NOVALUE,"in {'TT2', 'TT4'}",5,0.19230769230769232,0.5,0.38461538461538464
+"in {NOVALUE, 'F731TE'}",stromSchaltbar,temperaturEingaenge,"in {'CS2', 'CS3'}",TT2,4,0.15384615384615385,0.5,0.3076923076923077
+"in {NOVALUE, 'F731TE'}",stromSchaltbar,temperaturEingaenge,"in {'CS2', 'CS3'}","in {'TT2', 'TT4'}",4,0.15384615384615385,0.5,0.3076923076923077
+"in {NOVALUE, 'F731TE'}",stromSchaltbar,temperaturEingaenge,"in {'CS2', 'CS4'}",TT2,4,0.15384615384615385,1.0,0.3076923076923077
+"in {NOVALUE, 'F731TE'}",housing,powerSupply,"in {'ST', 'AL'}","in {'1', '4'}",26,1.0,1.0,1.0
+"in {NOVALUE, 'F731TE'}",numberOfChannels,temperaturEingaenge,1,TT2,13,0.5,1.0,1.0
+"in {NOVALUE, 'F731TE'}",numberOfChannels,temperaturEingaenge,2,"in {'TT2', 'TT4'}",13,0.5,1.0,1.0
+"in {NOVALUE, 'F731TE'}",dataInterface,certification,NN,"in {'NN', 'WN'}",4,0.15384615384615385,1.0,0.3333333333333333
+"in {NOVALUE, 'F731TE'}",dataInterface,certification,"in {'MT', 'BT'}","in {'NN', 'WN', 'FN'}",2,0.07692307692307693,1.0,0.25
+"in {NOVALUE, 'F731TE'}",dataInterface,certification,"in {'NN', 'MT', 'BT'}",NN,2,0.07692307692307693,0.5,0.3333333333333333
+"in {NOVALUE, 'F731TE'}",dataInterface,certification,"in {'NN', 'MT', 'BT'}","in {'NN', 'WN', 'FN'}",2,0.07692307692307693,0.5,0.25
+"in {NOVALUE, 'F731TE'}",dataInterface,certification,"in {'NN', 'PA', 'MR', 'FF', 'BM', 'HS'}",NN,2,0.07692307692307693,0.3333333333333333,0.3333333333333333
+"in {NOVALUE, 'F731TE'}",dataInterface,certification,"in {'NN', 'PA', 'MR', 'FF', 'BM', 'HS'}","in {'NN', 'WN'}",4,0.15384615384615385,0.6666666666666666,0.3333333333333333
+"in {NOVALUE, 'F731TE'}",dataInterface,certification,"in {'NN', 'PA', 'MR', 'FF', 'DB', 'BM', 'HS'}","in {'NN', 'WN', 'FN'}",2,0.07692307692307693,1.0,0.25
+"in {NOVALUE, 'F731TE'}",dataInterface,certification,"in {'PA', 'MR', 'FF', 'BM', 'HS'}",NN,2,0.07692307692307693,0.3333333333333333,0.3333333333333333
+"in {NOVALUE, 'F731TE'}",dataInterface,certification,"in {'PA', 'MR', 'FF', 'BM', 'HS'}","in {'NN', 'WN'}",4,0.15384615384615385,0.6666666666666666,0.3333333333333333
+"in {NOVALUE, 'F731TE'}",dataInterface,certification,"in {'PA', 'MR', 'FF', 'DB', 'BM', 'HS'}","in {'NN', 'WN', 'FN'}",2,0.07692307692307693,1.0,0.25
+"in {NOVALUE, 'F731TE'}",protectionArea,certification,2,NN,6,0.23076923076923078,0.3333333333333333,1.0
+"in {NOVALUE, 'F731TE'}",protectionArea,certification,2,"in {'NN', 'WN'}",12,0.46153846153846156,0.6666666666666666,1.0
+"in {NOVALUE, 'F731TE'}",protectionArea,certification,N,"in {'NN', 'WN', 'FN'}",8,0.3076923076923077,1.0,1.0
+"in {NOVALUE, 'F731TE'}",explosionApproval,protectionArea,F,2,6,0.23076923076923078,1.0,0.3333333333333333
+"in {NOVALUE, 'F731TE'}",explosionApproval,protectionArea,K,2,6,0.23076923076923078,1.0,0.3333333333333333
+"in {NOVALUE, 'F731TE'}",explosionApproval,protectionArea,N,N,8,0.3076923076923077,1.0,1.0
+"in {NOVALUE, 'F731TE'}",explosionApproval,protectionArea,"in {'A', 'E', 'P', 'J', 'S'}",2,6,0.23076923076923078,1.0,0.3333333333333333
+"in {NOVALUE, 'F731TE'}",binaerDigitalOpenColl_MN,binaerOpenColl_MP,MN4,NOVALUE,4,0.15384615384615385,1.0,0.2857142857142857
+"in {NOVALUE, 'F731TE'}",binaerDigitalOpenColl_MN,binaerOpenColl_MP,NOVALUE,MP4,12,0.46153846153846156,0.5454545454545454,1.0
+"in {NOVALUE, 'F731TE'}",binaerDigitalOpenColl_MN,binaerOpenColl_MP,NOVALUE,NOVALUE,10,0.38461538461538464,0.45454545454545453,0.7142857142857143
+"in {NOVALUE, 'F731WD_DualChannel'}",explosionApproval,certification,N,CN,6,0.5,0.5,1.0
+"in {NOVALUE, 'F731WD_DualChannel'}",explosionApproval,certification,N,"in {'NN', 'WN', 'FN'}",6,0.5,0.5,1.0
+"in {NOVALUE, 'F731WD_DualChannel'}",stromEingaenge,temperaturEingaenge,NOVALUE,NOVALUE,2,0.16666666666666666,1.0,0.16666666666666666
+"in {NOVALUE, 'F731WD_DualChannel'}",stromEingaenge,temperaturEingaenge,"in {NOVALUE, 'IS1', 'IS2'}",NOVALUE,4,0.3333333333333333,1.0,0.3333333333333333
+"in {NOVALUE, 'F731WD_DualChannel'}",stromEingaenge,temperaturEingaenge,"in {NOVALUE, 'IS1'}",NOVALUE,6,0.5,1.0,0.5
+"in {NOVALUE, 'F731WD_DualChannel'}",stromSchaltbar,stromEingaenge,CS2,"in {NOVALUE, 'IS1', 'IS2'}",2,0.16666666666666666,0.5,0.5
+"in {NOVALUE, 'F731WD_DualChannel'}",stromSchaltbar,stromEingaenge,CS2,"in {NOVALUE, 'IS1'}",2,0.16666666666666666,0.5,0.3333333333333333
+"in {NOVALUE, 'F731WD_DualChannel'}",stromSchaltbar,stromEingaenge,NOVALUE,"in {NOVALUE, 'IS1', 'IS2'}",2,0.16666666666666666,0.5,0.5
+"in {NOVALUE, 'F731WD_DualChannel'}",stromSchaltbar,stromEingaenge,NOVALUE,"in {NOVALUE, 'IS1'}",2,0.16666666666666666,0.5,0.3333333333333333
+"in {NOVALUE, 'F731WD_DualChannel'}",stromSchaltbar,stromEingaenge,"in {'CS2', 'CS3'}","in {NOVALUE, 'IS1'}",2,0.16666666666666666,1.0,0.3333333333333333
+"in {NOVALUE, 'F731WD_DualChannel'}",stromSchaltbar,stromEingaenge,"in {'CS2', 'CS4'}",NOVALUE,2,0.16666666666666666,1.0,1.0
+"in {NOVALUE, 'F731WD_DualChannel'}",stromSchaltbar,temperaturEingaenge,CS2,NOVALUE,4,0.3333333333333333,1.0,0.3333333333333333
+"in {NOVALUE, 'F731WD_DualChannel'}",stromSchaltbar,temperaturEingaenge,NOVALUE,NOVALUE,4,0.3333333333333333,1.0,0.3333333333333333
+"in {NOVALUE, 'F731WD_DualChannel'}",stromSchaltbar,temperaturEingaenge,"in {'CS2', 'CS3'}",NOVALUE,2,0.16666666666666666,1.0,0.16666666666666666
+"in {NOVALUE, 'F731WD_DualChannel'}",stromSchaltbar,temperaturEingaenge,"in {'CS2', 'CS4'}",NOVALUE,2,0.16666666666666666,1.0,0.16666666666666666
+"in {NOVALUE, 'F731WD_DualChannel'}",housing,powerSupply,"in {'ST', 'AL'}",1,6,0.5,0.5,1.0
+"in {NOVALUE, 'F731WD_DualChannel'}",housing,powerSupply,"in {'ST', 'AL'}","in {'1', '4'}",6,0.5,0.5,1.0
+"in {NOVALUE, 'F731WD_DualChannel'}",numberOfChannels,temperaturEingaenge,2,NOVALUE,12,1.0,1.0,1.0
+"in {NOVALUE, 'F731WD_DualChannel'}",dataInterface,certification,HS,CN,2,0.16666666666666666,0.5,0.3333333333333333
+"in {NOVALUE, 'F731WD_DualChannel'}",dataInterface,certification,HS,"in {'NN', 'WN', 'FN'}",2,0.16666666666666666,0.5,0.3333333333333333
+"in {NOVALUE, 'F731WD_DualChannel'}",dataInterface,certification,"in {'NN', 'PA', 'MT', 'MR', 'FF', 'DB', 'BM', 'BT'}",CN,3,0.25,0.5,0.5
+"in {NOVALUE, 'F731WD_DualChannel'}",dataInterface,certification,"in {'NN', 'PA', 'MT', 'MR', 'FF', 'DB', 'BM', 'BT'}","in {'NN', 'WN', 'FN'}",3,0.25,0.5,0.5
+"in {NOVALUE, 'F731WD_DualChannel'}",dataInterface,certification,"in {'PA', 'MT', 'MR', 'FF', 'DB', 'BM', 'BT'}",CN,1,0.08333333333333333,0.5,0.16666666666666666
+"in {NOVALUE, 'F731WD_DualChannel'}",dataInterface,certification,"in {'PA', 'MT', 'MR', 'FF', 'DB', 'BM', 'BT'}","in {'NN', 'WN', 'FN'}",1,0.08333333333333333,0.5,0.16666666666666666
+"in {NOVALUE, 'F731WD_DualChannel'}",protectionArea,certification,N,CN,6,0.5,0.5,1.0
+"in {NOVALUE, 'F731WD_DualChannel'}",protectionArea,certification,N,"in {'NN', 'WN', 'FN'}",6,0.5,0.5,1.0
+"in {NOVALUE, 'F731WD_DualChannel'}",explosionApproval,protectionArea,N,N,12,1.0,1.0,1.0
+"in {NOVALUE, 'F731WD_DualChannel'}",binaerDigitalOpenColl_MN,binaerOpenColl_MP,NOVALUE,MP4,8,0.6666666666666666,0.6666666666666666,1.0
+"in {NOVALUE, 'F731WD_DualChannel'}",binaerDigitalOpenColl_MN,binaerOpenColl_MP,NOVALUE,NOVALUE,4,0.3333333333333333,0.3333333333333333,1.0
+"in {NOVALUE, 'F731WD_SingleChannel'}",explosionApproval,certification,N,CN,4,0.5,0.5,1.0
+"in {NOVALUE, 'F731WD_SingleChannel'}",explosionApproval,certification,N,"in {'NN', 'WN', 'FN'}",4,0.5,0.5,1.0
+"in {NOVALUE, 'F731WD_SingleChannel'}",stromEingaenge,temperaturEingaenge,"in {NOVALUE, 'IS1', 'IS2'}",NOVALUE,4,0.5,1.0,0.5
+"in {NOVALUE, 'F731WD_SingleChannel'}",stromEingaenge,temperaturEingaenge,"in {NOVALUE, 'IS1'}",NOVALUE,4,0.5,1.0,0.5
+"in {NOVALUE, 'F731WD_SingleChannel'}",stromSchaltbar,stromEingaenge,CS2,"in {NOVALUE, 'IS1', 'IS2'}",2,0.25,0.5,0.5
+"in {NOVALUE, 'F731WD_SingleChannel'}",stromSchaltbar,stromEingaenge,CS2,"in {NOVALUE, 'IS1'}",2,0.25,0.5,0.5
+"in {NOVALUE, 'F731WD_SingleChannel'}",stromSchaltbar,stromEingaenge,NOVALUE,"in {NOVALUE, 'IS1', 'IS2'}",2,0.25,0.5,0.5
+"in {NOVALUE, 'F731WD_SingleChannel'}",stromSchaltbar,stromEingaenge,NOVALUE,"in {NOVALUE, 'IS1'}",2,0.25,0.5,0.5
+"in {NOVALUE, 'F731WD_SingleChannel'}",stromSchaltbar,temperaturEingaenge,CS2,NOVALUE,4,0.5,1.0,0.5
+"in {NOVALUE, 'F731WD_SingleChannel'}",stromSchaltbar,temperaturEingaenge,NOVALUE,NOVALUE,4,0.5,1.0,0.5
+"in {NOVALUE, 'F731WD_SingleChannel'}",housing,powerSupply,"in {'ST', 'AL'}",1,4,0.5,0.5,1.0
+"in {NOVALUE, 'F731WD_SingleChannel'}",housing,powerSupply,"in {'ST', 'AL'}","in {'1', '4'}",4,0.5,0.5,1.0
+"in {NOVALUE, 'F731WD_SingleChannel'}",numberOfChannels,temperaturEingaenge,1,NOVALUE,8,1.0,1.0,1.0
+"in {NOVALUE, 'F731WD_SingleChannel'}",dataInterface,certification,HS,CN,2,0.25,0.5,0.5
+"in {NOVALUE, 'F731WD_SingleChannel'}",dataInterface,certification,HS,"in {'NN', 'WN', 'FN'}",2,0.25,0.5,0.5
+"in {NOVALUE, 'F731WD_SingleChannel'}",dataInterface,certification,"in {'NN', 'PA', 'MT', 'MR', 'FF', 'DB', 'BM', 'BT'}",CN,1,0.125,0.5,0.25
+"in {NOVALUE, 'F731WD_SingleChannel'}",dataInterface,certification,"in {'NN', 'PA', 'MT', 'MR', 'FF', 'DB', 'BM', 'BT'}","in {'NN', 'WN', 'FN'}",1,0.125,0.5,0.25
+"in {NOVALUE, 'F731WD_SingleChannel'}",dataInterface,certification,"in {'PA', 'MT', 'MR', 'FF', 'DB', 'BM', 'BT'}",CN,1,0.125,0.5,0.25
+"in {NOVALUE, 'F731WD_SingleChannel'}",dataInterface,certification,"in {'PA', 'MT', 'MR', 'FF', 'DB', 'BM', 'BT'}","in {'NN', 'WN', 'FN'}",1,0.125,0.5,0.25
+"in {NOVALUE, 'F731WD_SingleChannel'}",protectionArea,certification,N,CN,4,0.5,0.5,1.0
+"in {NOVALUE, 'F731WD_SingleChannel'}",protectionArea,certification,N,"in {'NN', 'WN', 'FN'}",4,0.5,0.5,1.0
+"in {NOVALUE, 'F731WD_SingleChannel'}",explosionApproval,protectionArea,N,N,8,1.0,1.0,1.0
+"in {NOVALUE, 'F731WD_SingleChannel'}",binaerDigitalOpenColl_MN,binaerOpenColl_MP,NOVALUE,MP4,4,0.5,0.5,1.0
+"in {NOVALUE, 'F731WD_SingleChannel'}",binaerDigitalOpenColl_MN,binaerOpenColl_MP,NOVALUE,NOVALUE,4,0.5,0.5,1.0
+"in {NOVALUE, 'G731CA'}",explosionApproval,certification,F,NN,6,0.25,1.0,1.0
+"in {NOVALUE, 'G731CA'}",explosionApproval,certification,K,"in {'NN', 'WN'}",6,0.25,1.0,0.5
+"in {NOVALUE, 'G731CA'}",explosionApproval,certification,N,"in {'NN', 'WN', 'FN'}",6,0.25,1.0,1.0
+"in {NOVALUE, 'G731CA'}",explosionApproval,certification,"in {'A', 'E', 'P', 'J', 'S'}","in {'NN', 'WN'}",6,0.25,1.0,0.5
+"in {NOVALUE, 'G731CA'}",stromEingaenge,temperaturEingaenge,IS1,TT1,4,0.16666666666666666,0.5,0.3333333333333333
+"in {NOVALUE, 'G731CA'}",stromEingaenge,temperaturEingaenge,IS1,"in {'TT1', 'TT2'}",4,0.16666666666666666,0.5,0.3333333333333333
+"in {NOVALUE, 'G731CA'}",stromEingaenge,temperaturEingaenge,"in {'IS1', 'IS2'}",TT1,8,0.3333333333333333,0.5,0.6666666666666666
+"in {NOVALUE, 'G731CA'}",stromEingaenge,temperaturEingaenge,"in {'IS1', 'IS2'}","in {'TT1', 'TT2'}",8,0.3333333333333333,0.5,0.6666666666666666
+"in {NOVALUE, 'G731CA'}",stromSchaltbar,stromEingaenge,CS2,IS1,8,0.3333333333333333,0.5,1.0
+"in {NOVALUE, 'G731CA'}",stromSchaltbar,stromEingaenge,CS2,"in {'IS1', 'IS2'}",8,0.3333333333333333,0.5,0.5
+"in {NOVALUE, 'G731CA'}",stromSchaltbar,stromEingaenge,NOVALUE,"in {'IS1', 'IS2'}",8,0.3333333333333333,1.0,0.5
+"in {NOVALUE, 'G731CA'}",stromSchaltbar,temperaturEingaenge,CS2,TT1,8,0.3333333333333333,0.5,0.6666666666666666
+"in {NOVALUE, 'G731CA'}",stromSchaltbar,temperaturEingaenge,CS2,"in {'TT1', 'TT2'}",8,0.3333333333333333,0.5,0.6666666666666666
+"in {NOVALUE, 'G731CA'}",stromSchaltbar,temperaturEingaenge,NOVALUE,TT1,4,0.16666666666666666,0.5,0.3333333333333333
+"in {NOVALUE, 'G731CA'}",stromSchaltbar,temperaturEingaenge,NOVALUE,"in {'TT1', 'TT2'}",4,0.16666666666666666,0.5,0.3333333333333333
+"in {NOVALUE, 'G731CA'}",housing,powerSupply,"in {'ST', 'AL'}","in {'1', '4'}",24,1.0,1.0,1.0
+"in {NOVALUE, 'G731CA'}",numberOfChannels,temperaturEingaenge,1,TT1,12,0.5,1.0,1.0
+"in {NOVALUE, 'G731CA'}",numberOfChannels,temperaturEingaenge,2,"in {'TT1', 'TT2'}",12,0.5,1.0,1.0
+"in {NOVALUE, 'G731CA'}",dataInterface,certification,HS,NN,1,0.041666666666666664,0.14285714285714285,0.16666666666666666
+"in {NOVALUE, 'G731CA'}",dataInterface,certification,HS,"in {'NN', 'WN', 'FN'}",2,0.08333333333333333,0.2857142857142857,0.3333333333333333
+"in {NOVALUE, 'G731CA'}",dataInterface,certification,HS,"in {'NN', 'WN'}",4,0.16666666666666666,0.5714285714285714,0.3333333333333333
+"in {NOVALUE, 'G731CA'}",dataInterface,certification,"in {'MT', 'BT', 'PA', 'MR', 'FF', 'BM', 'HS'}",NN,3,0.125,1.0,0.5
+"in {NOVALUE, 'G731CA'}",dataInterface,certification,"in {'MT', 'BT', 'PA', 'MR', 'FF', 'DB', 'BM', 'HS'}","in {'NN', 'WN', 'FN'}",2,0.08333333333333333,1.0,0.3333333333333333
+"in {NOVALUE, 'G731CA'}",dataInterface,certification,"in {'NN', 'MT', 'BT', 'PA', 'MR', 'FF', 'BM'}",NN,2,0.08333333333333333,1.0,0.3333333333333333
+"in {NOVALUE, 'G731CA'}",dataInterface,certification,"in {'NN', 'MT', 'BT', 'PA', 'MR', 'FF', 'DB', 'BM'}","in {'NN', 'WN', 'FN'}",2,0.08333333333333333,1.0,0.3333333333333333
+"in {NOVALUE, 'G731CA'}",dataInterface,certification,"in {'NN', 'PA', 'MR', 'FF', 'BM'}","in {'NN', 'WN'}",4,0.16666666666666666,1.0,0.3333333333333333
+"in {NOVALUE, 'G731CA'}",dataInterface,certification,"in {'PA', 'MR', 'FF', 'BM', 'HS'}","in {'NN', 'WN'}",4,0.16666666666666666,1.0,0.3333333333333333
+"in {NOVALUE, 'G731CA'}",protectionArea,certification,2,NN,6,0.25,0.3333333333333333,1.0
+"in {NOVALUE, 'G731CA'}",protectionArea,certification,2,"in {'NN', 'WN'}",12,0.5,0.6666666666666666,1.0
+"in {NOVALUE, 'G731CA'}",protectionArea,certification,N,"in {'NN', 'WN', 'FN'}",6,0.25,1.0,1.0
+"in {NOVALUE, 'G731CA'}",explosionApproval,protectionArea,F,2,6,0.25,1.0,0.3333333333333333
+"in {NOVALUE, 'G731CA'}",explosionApproval,protectionArea,K,2,6,0.25,1.0,0.3333333333333333
+"in {NOVALUE, 'G731CA'}",explosionApproval,protectionArea,N,N,6,0.25,1.0,1.0
+"in {NOVALUE, 'G731CA'}",explosionApproval,protectionArea,"in {'A', 'E', 'P', 'J', 'S'}",2,6,0.25,1.0,0.3333333333333333
+"in {NOVALUE, 'G731CA'}",binaerDigitalOpenColl_MN,binaerOpenColl_MP,MN4,NOVALUE,4,0.16666666666666666,1.0,0.3333333333333333
+"in {NOVALUE, 'G731CA'}",binaerDigitalOpenColl_MN,binaerOpenColl_MP,NOVALUE,MP4,12,0.5,0.6,1.0
+"in {NOVALUE, 'G731CA'}",binaerDigitalOpenColl_MN,binaerOpenColl_MP,NOVALUE,NOVALUE,8,0.3333333333333333,0.4,0.6666666666666666
+"in {NOVALUE, 'G731ST-HT'}",explosionApproval,certification,F,NN,19,0.14285714285714285,1.0,1.0
+"in {NOVALUE, 'G731ST-HT'}",explosionApproval,certification,K,"in {'NN', 'WN'}",38,0.2857142857142857,1.0,0.5
+"in {NOVALUE, 'G731ST-HT'}",explosionApproval,certification,N,"in {'NN', 'WN', 'FN'}",38,0.2857142857142857,1.0,1.0
+"in {NOVALUE, 'G731ST-HT'}",explosionApproval,certification,"in {'A', 'E', 'P', 'J', 'S'}","in {'NN', 'WN'}",38,0.2857142857142857,1.0,0.5
+"in {NOVALUE, 'G731ST-HT'}",stromEingaenge,temperaturEingaenge,NOVALUE,NOVALUE,7,0.05263157894736842,0.14285714285714285,0.3333333333333333
+"in {NOVALUE, 'G731ST-HT'}",stromEingaenge,temperaturEingaenge,NOVALUE,"in {NOVALUE, 'TT1', 'TT2', 'TT3', 'TT4'}",21,0.15789473684210525,0.42857142857142855,1.0
+"in {NOVALUE, 'G731ST-HT'}",stromEingaenge,temperaturEingaenge,NOVALUE,"in {NOVALUE, 'TT1', 'TT2'}",21,0.15789473684210525,0.42857142857142855,0.5
+"in {NOVALUE, 'G731ST-HT'}",stromEingaenge,temperaturEingaenge,"in {NOVALUE, 'IS1', 'IS2', 'IS3', 'IS4'}",NOVALUE,14,0.10526315789473684,1.0,0.6666666666666666
+"in {NOVALUE, 'G731ST-HT'}",stromEingaenge,temperaturEingaenge,"in {NOVALUE, 'IS1', 'IS2', 'IS3'}","in {NOVALUE, 'TT1'}",21,0.15789473684210525,1.0,0.75
+"in {NOVALUE, 'G731ST-HT'}",stromEingaenge,temperaturEingaenge,"in {NOVALUE, 'IS1', 'IS2'}","in {NOVALUE, 'TT1', 'TT2'}",21,0.15789473684210525,1.0,0.5
+"in {NOVALUE, 'G731ST-HT'}",stromEingaenge,temperaturEingaenge,"in {NOVALUE, 'IS1'}","in {NOVALUE, 'TT1', 'TT2', 'TT3'}",21,0.15789473684210525,0.75,1.0
+"in {NOVALUE, 'G731ST-HT'}",stromEingaenge,temperaturEingaenge,"in {NOVALUE, 'IS1'}","in {NOVALUE, 'TT1'}",7,0.05263157894736842,0.25,0.25
+"in {NOVALUE, 'G731ST-HT'}",stromSchaltbar,stromEingaenge,NOVALUE,"in {NOVALUE, 'IS1', 'IS2', 'IS3', 'IS4'}",14,0.10526315789473684,0.6666666666666666,1.0
+"in {NOVALUE, 'G731ST-HT'}",stromSchaltbar,stromEingaenge,NOVALUE,"in {NOVALUE, 'IS1', 'IS2', 'IS3'}",7,0.05263157894736842,0.3333333333333333,0.3333333333333333
+"in {NOVALUE, 'G731ST-HT'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3', 'CS4'}",NOVALUE,14,0.10526315789473684,1.0,0.2857142857142857
+"in {NOVALUE, 'G731ST-HT'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3'}",NOVALUE,21,0.15789473684210525,0.6,0.42857142857142855
+"in {NOVALUE, 'G731ST-HT'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3'}","in {NOVALUE, 'IS1'}",14,0.10526315789473684,0.4,0.5
+"in {NOVALUE, 'G731ST-HT'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1', 'CS2'}",NOVALUE,14,0.10526315789473684,0.3333333333333333,0.2857142857142857
+"in {NOVALUE, 'G731ST-HT'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1', 'CS2'}","in {NOVALUE, 'IS1', 'IS2'}",14,0.10526315789473684,0.3333333333333333,0.6666666666666666
+"in {NOVALUE, 'G731ST-HT'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1', 'CS2'}","in {NOVALUE, 'IS1'}",14,0.10526315789473684,0.3333333333333333,0.5
+"in {NOVALUE, 'G731ST-HT'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1'}","in {NOVALUE, 'IS1', 'IS2', 'IS3'}",14,0.10526315789473684,0.6666666666666666,0.6666666666666666
+"in {NOVALUE, 'G731ST-HT'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1'}","in {NOVALUE, 'IS1', 'IS2'}",7,0.05263157894736842,0.3333333333333333,0.3333333333333333
+"in {NOVALUE, 'G731ST-HT'}",stromSchaltbar,temperaturEingaenge,NOVALUE,NOVALUE,14,0.10526315789473684,0.6666666666666666,0.6666666666666666
+"in {NOVALUE, 'G731ST-HT'}",stromSchaltbar,temperaturEingaenge,NOVALUE,"in {NOVALUE, 'TT1'}",7,0.05263157894736842,0.3333333333333333,0.25
+"in {NOVALUE, 'G731ST-HT'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3', 'CS4'}",NOVALUE,7,0.05263157894736842,0.5,0.3333333333333333
+"in {NOVALUE, 'G731ST-HT'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3', 'CS4'}","in {NOVALUE, 'TT1', 'TT2'}",7,0.05263157894736842,0.5,0.16666666666666666
+"in {NOVALUE, 'G731ST-HT'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3'}","in {NOVALUE, 'TT1', 'TT2', 'TT3', 'TT4'}",7,0.05263157894736842,0.2,0.3333333333333333
+"in {NOVALUE, 'G731ST-HT'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3'}","in {NOVALUE, 'TT1', 'TT2', 'TT3'}",7,0.05263157894736842,0.2,0.3333333333333333
+"in {NOVALUE, 'G731ST-HT'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3'}","in {NOVALUE, 'TT1', 'TT2'}",14,0.10526315789473684,0.4,0.3333333333333333
+"in {NOVALUE, 'G731ST-HT'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3'}","in {NOVALUE, 'TT1'}",7,0.05263157894736842,0.2,0.25
+"in {NOVALUE, 'G731ST-HT'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2'}","in {NOVALUE, 'TT1', 'TT2', 'TT3', 'TT4'}",14,0.10526315789473684,0.3333333333333333,0.6666666666666666
+"in {NOVALUE, 'G731ST-HT'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2'}","in {NOVALUE, 'TT1', 'TT2', 'TT3'}",14,0.10526315789473684,0.3333333333333333,0.6666666666666666
+"in {NOVALUE, 'G731ST-HT'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2'}","in {NOVALUE, 'TT1', 'TT2'}",14,0.10526315789473684,0.3333333333333333,0.3333333333333333
+"in {NOVALUE, 'G731ST-HT'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1'}","in {NOVALUE, 'TT1', 'TT2'}",7,0.05263157894736842,0.3333333333333333,0.16666666666666666
+"in {NOVALUE, 'G731ST-HT'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1'}","in {NOVALUE, 'TT1'}",14,0.10526315789473684,0.6666666666666666,0.5
+"in {NOVALUE, 'G731ST-HT'}",housing,powerSupply,"in {'ST', 'AL'}","in {'1', '4'}",133,1.0,1.0,1.0
+"in {NOVALUE, 'G731ST-HT'}",numberOfChannels,temperaturEingaenge,2,NOVALUE,21,0.15789473684210525,0.15789473684210525,1.0
+"in {NOVALUE, 'G731ST-HT'}",numberOfChannels,temperaturEingaenge,2,"in {NOVALUE, 'TT1', 'TT2', 'TT3', 'TT4'}",21,0.15789473684210525,0.15789473684210525,1.0
+"in {NOVALUE, 'G731ST-HT'}",numberOfChannels,temperaturEingaenge,2,"in {NOVALUE, 'TT1', 'TT2', 'TT3'}",21,0.15789473684210525,0.15789473684210525,1.0
+"in {NOVALUE, 'G731ST-HT'}",numberOfChannels,temperaturEingaenge,2,"in {NOVALUE, 'TT1', 'TT2'}",42,0.3157894736842105,0.3157894736842105,1.0
+"in {NOVALUE, 'G731ST-HT'}",numberOfChannels,temperaturEingaenge,2,"in {NOVALUE, 'TT1'}",28,0.21052631578947367,0.21052631578947367,1.0
+"in {NOVALUE, 'G731ST-HT'}",dataInterface,certification,HS,NN,5,0.03759398496240601,0.14285714285714285,0.2631578947368421
+"in {NOVALUE, 'G731ST-HT'}",dataInterface,certification,HS,"in {'NN', 'WN', 'FN'}",10,0.07518796992481203,0.2857142857142857,0.2631578947368421
+"in {NOVALUE, 'G731ST-HT'}",dataInterface,certification,HS,"in {'NN', 'WN'}",20,0.15037593984962405,0.5714285714285714,0.2631578947368421
+"in {NOVALUE, 'G731ST-HT'}",dataInterface,certification,NN,"in {'NN', 'WN'}",24,0.18045112781954886,1.0,0.3157894736842105
+"in {NOVALUE, 'G731ST-HT'}",dataInterface,certification,"in {'NN', 'MT', 'BT'}",NN,6,0.045112781954887216,0.3333333333333333,0.3157894736842105
+"in {NOVALUE, 'G731ST-HT'}",dataInterface,certification,"in {'NN', 'MT', 'BT'}","in {'NN', 'WN', 'FN'}",12,0.09022556390977443,0.6666666666666666,0.3157894736842105
+"in {NOVALUE, 'G731ST-HT'}",dataInterface,certification,"in {'NN', 'PA', 'MR', 'FF', 'BM'}",NN,8,0.06015037593984962,0.2,0.42105263157894735
+"in {NOVALUE, 'G731ST-HT'}",dataInterface,certification,"in {'NN', 'PA', 'MR', 'FF', 'BM'}","in {'NN', 'WN'}",32,0.24060150375939848,0.8,0.42105263157894735
+"in {NOVALUE, 'G731ST-HT'}",dataInterface,certification,"in {'NN', 'PA', 'MR', 'FF', 'DB', 'BM'}","in {'NN', 'WN', 'FN'}",16,0.12030075187969924,1.0,0.42105263157894735
+"in {NOVALUE, 'G731ST-HT'}",protectionArea,certification,2,NN,19,0.14285714285714285,0.2,1.0
+"in {NOVALUE, 'G731ST-HT'}",protectionArea,certification,2,"in {'NN', 'WN'}",76,0.5714285714285714,0.8,1.0
+"in {NOVALUE, 'G731ST-HT'}",protectionArea,certification,N,"in {'NN', 'WN', 'FN'}",38,0.2857142857142857,1.0,1.0
+"in {NOVALUE, 'G731ST-HT'}",explosionApproval,protectionArea,F,2,19,0.14285714285714285,1.0,0.2
+"in {NOVALUE, 'G731ST-HT'}",explosionApproval,protectionArea,K,2,38,0.2857142857142857,1.0,0.4
+"in {NOVALUE, 'G731ST-HT'}",explosionApproval,protectionArea,N,N,38,0.2857142857142857,1.0,1.0
+"in {NOVALUE, 'G731ST-HT'}",explosionApproval,protectionArea,"in {'A', 'E', 'P', 'J', 'S'}",2,38,0.2857142857142857,1.0,0.4
+"in {NOVALUE, 'G731ST-HT'}",binaerDigitalOpenColl_MN,binaerOpenColl_MP,NOVALUE,"in {NOVALUE, 'MP1', 'MP2', 'MP3', 'MP4'}",57,0.42857142857142855,1.0,1.0
+"in {NOVALUE, 'G731ST-HT'}",binaerDigitalOpenColl_MN,binaerOpenColl_MP,"in {NOVALUE, 'MN1', 'MN2', 'MN3', 'MN4'}",NOVALUE,76,0.5714285714285714,1.0,1.0
+"in {NOVALUE, 'G731ST-LT'}",explosionApproval,certification,F,NN,19,0.14285714285714285,1.0,1.0
+"in {NOVALUE, 'G731ST-LT'}",explosionApproval,certification,K,"in {'NN', 'WN'}",38,0.2857142857142857,1.0,0.5
+"in {NOVALUE, 'G731ST-LT'}",explosionApproval,certification,N,"in {'NN', 'WN', 'FN'}",38,0.2857142857142857,1.0,1.0
+"in {NOVALUE, 'G731ST-LT'}",explosionApproval,certification,"in {'A', 'E', 'P', 'J', 'S'}","in {'NN', 'WN'}",38,0.2857142857142857,1.0,0.5
+"in {NOVALUE, 'G731ST-LT'}",stromEingaenge,temperaturEingaenge,NOVALUE,NOVALUE,7,0.05263157894736842,0.14285714285714285,0.3333333333333333
+"in {NOVALUE, 'G731ST-LT'}",stromEingaenge,temperaturEingaenge,NOVALUE,"in {NOVALUE, 'TT1', 'TT2', 'TT3', 'TT4'}",21,0.15789473684210525,0.42857142857142855,1.0
+"in {NOVALUE, 'G731ST-LT'}",stromEingaenge,temperaturEingaenge,NOVALUE,"in {NOVALUE, 'TT1', 'TT2'}",21,0.15789473684210525,0.42857142857142855,0.5
+"in {NOVALUE, 'G731ST-LT'}",stromEingaenge,temperaturEingaenge,"in {NOVALUE, 'IS1', 'IS2', 'IS3', 'IS4'}",NOVALUE,14,0.10526315789473684,1.0,0.6666666666666666
+"in {NOVALUE, 'G731ST-LT'}",stromEingaenge,temperaturEingaenge,"in {NOVALUE, 'IS1', 'IS2', 'IS3'}","in {NOVALUE, 'TT1'}",21,0.15789473684210525,1.0,0.75
+"in {NOVALUE, 'G731ST-LT'}",stromEingaenge,temperaturEingaenge,"in {NOVALUE, 'IS1', 'IS2'}","in {NOVALUE, 'TT1', 'TT2'}",21,0.15789473684210525,1.0,0.5
+"in {NOVALUE, 'G731ST-LT'}",stromEingaenge,temperaturEingaenge,"in {NOVALUE, 'IS1'}","in {NOVALUE, 'TT1', 'TT2', 'TT3'}",21,0.15789473684210525,0.75,1.0
+"in {NOVALUE, 'G731ST-LT'}",stromEingaenge,temperaturEingaenge,"in {NOVALUE, 'IS1'}","in {NOVALUE, 'TT1'}",7,0.05263157894736842,0.25,0.25
+"in {NOVALUE, 'G731ST-LT'}",stromSchaltbar,stromEingaenge,NOVALUE,"in {NOVALUE, 'IS1', 'IS2', 'IS3', 'IS4'}",14,0.10526315789473684,0.6666666666666666,1.0
+"in {NOVALUE, 'G731ST-LT'}",stromSchaltbar,stromEingaenge,NOVALUE,"in {NOVALUE, 'IS1', 'IS2', 'IS3'}",7,0.05263157894736842,0.3333333333333333,0.3333333333333333
+"in {NOVALUE, 'G731ST-LT'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3', 'CS4'}",NOVALUE,14,0.10526315789473684,1.0,0.2857142857142857
+"in {NOVALUE, 'G731ST-LT'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3'}",NOVALUE,21,0.15789473684210525,0.6,0.42857142857142855
+"in {NOVALUE, 'G731ST-LT'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3'}","in {NOVALUE, 'IS1'}",14,0.10526315789473684,0.4,0.5
+"in {NOVALUE, 'G731ST-LT'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1', 'CS2'}",NOVALUE,14,0.10526315789473684,0.3333333333333333,0.2857142857142857
+"in {NOVALUE, 'G731ST-LT'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1', 'CS2'}","in {NOVALUE, 'IS1', 'IS2'}",14,0.10526315789473684,0.3333333333333333,0.6666666666666666
+"in {NOVALUE, 'G731ST-LT'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1', 'CS2'}","in {NOVALUE, 'IS1'}",14,0.10526315789473684,0.3333333333333333,0.5
+"in {NOVALUE, 'G731ST-LT'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1'}","in {NOVALUE, 'IS1', 'IS2', 'IS3'}",14,0.10526315789473684,0.6666666666666666,0.6666666666666666
+"in {NOVALUE, 'G731ST-LT'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1'}","in {NOVALUE, 'IS1', 'IS2'}",7,0.05263157894736842,0.3333333333333333,0.3333333333333333
+"in {NOVALUE, 'G731ST-LT'}",stromSchaltbar,temperaturEingaenge,NOVALUE,NOVALUE,14,0.10526315789473684,0.6666666666666666,0.6666666666666666
+"in {NOVALUE, 'G731ST-LT'}",stromSchaltbar,temperaturEingaenge,NOVALUE,"in {NOVALUE, 'TT1'}",7,0.05263157894736842,0.3333333333333333,0.25
+"in {NOVALUE, 'G731ST-LT'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3', 'CS4'}",NOVALUE,7,0.05263157894736842,0.5,0.3333333333333333
+"in {NOVALUE, 'G731ST-LT'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3', 'CS4'}","in {NOVALUE, 'TT1', 'TT2'}",7,0.05263157894736842,0.5,0.16666666666666666
+"in {NOVALUE, 'G731ST-LT'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3'}","in {NOVALUE, 'TT1', 'TT2', 'TT3', 'TT4'}",7,0.05263157894736842,0.2,0.3333333333333333
+"in {NOVALUE, 'G731ST-LT'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3'}","in {NOVALUE, 'TT1', 'TT2', 'TT3'}",7,0.05263157894736842,0.2,0.3333333333333333
+"in {NOVALUE, 'G731ST-LT'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3'}","in {NOVALUE, 'TT1', 'TT2'}",14,0.10526315789473684,0.4,0.3333333333333333
+"in {NOVALUE, 'G731ST-LT'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3'}","in {NOVALUE, 'TT1'}",7,0.05263157894736842,0.2,0.25
+"in {NOVALUE, 'G731ST-LT'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2'}","in {NOVALUE, 'TT1', 'TT2', 'TT3', 'TT4'}",14,0.10526315789473684,0.3333333333333333,0.6666666666666666
+"in {NOVALUE, 'G731ST-LT'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2'}","in {NOVALUE, 'TT1', 'TT2', 'TT3'}",14,0.10526315789473684,0.3333333333333333,0.6666666666666666
+"in {NOVALUE, 'G731ST-LT'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2'}","in {NOVALUE, 'TT1', 'TT2'}",14,0.10526315789473684,0.3333333333333333,0.3333333333333333
+"in {NOVALUE, 'G731ST-LT'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1'}","in {NOVALUE, 'TT1', 'TT2'}",7,0.05263157894736842,0.3333333333333333,0.16666666666666666
+"in {NOVALUE, 'G731ST-LT'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1'}","in {NOVALUE, 'TT1'}",14,0.10526315789473684,0.6666666666666666,0.5
+"in {NOVALUE, 'G731ST-LT'}",housing,powerSupply,"in {'ST', 'AL'}","in {'1', '4'}",133,1.0,1.0,1.0
+"in {NOVALUE, 'G731ST-LT'}",numberOfChannels,temperaturEingaenge,"in {1, 2}",NOVALUE,21,0.15789473684210525,0.15789473684210525,1.0
+"in {NOVALUE, 'G731ST-LT'}",numberOfChannels,temperaturEingaenge,"in {1, 2}","in {NOVALUE, 'TT1', 'TT2', 'TT3', 'TT4'}",21,0.15789473684210525,0.15789473684210525,1.0
+"in {NOVALUE, 'G731ST-LT'}",numberOfChannels,temperaturEingaenge,"in {1, 2}","in {NOVALUE, 'TT1', 'TT2', 'TT3'}",21,0.15789473684210525,0.15789473684210525,1.0
+"in {NOVALUE, 'G731ST-LT'}",numberOfChannels,temperaturEingaenge,"in {1, 2}","in {NOVALUE, 'TT1', 'TT2'}",42,0.3157894736842105,0.3157894736842105,1.0
+"in {NOVALUE, 'G731ST-LT'}",numberOfChannels,temperaturEingaenge,"in {1, 2}","in {NOVALUE, 'TT1'}",28,0.21052631578947367,0.21052631578947367,1.0
+"in {NOVALUE, 'G731ST-LT'}",dataInterface,certification,HS,NN,5,0.03759398496240601,0.14285714285714285,0.2631578947368421
+"in {NOVALUE, 'G731ST-LT'}",dataInterface,certification,HS,"in {'NN', 'WN', 'FN'}",10,0.07518796992481203,0.2857142857142857,0.2631578947368421
+"in {NOVALUE, 'G731ST-LT'}",dataInterface,certification,HS,"in {'NN', 'WN'}",20,0.15037593984962405,0.5714285714285714,0.2631578947368421
+"in {NOVALUE, 'G731ST-LT'}",dataInterface,certification,NN,"in {'NN', 'WN'}",24,0.18045112781954886,1.0,0.3157894736842105
+"in {NOVALUE, 'G731ST-LT'}",dataInterface,certification,"in {'NN', 'MT', 'BT'}",NN,6,0.045112781954887216,0.3333333333333333,0.3157894736842105
+"in {NOVALUE, 'G731ST-LT'}",dataInterface,certification,"in {'NN', 'MT', 'BT'}","in {'NN', 'WN', 'FN'}",12,0.09022556390977443,0.6666666666666666,0.3157894736842105
+"in {NOVALUE, 'G731ST-LT'}",dataInterface,certification,"in {'NN', 'PA', 'MR', 'FF', 'BM'}",NN,8,0.06015037593984962,0.2,0.42105263157894735
+"in {NOVALUE, 'G731ST-LT'}",dataInterface,certification,"in {'NN', 'PA', 'MR', 'FF', 'BM'}","in {'NN', 'WN'}",32,0.24060150375939848,0.8,0.42105263157894735
+"in {NOVALUE, 'G731ST-LT'}",dataInterface,certification,"in {'NN', 'PA', 'MR', 'FF', 'DB', 'BM'}","in {'NN', 'WN', 'FN'}",16,0.12030075187969924,1.0,0.42105263157894735
+"in {NOVALUE, 'G731ST-LT'}",protectionArea,certification,2,NN,19,0.14285714285714285,0.2,1.0
+"in {NOVALUE, 'G731ST-LT'}",protectionArea,certification,2,"in {'NN', 'WN'}",76,0.5714285714285714,0.8,1.0
+"in {NOVALUE, 'G731ST-LT'}",protectionArea,certification,N,"in {'NN', 'WN', 'FN'}",38,0.2857142857142857,1.0,1.0
+"in {NOVALUE, 'G731ST-LT'}",explosionApproval,protectionArea,F,2,19,0.14285714285714285,1.0,0.2
+"in {NOVALUE, 'G731ST-LT'}",explosionApproval,protectionArea,K,2,38,0.2857142857142857,1.0,0.4
+"in {NOVALUE, 'G731ST-LT'}",explosionApproval,protectionArea,N,N,38,0.2857142857142857,1.0,1.0
+"in {NOVALUE, 'G731ST-LT'}",explosionApproval,protectionArea,"in {'A', 'E', 'P', 'J', 'S'}",2,38,0.2857142857142857,1.0,0.4
+"in {NOVALUE, 'G731ST-LT'}",binaerDigitalOpenColl_MN,binaerOpenColl_MP,NOVALUE,"in {NOVALUE, 'MP1', 'MP2', 'MP3', 'MP4'}",57,0.42857142857142855,1.0,1.0
+"in {NOVALUE, 'G731ST-LT'}",binaerDigitalOpenColl_MN,binaerOpenColl_MP,"in {NOVALUE, 'MN1', 'MN2', 'MN3', 'MN4'}",NOVALUE,76,0.5714285714285714,1.0,1.0
+"in {NOVALUE, 'G731VG'}",explosionApproval,certification,F,NN,4,1.0,1.0,1.0
+"in {NOVALUE, 'G731VG'}",stromEingaenge,temperaturEingaenge,IS1,TT1,2,0.5,1.0,1.0
+"in {NOVALUE, 'G731VG'}",stromEingaenge,temperaturEingaenge,IS2,"in {NOVALUE, 'TT1'}",2,0.5,1.0,1.0
+"in {NOVALUE, 'G731VG'}",stromSchaltbar,stromEingaenge,CS1,IS2,1,0.25,1.0,0.5
+"in {NOVALUE, 'G731VG'}",stromSchaltbar,stromEingaenge,CS2,IS1,1,0.25,0.5,0.5
+"in {NOVALUE, 'G731VG'}",stromSchaltbar,stromEingaenge,CS2,IS2,1,0.25,0.5,0.5
+"in {NOVALUE, 'G731VG'}",stromSchaltbar,stromEingaenge,"in {'CS2', 'CS3'}",IS1,1,0.25,1.0,0.5
+"in {NOVALUE, 'G731VG'}",stromSchaltbar,temperaturEingaenge,CS1,"in {NOVALUE, 'TT1'}",1,0.25,1.0,0.5
+"in {NOVALUE, 'G731VG'}",stromSchaltbar,temperaturEingaenge,CS2,TT1,1,0.25,0.5,0.5
+"in {NOVALUE, 'G731VG'}",stromSchaltbar,temperaturEingaenge,CS2,"in {NOVALUE, 'TT1'}",1,0.25,0.5,0.5
+"in {NOVALUE, 'G731VG'}",stromSchaltbar,temperaturEingaenge,"in {'CS2', 'CS3'}",TT1,1,0.25,1.0,0.5
+"in {NOVALUE, 'G731VG'}",housing,powerSupply,"in {'ST', 'AL'}","in {'1', '4'}",4,1.0,1.0,1.0
+"in {NOVALUE, 'G731VG'}",numberOfChannels,temperaturEingaenge,2,TT1,2,0.5,0.5,1.0
+"in {NOVALUE, 'G731VG'}",numberOfChannels,temperaturEingaenge,2,"in {NOVALUE, 'TT1'}",2,0.5,0.5,1.0
+"in {NOVALUE, 'G731VG'}",dataInterface,certification,HS,NN,2,0.5,1.0,0.5
+"in {NOVALUE, 'G731VG'}",dataInterface,certification,"in {'NN', 'MT', 'MR'}",NN,2,0.5,1.0,0.5
+"in {NOVALUE, 'G731VG'}",protectionArea,certification,2,NN,4,1.0,1.0,1.0
+"in {NOVALUE, 'G731VG'}",explosionApproval,protectionArea,F,2,4,1.0,1.0,1.0
+"in {NOVALUE, 'G731VG'}",binaerDigitalOpenColl_MN,binaerOpenColl_MP,MN2,NOVALUE,1,0.25,1.0,0.25
+"in {NOVALUE, 'G731VG'}",binaerDigitalOpenColl_MN,binaerOpenColl_MP,"in {'MN2', 'MN4'}",NOVALUE,3,0.75,1.0,0.75
+"in {NOVALUE, 'x731'}",explosionApproval,certification,A,MN,116,0.16666666666666666,1.0,0.4
+"in {NOVALUE, 'x731'}",explosionApproval,certification,F,MN,58,0.08333333333333333,0.5,0.2
+"in {NOVALUE, 'x731'}",explosionApproval,certification,F,NN,58,0.08333333333333333,0.5,0.42028985507246375
+"in {NOVALUE, 'x731'}",explosionApproval,certification,K,NN,40,0.05747126436781609,0.3448275862068966,0.2898550724637681
+"in {NOVALUE, 'x731'}",explosionApproval,certification,K,"in {'NN', 'WN'}",76,0.10919540229885058,0.6551724137931034,0.5
+"in {NOVALUE, 'x731'}",explosionApproval,certification,N,MN,116,0.16666666666666666,0.5,0.4
+"in {NOVALUE, 'x731'}",explosionApproval,certification,N,"in {'NN', 'FN'}",40,0.05747126436781609,0.1724137931034483,1.0
+"in {NOVALUE, 'x731'}",explosionApproval,certification,N,"in {'NN', 'WN', 'FN'}",76,0.10919540229885058,0.3275862068965517,1.0
+"in {NOVALUE, 'x731'}",explosionApproval,certification,"in {'A', 'E', 'P', 'J', 'S'}",NN,40,0.05747126436781609,0.3448275862068966,0.2898550724637681
+"in {NOVALUE, 'x731'}",explosionApproval,certification,"in {'A', 'E', 'P', 'J', 'S'}","in {'NN', 'WN'}",76,0.10919540229885058,0.6551724137931034,0.5
+"in {NOVALUE, 'x731'}",stromEingaenge,temperaturEingaenge,IS1,TT1,24,0.034482758620689655,0.25,0.25
+"in {NOVALUE, 'x731'}",stromEingaenge,temperaturEingaenge,IS1,"in {'TT1', 'TT2', 'TT3'}",72,0.10344827586206896,0.75,1.0
+"in {NOVALUE, 'x731'}",stromEingaenge,temperaturEingaenge,NOVALUE,NOVALUE,24,0.034482758620689655,0.14285714285714285,0.3333333333333333
+"in {NOVALUE, 'x731'}",stromEingaenge,temperaturEingaenge,NOVALUE,"in {NOVALUE, 'TT1', 'TT2', 'TT3', 'TT4'}",72,0.10344827586206896,0.42857142857142855,1.0
+"in {NOVALUE, 'x731'}",stromEingaenge,temperaturEingaenge,NOVALUE,"in {NOVALUE, 'TT1', 'TT2'}",72,0.10344827586206896,0.42857142857142855,0.5
+"in {NOVALUE, 'x731'}",stromEingaenge,temperaturEingaenge,"in {'IS1', 'IS2', 'IS3'}",TT1,72,0.10344827586206896,1.0,0.75
+"in {NOVALUE, 'x731'}",stromEingaenge,temperaturEingaenge,"in {'IS1', 'IS2'}","in {'TT1', 'TT2'}",72,0.10344827586206896,1.0,1.0
+"in {NOVALUE, 'x731'}",stromEingaenge,temperaturEingaenge,"in {NOVALUE, 'IS1', 'IS2', 'IS3', 'IS4'}",NOVALUE,48,0.06896551724137931,1.0,0.6666666666666666
+"in {NOVALUE, 'x731'}",stromEingaenge,temperaturEingaenge,"in {NOVALUE, 'IS1', 'IS2', 'IS3'}","in {NOVALUE, 'TT1'}",72,0.10344827586206896,1.0,0.75
+"in {NOVALUE, 'x731'}",stromEingaenge,temperaturEingaenge,"in {NOVALUE, 'IS1', 'IS2'}","in {NOVALUE, 'TT1', 'TT2'}",72,0.10344827586206896,1.0,0.5
+"in {NOVALUE, 'x731'}",stromEingaenge,temperaturEingaenge,"in {NOVALUE, 'IS1'}","in {NOVALUE, 'TT1', 'TT2', 'TT3'}",72,0.10344827586206896,0.75,1.0
+"in {NOVALUE, 'x731'}",stromEingaenge,temperaturEingaenge,"in {NOVALUE, 'IS1'}","in {NOVALUE, 'TT1'}",24,0.034482758620689655,0.25,0.25
+"in {NOVALUE, 'x731'}",stromSchaltbar,stromEingaenge,NOVALUE,"in {'IS1', 'IS2', 'IS3'}",24,0.034482758620689655,0.25,0.3333333333333333
+"in {NOVALUE, 'x731'}",stromSchaltbar,stromEingaenge,NOVALUE,"in {NOVALUE, 'IS1', 'IS2', 'IS3', 'IS4'}",48,0.06896551724137931,0.5,1.0
+"in {NOVALUE, 'x731'}",stromSchaltbar,stromEingaenge,NOVALUE,"in {NOVALUE, 'IS1', 'IS2', 'IS3'}",24,0.034482758620689655,0.25,0.3333333333333333
+"in {NOVALUE, 'x731'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3', 'CS4'}",NOVALUE,48,0.06896551724137931,1.0,0.2857142857142857
+"in {NOVALUE, 'x731'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3'}",IS1,48,0.06896551724137931,0.2857142857142857,0.5
+"in {NOVALUE, 'x731'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3'}",NOVALUE,72,0.10344827586206896,0.42857142857142855,0.42857142857142855
+"in {NOVALUE, 'x731'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3'}","in {NOVALUE, 'IS1'}",48,0.06896551724137931,0.2857142857142857,0.5
+"in {NOVALUE, 'x731'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1', 'CS2'}",IS1,48,0.06896551724137931,0.2,0.5
+"in {NOVALUE, 'x731'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1', 'CS2'}",NOVALUE,48,0.06896551724137931,0.2,0.2857142857142857
+"in {NOVALUE, 'x731'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1', 'CS2'}","in {'IS1', 'IS2'}",48,0.06896551724137931,0.2,0.6666666666666666
+"in {NOVALUE, 'x731'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1', 'CS2'}","in {NOVALUE, 'IS1', 'IS2'}",48,0.06896551724137931,0.2,0.6666666666666666
+"in {NOVALUE, 'x731'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1', 'CS2'}","in {NOVALUE, 'IS1'}",48,0.06896551724137931,0.2,0.5
+"in {NOVALUE, 'x731'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1'}","in {'IS1', 'IS2', 'IS3'}",48,0.06896551724137931,0.3333333333333333,0.6666666666666666
+"in {NOVALUE, 'x731'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1'}","in {'IS1', 'IS2'}",24,0.034482758620689655,0.16666666666666666,0.3333333333333333
+"in {NOVALUE, 'x731'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1'}","in {NOVALUE, 'IS1', 'IS2', 'IS3'}",48,0.06896551724137931,0.3333333333333333,0.6666666666666666
+"in {NOVALUE, 'x731'}",stromSchaltbar,stromEingaenge,"in {NOVALUE, 'CS1'}","in {NOVALUE, 'IS1', 'IS2'}",24,0.034482758620689655,0.16666666666666666,0.3333333333333333
+"in {NOVALUE, 'x731'}",stromSchaltbar,temperaturEingaenge,NOVALUE,NOVALUE,48,0.06896551724137931,0.5,0.6666666666666666
+"in {NOVALUE, 'x731'}",stromSchaltbar,temperaturEingaenge,NOVALUE,TT1,24,0.034482758620689655,0.25,0.25
+"in {NOVALUE, 'x731'}",stromSchaltbar,temperaturEingaenge,NOVALUE,"in {NOVALUE, 'TT1'}",24,0.034482758620689655,0.25,0.25
+"in {NOVALUE, 'x731'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3', 'CS4'}",NOVALUE,24,0.034482758620689655,0.5,0.3333333333333333
+"in {NOVALUE, 'x731'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3', 'CS4'}","in {NOVALUE, 'TT1', 'TT2'}",24,0.034482758620689655,0.5,0.16666666666666666
+"in {NOVALUE, 'x731'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3'}",TT1,24,0.034482758620689655,0.14285714285714285,0.25
+"in {NOVALUE, 'x731'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3'}","in {'TT1', 'TT2', 'TT3'}",24,0.034482758620689655,0.14285714285714285,0.3333333333333333
+"in {NOVALUE, 'x731'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3'}","in {NOVALUE, 'TT1', 'TT2', 'TT3', 'TT4'}",24,0.034482758620689655,0.14285714285714285,0.3333333333333333
+"in {NOVALUE, 'x731'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3'}","in {NOVALUE, 'TT1', 'TT2', 'TT3'}",24,0.034482758620689655,0.14285714285714285,0.3333333333333333
+"in {NOVALUE, 'x731'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3'}","in {NOVALUE, 'TT1', 'TT2'}",48,0.06896551724137931,0.2857142857142857,0.3333333333333333
+"in {NOVALUE, 'x731'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2', 'CS3'}","in {NOVALUE, 'TT1'}",24,0.034482758620689655,0.14285714285714285,0.25
+"in {NOVALUE, 'x731'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2'}","in {'TT1', 'TT2', 'TT3'}",48,0.06896551724137931,0.2,0.6666666666666666
+"in {NOVALUE, 'x731'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2'}","in {'TT1', 'TT2'}",48,0.06896551724137931,0.2,0.6666666666666666
+"in {NOVALUE, 'x731'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2'}","in {NOVALUE, 'TT1', 'TT2', 'TT3', 'TT4'}",48,0.06896551724137931,0.2,0.6666666666666666
+"in {NOVALUE, 'x731'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2'}","in {NOVALUE, 'TT1', 'TT2', 'TT3'}",48,0.06896551724137931,0.2,0.6666666666666666
+"in {NOVALUE, 'x731'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1', 'CS2'}","in {NOVALUE, 'TT1', 'TT2'}",48,0.06896551724137931,0.2,0.3333333333333333
+"in {NOVALUE, 'x731'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1'}",TT1,48,0.06896551724137931,0.3333333333333333,0.5
+"in {NOVALUE, 'x731'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1'}","in {'TT1', 'TT2'}",24,0.034482758620689655,0.16666666666666666,0.3333333333333333
+"in {NOVALUE, 'x731'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1'}","in {NOVALUE, 'TT1', 'TT2'}",24,0.034482758620689655,0.16666666666666666,0.16666666666666666
+"in {NOVALUE, 'x731'}",stromSchaltbar,temperaturEingaenge,"in {NOVALUE, 'CS1'}","in {NOVALUE, 'TT1'}",48,0.06896551724137931,0.3333333333333333,0.5
+"in {NOVALUE, 'x731'}",housing,powerSupply,ST,4,290,0.4166666666666667,1.0,1.0
+"in {NOVALUE, 'x731'}",housing,powerSupply,"in {'ST', 'AL'}","in {'1', '4'}",406,0.5833333333333334,1.0,1.0
+"in {NOVALUE, 'x731'}",numberOfChannels,temperaturEingaenge,"in {1, 2}",NOVALUE,72,0.10344827586206896,0.10344827586206896,1.0
+"in {NOVALUE, 'x731'}",numberOfChannels,temperaturEingaenge,"in {1, 2}",TT1,96,0.13793103448275862,0.13793103448275862,1.0
+"in {NOVALUE, 'x731'}",numberOfChannels,temperaturEingaenge,"in {1, 2}","in {'TT1', 'TT2', 'TT3'}",72,0.10344827586206896,0.10344827586206896,1.0
+"in {NOVALUE, 'x731'}",numberOfChannels,temperaturEingaenge,"in {1, 2}","in {'TT1', 'TT2'}",72,0.10344827586206896,0.10344827586206896,1.0
+"in {NOVALUE, 'x731'}",numberOfChannels,temperaturEingaenge,"in {1, 2}","in {NOVALUE, 'TT1', 'TT2', 'TT3', 'TT4'}",72,0.10344827586206896,0.10344827586206896,1.0
+"in {NOVALUE, 'x731'}",numberOfChannels,temperaturEingaenge,"in {1, 2}","in {NOVALUE, 'TT1', 'TT2', 'TT3'}",72,0.10344827586206896,0.10344827586206896,1.0
+"in {NOVALUE, 'x731'}",numberOfChannels,temperaturEingaenge,"in {1, 2}","in {NOVALUE, 'TT1', 'TT2'}",144,0.20689655172413793,0.20689655172413793,1.0
+"in {NOVALUE, 'x731'}",numberOfChannels,temperaturEingaenge,"in {1, 2}","in {NOVALUE, 'TT1'}",96,0.13793103448275862,0.13793103448275862,1.0
+"in {NOVALUE, 'x731'}",dataInterface,certification,HS,MN,80,0.11494252873563218,0.4166666666666667,0.27586206896551724
+"in {NOVALUE, 'x731'}",dataInterface,certification,HS,NN,40,0.05747126436781609,0.20833333333333334,0.2898550724637681
+"in {NOVALUE, 'x731'}",dataInterface,certification,HS,"in {'NN', 'FN'}",12,0.017241379310344827,0.0625,0.3
+"in {NOVALUE, 'x731'}",dataInterface,certification,HS,"in {'NN', 'WN', 'FN'}",20,0.028735632183908046,0.10416666666666667,0.2631578947368421
+"in {NOVALUE, 'x731'}",dataInterface,certification,HS,"in {'NN', 'WN'}",40,0.05747126436781609,0.20833333333333334,0.2631578947368421
+"in {NOVALUE, 'x731'}",dataInterface,certification,NN,MN,36,0.05172413793103448,0.3333333333333333,0.12413793103448276
+"in {NOVALUE, 'x731'}",dataInterface,certification,NN,NN,24,0.034482758620689655,0.2222222222222222,0.17391304347826086
+"in {NOVALUE, 'x731'}",dataInterface,certification,NN,"in {'NN', 'WN'}",48,0.06896551724137931,0.4444444444444444,0.3157894736842105
+"in {NOVALUE, 'x731'}",dataInterface,certification,"in {'NN', 'MT', 'BT'}",MN,45,0.06465517241379311,0.5,0.15517241379310345
+"in {NOVALUE, 'x731'}",dataInterface,certification,"in {'NN', 'MT', 'BT'}",NN,15,0.021551724137931036,0.16666666666666666,0.10869565217391304
+"in {NOVALUE, 'x731'}",dataInterface,certification,"in {'NN', 'MT', 'BT'}","in {'NN', 'FN'}",6,0.008620689655172414,0.06666666666666667,0.15
+"in {NOVALUE, 'x731'}",dataInterface,certification,"in {'NN', 'MT', 'BT'}","in {'NN', 'WN', 'FN'}",24,0.034482758620689655,0.26666666666666666,0.3157894736842105
+"in {NOVALUE, 'x731'}",dataInterface,certification,"in {'NN', 'MT'}",MN,9,0.01293103448275862,0.5,0.03103448275862069
+"in {NOVALUE, 'x731'}",dataInterface,certification,"in {'NN', 'MT'}",NN,3,0.004310344827586207,0.16666666666666666,0.021739130434782608
+"in {NOVALUE, 'x731'}",dataInterface,certification,"in {'NN', 'MT'}","in {'NN', 'FN'}",6,0.008620689655172414,0.3333333333333333,0.15
+"in {NOVALUE, 'x731'}",dataInterface,certification,"in {'NN', 'PA', 'MR', 'FF', 'BM'}",MN,68,0.09770114942528736,0.38636363636363635,0.23448275862068965
+"in {NOVALUE, 'x731'}",dataInterface,certification,"in {'NN', 'PA', 'MR', 'FF', 'BM'}",NN,36,0.05172413793103448,0.20454545454545456,0.2608695652173913
+"in {NOVALUE, 'x731'}",dataInterface,certification,"in {'NN', 'PA', 'MR', 'FF', 'BM'}","in {'NN', 'FN'}",8,0.011494252873563218,0.045454545454545456,0.2
+"in {NOVALUE, 'x731'}",dataInterface,certification,"in {'NN', 'PA', 'MR', 'FF', 'BM'}","in {'NN', 'WN'}",64,0.09195402298850575,0.36363636363636365,0.42105263157894735
+"in {NOVALUE, 'x731'}",dataInterface,certification,"in {'NN', 'PA', 'MR', 'FF', 'DB', 'BM'}",MN,32,0.04597701149425287,0.5,0.1103448275862069
+"in {NOVALUE, 'x731'}",dataInterface,certification,"in {'NN', 'PA', 'MR', 'FF', 'DB', 'BM'}","in {'NN', 'WN', 'FN'}",32,0.04597701149425287,0.5,0.42105263157894735
+"in {NOVALUE, 'x731'}",dataInterface,certification,"in {'NN', 'PA', 'MR', 'FF'}",MN,20,0.028735632183908046,0.4166666666666667,0.06896551724137931
+"in {NOVALUE, 'x731'}",dataInterface,certification,"in {'NN', 'PA', 'MR', 'FF'}",NN,20,0.028735632183908046,0.4166666666666667,0.14492753623188406
+"in {NOVALUE, 'x731'}",dataInterface,certification,"in {'NN', 'PA', 'MR', 'FF'}","in {'NN', 'FN'}",8,0.011494252873563218,0.16666666666666666,0.2
+"in {NOVALUE, 'x731'}",protectionArea,certification,2,MN,174,0.25,0.375,0.6
+"in {NOVALUE, 'x731'}",protectionArea,certification,2,NN,138,0.19827586206896552,0.2974137931034483,1.0
+"in {NOVALUE, 'x731'}",protectionArea,certification,2,"in {'NN', 'WN'}",152,0.21839080459770116,0.3275862068965517,1.0
+"in {NOVALUE, 'x731'}",protectionArea,certification,N,MN,116,0.16666666666666666,0.5,0.4
+"in {NOVALUE, 'x731'}",protectionArea,certification,N,"in {'NN', 'FN'}",40,0.05747126436781609,0.1724137931034483,1.0
+"in {NOVALUE, 'x731'}",protectionArea,certification,N,"in {'NN', 'WN', 'FN'}",76,0.10919540229885058,0.3275862068965517,1.0
+"in {NOVALUE, 'x731'}",explosionApproval,protectionArea,A,2,116,0.16666666666666666,1.0,0.25
+"in {NOVALUE, 'x731'}",explosionApproval,protectionArea,F,2,116,0.16666666666666666,1.0,0.25
+"in {NOVALUE, 'x731'}",explosionApproval,protectionArea,K,2,116,0.16666666666666666,1.0,0.25
+"in {NOVALUE, 'x731'}",explosionApproval,protectionArea,N,N,232,0.3333333333333333,1.0,1.0
+"in {NOVALUE, 'x731'}",explosionApproval,protectionArea,"in {'A', 'E', 'P', 'J', 'S'}",2,116,0.16666666666666666,1.0,0.25
+"in {NOVALUE, 'x731'}",binaerDigitalOpenColl_MN,binaerOpenColl_MP,NOVALUE,"in {NOVALUE, 'MP1', 'MP2', 'MP3', 'MP4'}",290,0.4166666666666667,1.0,1.0
+"in {NOVALUE, 'x731'}",binaerDigitalOpenColl_MN,binaerOpenColl_MP,"in {NOVALUE, 'MN1', 'MN2', 'MN3', 'MN4'}",NOVALUE,406,0.5833333333333334,1.0,1.0

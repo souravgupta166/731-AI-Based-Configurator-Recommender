@@ -1,0 +1,26 @@
+{
+  "node_count": 3266,
+  "relationship_count": 73451,
+  "node_types": {
+    "Configuration": 1979,
+    "RuleRow": 1056,
+    "CharacteristicValue": 182,
+    "Characteristic": 30,
+    "ConfigurationFamily": 18,
+    "Product": 1
+  },
+  "relationship_types": {
+    "HAS_VALUE": 37783,
+    "RULE_SPECIFIES": 29568,
+    "HAS_CONFIGURATION": 1979,
+    "BELONGS_TO_FAMILY": 1979,
+    "HAS_RULE_ROW": 1056,
+    "RULE_APPLIES_TO_FAMILY": 1056,
+    "HAS_CHARACTERISTIC": 30
+  },
+  "provenance": {
+    "SYNTHETIC": 2046,
+    "OBSERVED_731": 1218,
+    "DERIVED": 2
+  }
+}
