@@ -1,5 +1,7 @@
 
 # 731 AI-Based Configurator Recommender (https://souravgupta166-731-ai-base-srcui731-poc-configurator-app-gitsyl.streamlit.app/)
+Knowledge Graph Explorer: https://731-ai-based-configurator-recommender-chbczb8tfxkvesbkkyytry.streamlit.app/
+Knowledge Graph Overview: https://731-ai-based-configurator-recommender-hvtxc3bqvmfx7oxbbn8ese.streamlit.app/
 
 An AI-assisted configuration recommendation system developed as part of a Master's thesis in Data Science, AI, and Digital Business.
 
