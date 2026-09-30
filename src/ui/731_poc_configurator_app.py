@@ -1153,7 +1153,7 @@ def main():
         st.markdown('<span class="step-number purple">3</span><span class="step-title">Technical requirements</span>', unsafe_allow_html=True)
         st.caption("Specify only requirements that are explicitly known. All fields are optional.")
     with t2:
-        if st.button("↻ Clear all", use_container_width=True):
+        if st.button("↻ Clear all", width="stretch"):
             for key in list(st.session_state.keys()):
                 if key.startswith("value_") or key.startswith("importance_"):
                     del st.session_state[key]
@@ -1199,7 +1199,7 @@ def main():
 
     # ------------------------------ Action ---------------------------------
     st.markdown("<br>", unsafe_allow_html=True)
-    generate = st.button("✨  Find Best Matching Configurations  →", type="primary", use_container_width=True)
+    generate = st.button("✨  Find Best Matching Configurations  →", type="primary", width="stretch")
 
     if generate:
         req_df = pd.DataFrame(requirement_rows, columns=["characteristic", "value", "type"])
@@ -1294,7 +1294,7 @@ def main():
             st.caption("The selected value is not present in the catalogue for this configuration family.")
             st.dataframe(
                 catalogue_conflict,
-                use_container_width=True,
+                width="stretch",
                 hide_index=True,
                 column_config={
                     "Requirement": st.column_config.TextColumn("Technical area"),
@@ -1307,14 +1307,14 @@ def main():
             st.markdown("#### Which requirement is causing the conflict?")
             st.caption("Each row shows how many candidates would remain if that one mandatory requirement were relaxed while the other mandatory requirements stayed fixed.")
             display = result["conflict"].copy()
-            st.dataframe(display, use_container_width=True, hide_index=True)
+            st.dataframe(display, width="stretch", hide_index=True)
         if not result["requirements"].empty:
             st.markdown("#### Selected requirements")
             display = result["requirements"].copy()
             display["characteristic"] = display["characteristic"].map(field_label)
             display["value"] = [value_label(c, v) for c, v in zip(result["requirements"]["characteristic"], result["requirements"]["value"])]
             display.columns = ["Requirement", "Requested value", "Importance"]
-            st.dataframe(display, use_container_width=True, hide_index=True)
+            st.dataframe(display, width="stretch", hide_index=True)
         return
 
 
@@ -1424,7 +1424,7 @@ def main():
                 })
             st.dataframe(
                 pd.DataFrame(rows),
-                use_container_width=True,
+                width="stretch",
                 hide_index=True,
                 column_config={
                     "Requirement": st.column_config.TextColumn("Requirement"),
@@ -1475,7 +1475,7 @@ def main():
     else:
         st.dataframe(
             backend_specs,
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
             column_config={
                 "Configuration field": st.column_config.TextColumn("Configuration field"),
@@ -1523,7 +1523,7 @@ def main():
                 "Recommendation": value_label(req["characteristic"], actual),
                 "Result": "✓ Matches your requirement" if satisfied else "Review",
             })
-        st.dataframe(pd.DataFrame(checks), use_container_width=True, hide_index=True, column_config={
+        st.dataframe(pd.DataFrame(checks), width="stretch", hide_index=True, column_config={
             "Requirement": st.column_config.TextColumn("Requirement"),
             "Priority": st.column_config.TextColumn("Priority"),
             "You selected": st.column_config.TextColumn("Your selection"),
@@ -1565,7 +1565,7 @@ def main():
         )
         st.dataframe(
             pd.DataFrame(alt_rows),
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
             column_config={
                 "Technical differences from #1": st.column_config.NumberColumn(
@@ -1610,14 +1610,14 @@ def main():
                     st.markdown("**What differs from Rank #1?**")
                     st.dataframe(
                         diff_df,
-                        use_container_width=True,
+                        width="stretch",
                         hide_index=True,
                     )
 
                 st.markdown("**Complete configuration details**")
                 st.dataframe(
                     backend_configuration_summary(row),
-                    use_container_width=True,
+                    width="stretch",
                     hide_index=True,
                 )
 
@@ -1660,7 +1660,7 @@ def main():
     with st.expander("Show validation checks", expanded=False):
         st.dataframe(
             audit_df,
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
         )
         st.caption(
@@ -1674,7 +1674,7 @@ def main():
             data=audit_download,
             file_name="731_configurator_result_validation.csv",
             mime="text/csv",
-            use_container_width=True,
+            width="stretch",
         )
 
     # --------------------- All compatible configurations ---------------------
@@ -1811,7 +1811,7 @@ def main():
     )
     st.dataframe(
         all_configs[overview_cols],
-        use_container_width=True,
+        width="stretch",
         hide_index=True,
         height=min(650, 140 + 35 * min(len(all_configs), 15)),
         column_config={
@@ -1826,7 +1826,7 @@ def main():
         data=ranked.to_csv(index=False).encode("utf-8"),
         file_name=f"731_all_compatible_configurations_{norm(package)}.csv",
         mime="text/csv",
-        use_container_width=True,
+        width="stretch",
         help=(
             "Downloads every unique configuration that passed the KG and deterministic "
             "validity checks, including all backend technical fields and ranking information."
@@ -1853,7 +1853,7 @@ def main():
                 )
                 st.dataframe(
                     backend_configuration_summary(selected_row),
-                    use_container_width=True,
+                    width="stretch",
                     hide_index=True,
                 )
                 st.caption(
@@ -1868,7 +1868,7 @@ def main():
         )
         st.dataframe(
             all_configs,
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
             height=650,
             column_config={
@@ -1879,7 +1879,7 @@ def main():
 
     with st.expander("Technical configuration details", expanded=False):
         st.caption("These values come directly from the 731 catalogue and are retained for expert review. The PoC does not invent meanings for internal codes.")
-        st.dataframe(nonempty_specs(top), use_container_width=True, hide_index=True, column_config={
+        st.dataframe(nonempty_specs(top), width="stretch", hide_index=True, column_config={
             "Requirement": st.column_config.TextColumn("Technical area"),
             "Selected option": st.column_config.TextColumn("Catalogue value"),
         })
