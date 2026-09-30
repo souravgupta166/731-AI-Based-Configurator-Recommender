@@ -24,6 +24,7 @@ Research safeguards
 
 from itertools import combinations
 from pathlib import Path
+import traceback
 import warnings
 
 import numpy as np
@@ -1081,11 +1082,47 @@ def main():
         layout="wide",
         initial_sidebar_state="expanded",
     )
+    print("DIAG 0: main() entered; page configuration completed", flush=True)
     apply_custom_css()
+
+    print("DIAG 1: Checking required data files", flush=True)
     require_files()
-    v41, pair, configs = load_data()
-    kg = load_knowledge_graph()
-    model, feature_cols, keep_cols = train_model()
+    print("DIAG 2: Required data files check completed", flush=True)
+
+    try:
+        print("DIAG 3: Starting load_data()", flush=True)
+        v41, pair, configs = load_data()
+        print(
+            f"DIAG 4: load_data() completed; candidates={len(v41)}, "
+            f"pairs={len(pair)}, configurations={len(configs)}",
+            flush=True,
+        )
+    except Exception:
+        print("DIAG ERROR: load_data() failed", flush=True)
+        traceback.print_exc()
+        raise
+
+    try:
+        print("DIAG 5: Starting load_knowledge_graph()", flush=True)
+        kg = load_knowledge_graph()
+        print("DIAG 6: load_knowledge_graph() completed", flush=True)
+    except Exception:
+        print("DIAG ERROR: load_knowledge_graph() failed", flush=True)
+        traceback.print_exc()
+        raise
+
+    try:
+        print("DIAG 7: Starting train_model()", flush=True)
+        model, feature_cols, keep_cols = train_model()
+        print(
+            f"DIAG 8: train_model() completed; features={len(feature_cols)}, "
+            f"retained_features={len(keep_cols)}",
+            flush=True,
+        )
+    except Exception:
+        print("DIAG ERROR: train_model() failed", flush=True)
+        traceback.print_exc()
+        raise
 
     package_col = "package_context" if "package_context" in configs.columns else None
     if package_col is None:
