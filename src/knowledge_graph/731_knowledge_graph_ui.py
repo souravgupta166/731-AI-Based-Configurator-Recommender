@@ -10,7 +10,7 @@ import streamlit as st
 # ============================================================
 
 st.set_page_config(
-    page_title="731 Knowledge Graph Explorer",
+    page_title="731 Knowledge Graph Overview",
     page_icon="🔗",
     layout="wide",
     initial_sidebar_state="expanded",
