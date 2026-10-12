@@ -1,0 +1,39 @@
+field_name,label,role,customer_selectable,backend_only,observed_value_count,observed_values,model_code_mapping_status
+devCategory,Device Category,technical_configuration,True,False,4,F|G|H|S,NOT_VERIFIED
+characteristic,Characteristic,technical_configuration,True,False,7,CA|GP|PW|ST|TE|VG|WD,NOT_VERIFIED
+housing,Housing,technical_configuration,True,False,2,AL|ST,NOT_VERIFIED
+powerSupply,Power Supply,technical_configuration,True,False,2,1|4,NOT_VERIFIED
+numberOfChannels,Number of Channels,technical_configuration,True,False,2,1|2,NOT_VERIFIED
+explosionApproval,Explosion Approval,technical_configuration,True,False,8,A|E|F|J|K|N|P|S,NOT_VERIFIED
+protectionArea,Protection Area,technical_configuration,True,False,2,2|N,NOT_VERIFIED
+certification,Certification,technical_configuration,True,False,5,CN|FN|MN|NN|WN,NOT_VERIFIED
+dataInterface,Data Interface,technical_configuration,True,False,9,BM|BT|DB|FF|HS|MR|MT|NN|PA,NOT_VERIFIED
+stromSchaltbar,Switchable Current,technical_configuration,True,False,5,CS1|CS2|CS3|CS4|NOVALUE,NOT_VERIFIED
+stromEingaenge,Current Inputs,technical_configuration,True,False,5,IS1|IS2|IS3|IS4|NOVALUE,NOT_VERIFIED
+temperaturEingaenge,Temperature Inputs,technical_configuration,True,False,5,NOVALUE|TT1|TT2|TT3|TT4,NOT_VERIFIED
+binaerDigitalOpenColl_MN,Binary Digital Open Collector MN,technical_configuration,True,False,5,MN1|MN2|MN3|MN4|NOVALUE,NOT_VERIFIED
+binaerOpenColl_MP,Binary Open Collector MP,technical_configuration,True,False,5,MP1|MP2|MP3|MP4|NOVALUE,NOT_VERIFIED
+waveInjector,Wave Injector,technical_configuration,True,False,3,FWI|FWY|NOVALUE,NOT_VERIFIED
+dev_advMeterVerification,Advanced Meter Verification,technical_configuration,True,False,2,1|NOVALUE,NOT_VERIFIED
+dynamicGasMaster,Dynamic Gas Master,technical_configuration,True,False,2,1|NOVALUE,NOT_VERIFIED
+customUserFluid,Custom User Fluid,technical_configuration,True,False,2,1|NOVALUE,NOT_VERIFIED
+steamApplication,Steam Application,technical_configuration,True,False,3,H|N|NOVALUE,NOT_VERIFIED
+packageFixed_dev,Package Context,package_context,False,True,10,F731PW|F731TE|F731WD_DualChannel|F731WD_SingleChannel|G731CA|G731ST-HT|G731ST-LT|G731VG|NOVALUE|x731,NOT_VERIFIED
+OrgUnitAreaOfDocument,Organizational / Document Area,source_metadata,False,True,4,0|1|2|3,NOT_VERIFIED
+marke,marke,product_metadata,False,True,1,flexim,NOT_APPLICABLE
+installationsart,installationsart,product_metadata,False,True,1,stationaer,NOT_APPLICABLE
+type,type,product_metadata,False,True,1,731,NOT_APPLICABLE
+intrinsicSafety,intrinsicSafety,product_metadata,False,True,1,N,NOT_APPLICABLE
+inclusiveManual,inclusiveManual,product_metadata,False,True,1,QI,NOT_APPLICABLE
+powerCable,powerCable,product_metadata,False,True,1,NOVALUE,NOT_APPLICABLE
+carryingCase,carryingCase,product_metadata,False,True,1,NOVALUE,NOT_APPLICABLE
+measuringTape,measuringTape,product_metadata,False,True,1,NOVALUE,NOT_APPLICABLE
+analogInput,analogInput,legacy_or_unused,False,True,0,,NOT_APPLICABLE
+analogInput2,analogInput2,legacy_or_unused,False,True,0,,NOT_APPLICABLE
+analogOutput,analogOutput,legacy_or_unused,False,True,0,,NOT_APPLICABLE
+analogOutput2,analogOutput2,legacy_or_unused,False,True,0,,NOT_APPLICABLE
+digitalInput,digitalInput,legacy_or_unused,False,True,0,,NOT_APPLICABLE
+digitalInput2,digitalInput2,legacy_or_unused,False,True,0,,NOT_APPLICABLE
+digitalOutput,digitalOutput,legacy_or_unused,False,True,0,,NOT_APPLICABLE
+digitalOutput2,digitalOutput2,legacy_or_unused,False,True,0,,NOT_APPLICABLE
+hardwareAP,hardwareAP,legacy_or_unused,False,True,1,NOVALUE,NOT_APPLICABLE

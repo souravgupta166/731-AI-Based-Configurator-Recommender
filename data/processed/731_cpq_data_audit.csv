@@ -1,0 +1,61 @@
+field_name,source_rows,source_non_null,source_null_count,source_unique_count,current_ui_field,rule_occurrences,classification,rationale,model_code_mapping_status,recommended_action
+Unnamed: 0,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Only one observed source value was found. Investigate whether this represents product metadata or a fixed CPQ value.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+OrgUnitAreaOfDocument,1056,1056,0,2,False,840,BACKEND_RULE_FIELD,Field has extracted deterministic rule occurrences and therefore participates in source-data logic.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+marke,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Field is effectively fixed in the 731 source and should not automatically become a customer selection.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+packageFixed_dev,1056,1056,0,9,False,1056,BACKEND_RULE_FIELD,Field has extracted deterministic rule occurrences and therefore participates in source-data logic.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+installationsart,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Field is effectively fixed in the 731 source and should not automatically become a customer selection.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+devCategory,1056,1056,0,4,True,0,CPQ_VISIBLE_TECHNICAL,Currently represented in the 19-field technical configuration schema.,NOT_VERIFIED,KEEP_IN_TECHNICAL_SCHEMA
+type,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Field is effectively fixed in the 731 source and should not automatically become a customer selection.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+characteristic,1056,1056,0,7,True,0,CPQ_VISIBLE_TECHNICAL,Currently represented in the 19-field technical configuration schema.,NOT_VERIFIED,KEEP_IN_TECHNICAL_SCHEMA
+housing,1056,1056,0,2,True,766,CPQ_VISIBLE_TECHNICAL,Currently represented in the 19-field technical configuration schema.,NOT_VERIFIED,KEEP_IN_TECHNICAL_SCHEMA
+powerSupply,1056,1056,0,3,True,756,CPQ_VISIBLE_TECHNICAL,Currently represented in the 19-field technical configuration schema.,NOT_VERIFIED,KEEP_IN_TECHNICAL_SCHEMA
+numberOfChannels,1056,1056,0,3,True,849,CPQ_VISIBLE_TECHNICAL,Currently represented in the 19-field technical configuration schema.,NOT_VERIFIED,KEEP_IN_TECHNICAL_SCHEMA
+explosionApproval,1056,1056,0,5,True,212,CPQ_VISIBLE_TECHNICAL,Currently represented in the 19-field technical configuration schema.,NOT_VERIFIED,KEEP_IN_TECHNICAL_SCHEMA
+protectionArea,1056,1056,0,2,True,0,CPQ_VISIBLE_TECHNICAL,Currently represented in the 19-field technical configuration schema.,NOT_VERIFIED,KEEP_IN_TECHNICAL_SCHEMA
+intrinsicSafety,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Field is effectively fixed in the 731 source and should not automatically become a customer selection.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+certification,1056,1056,0,6,True,560,CPQ_VISIBLE_TECHNICAL,Currently represented in the 19-field technical configuration schema.,NOT_VERIFIED,KEEP_IN_TECHNICAL_SCHEMA
+dataInterface,1056,1056,0,27,True,617,CPQ_VISIBLE_TECHNICAL,Currently represented in the 19-field technical configuration schema.,NOT_VERIFIED,KEEP_IN_TECHNICAL_SCHEMA
+binaerDigitalOptoRelay,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Only one observed source value was found. Investigate whether this represents product metadata or a fixed CPQ value.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+binaerDigitalReedRelay,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Only one observed source value was found. Investigate whether this represents product metadata or a fixed CPQ value.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+binaerDigitalOpenColl_MN,1056,1056,0,7,True,570,CPQ_VISIBLE_TECHNICAL,Currently represented in the 19-field technical configuration schema.,NOT_VERIFIED,KEEP_IN_TECHNICAL_SCHEMA
+binaerDigitalOpenCollExia_MA,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Only one observed source value was found. Investigate whether this represents product metadata or a fixed CPQ value.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+binaerOpenColl_MP,1056,1056,0,7,True,410,CPQ_VISIBLE_TECHNICAL,Currently represented in the 19-field technical configuration schema.,NOT_VERIFIED,KEEP_IN_TECHNICAL_SCHEMA
+binaerOpenColl_BC,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Only one observed source value was found. Investigate whether this represents product metadata or a fixed CPQ value.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+binaerOpenColl_SC,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Only one observed source value was found. Investigate whether this represents product metadata or a fixed CPQ value.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+binaerOpenColl30v,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Only one observed source value was found. Investigate whether this represents product metadata or a fixed CPQ value.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+binaerOpenCollExib,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Only one observed source value was found. Investigate whether this represents product metadata or a fixed CPQ value.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+binaerOpenCollNamur,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Only one observed source value was found. Investigate whether this represents product metadata or a fixed CPQ value.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+binaerOptoRelay_BO,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Only one observed source value was found. Investigate whether this represents product metadata or a fixed CPQ value.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+binaerOptoRelay_SO,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Only one observed source value was found. Investigate whether this represents product metadata or a fixed CPQ value.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+binaerReedRelay_BR,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Only one observed source value was found. Investigate whether this represents product metadata or a fixed CPQ value.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+binaerReedRelay_SR,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Only one observed source value was found. Investigate whether this represents product metadata or a fixed CPQ value.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+frequenz0_5khz_FO,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Only one observed source value was found. Investigate whether this represents product metadata or a fixed CPQ value.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+frequenz0_5khz_FC,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Only one observed source value was found. Investigate whether this represents product metadata or a fixed CPQ value.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+frequenz0_5khzNamur,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Only one observed source value was found. Investigate whether this represents product metadata or a fixed CPQ value.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+frequenz5_15HzExia,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Only one observed source value was found. Investigate whether this represents product metadata or a fixed CPQ value.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+spannung0_10v,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Only one observed source value was found. Investigate whether this represents product metadata or a fixed CPQ value.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+spannung0_1v,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Only one observed source value was found. Investigate whether this represents product metadata or a fixed CPQ value.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+stromAktiv,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Only one observed source value was found. Investigate whether this represents product metadata or a fixed CPQ value.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+stromAktiv24,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Only one observed source value was found. Investigate whether this represents product metadata or a fixed CPQ value.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+stromPassiv,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Only one observed source value was found. Investigate whether this represents product metadata or a fixed CPQ value.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+stromPassivExib,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Only one observed source value was found. Investigate whether this represents product metadata or a fixed CPQ value.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+StromPassivExia,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Only one observed source value was found. Investigate whether this represents product metadata or a fixed CPQ value.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+stromSchaltbar,1056,1056,0,12,True,861,CPQ_VISIBLE_TECHNICAL,Currently represented in the 19-field technical configuration schema.,NOT_VERIFIED,KEEP_IN_TECHNICAL_SCHEMA
+binaerEingaenge,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Only one observed source value was found. Investigate whether this represents product metadata or a fixed CPQ value.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+spannungsEingaenge,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Only one observed source value was found. Investigate whether this represents product metadata or a fixed CPQ value.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+stromEingaenge,1056,1056,0,9,True,634,CPQ_VISIBLE_TECHNICAL,Currently represented in the 19-field technical configuration schema.,NOT_VERIFIED,KEEP_IN_TECHNICAL_SCHEMA
+stromEingaenge_passiv,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Only one observed source value was found. Investigate whether this represents product metadata or a fixed CPQ value.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+stromEingaengeExia,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Only one observed source value was found. Investigate whether this represents product metadata or a fixed CPQ value.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+temperaturEingaenge,1056,1056,0,10,True,779,CPQ_VISIBLE_TECHNICAL,Currently represented in the 19-field technical configuration schema.,NOT_VERIFIED,KEEP_IN_TECHNICAL_SCHEMA
+temperaturEingaengeExi,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Only one observed source value was found. Investigate whether this represents product metadata or a fixed CPQ value.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+hardwareAP,1056,1056,0,1,False,0,LEGACY_OR_UNUSED,Previously identified as effectively NOVALUE throughout the normalized 731 dataset.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+steamApplication,1056,1056,0,3,True,0,CPQ_VISIBLE_TECHNICAL,Currently represented in the 19-field technical configuration schema.,NOT_VERIFIED,KEEP_IN_TECHNICAL_SCHEMA
+waveInjector,1056,1056,0,3,True,829,CPQ_VISIBLE_TECHNICAL,Currently represented in the 19-field technical configuration schema.,NOT_VERIFIED,KEEP_IN_TECHNICAL_SCHEMA
+tagPlate,1056,1056,0,1,False,1056,BACKEND_OR_OPTIONAL_METADATA,Field varies in the source but is not part of the current 19-field technical configuration schema.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+inclusiveManual,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Field is effectively fixed in the 731 source and should not automatically become a customer selection.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+powerCable,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Field is effectively fixed in the 731 source and should not automatically become a customer selection.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+carryingCase,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Field is effectively fixed in the 731 source and should not automatically become a customer selection.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+measuringTape,1056,1056,0,1,False,0,CONSTANT_PRODUCT_METADATA,Field is effectively fixed in the 731 source and should not automatically become a customer selection.,NOT_VERIFIED,DO_NOT_EXPOSE_UNTIL_MAPPED
+dev_advMeterVerification,1056,1056,0,3,True,679,CPQ_VISIBLE_TECHNICAL,Currently represented in the 19-field technical configuration schema.,NOT_VERIFIED,KEEP_IN_TECHNICAL_SCHEMA
+dynamicGasMaster,1056,1056,0,3,True,228,CPQ_VISIBLE_TECHNICAL,Currently represented in the 19-field technical configuration schema.,NOT_VERIFIED,KEEP_IN_TECHNICAL_SCHEMA
+customUserFluid,1056,1056,0,2,True,722,CPQ_VISIBLE_TECHNICAL,Currently represented in the 19-field technical configuration schema.,NOT_VERIFIED,KEEP_IN_TECHNICAL_SCHEMA

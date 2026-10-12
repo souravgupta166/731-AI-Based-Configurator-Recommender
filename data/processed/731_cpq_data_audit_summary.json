@@ -1,0 +1,38 @@
+{
+  "source": {
+    "file": "data/raw/x731_allgemein_Rev24.xlsx",
+    "rows": 1056,
+    "columns": 60,
+    "current_ui_technical_field_count": 19,
+    "ui_fields_missing_from_source": []
+  },
+  "field_classification": {
+    "current_ui_technical_fields": 19,
+    "constant_product_metadata": 37,
+    "legacy_or_unused": 1,
+    "backend_rule_fields": 2,
+    "variable_fields_not_currently_in_ui": 2,
+    "investigate_fields": 1
+  },
+  "artifacts": {
+    "normalized_exists": true,
+    "normalized_rows": 63360,
+    "normalized_columns": 6,
+    "rules_exists": true,
+    "rules_rows": 12424,
+    "rules_columns": 6,
+    "synthetic_exists": true,
+    "synthetic_rows": 5000,
+    "synthetic_columns": 34,
+    "kg_nodes_exists": true,
+    "kg_nodes": 8261,
+    "kg_edges_exists": true,
+    "kg_edges": 83409
+  },
+  "model_code": {
+    "status": "NOT_VERIFIED",
+    "mapping_inferred": false,
+    "canonical_cfg_ids_are_model_codes": false,
+    "action": "Obtain authoritative Emerson/CPQ model-code mapping before implementing model-code generation."
+  }
+}
