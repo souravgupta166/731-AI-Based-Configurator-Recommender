@@ -1093,6 +1093,10 @@ print("-" * 75)
 record_count = 0
 record_value_edges = 0
 
+# Canonical technical values must be represented once per
+# canonical configuration, not once per source record.
+canonical_value_edge_keys = set()
+
 
 for idx, row in synthetic_df.iterrows():
 
@@ -1230,31 +1234,43 @@ for idx, row in synthetic_df.iterrows():
                 value=value,
             )
 
-        add_edge(
-            edges,
-            edge_keys,
-            canonical_node,
-            value_id,
+        # Deduplicate at canonical-configuration level.
+        # The general add_edge helper includes source_row in its key,
+        # which is appropriate for record provenance but not for
+        # canonical technical-value relationships.
+        canonical_edge_key = (
+            str(canonical_node),
+            str(value_id),
             "HAS_TECHNICAL_VALUE",
-            (
+            str(column),
+        )
+
+        if canonical_edge_key not in canonical_value_edge_keys:
+            value_provenance = (
                 "OBSERVED_731"
                 if any(
                     (
-                        nodes_item["node_id"]
-                        == value_id
-                        and nodes_item["provenance"]
-                        == "OBSERVED_731"
+                        nodes_item["node_id"] == value_id
+                        and nodes_item["provenance"] == "OBSERVED_731"
                     )
                     for nodes_item in nodes
                 )
                 else "SYNTHETIC"
-            ),
-            source=SYNTHETIC_SOURCE,
-            source_row=source_row,
-            characteristic=column,
-        )
+            )
 
-        record_value_edges += 1
+            edges.append(
+                {
+                    "source_id": canonical_node,
+                    "target_id": value_id,
+                    "relation": "HAS_TECHNICAL_VALUE",
+                    "provenance": value_provenance,
+                    "source": SYNTHETIC_SOURCE,
+                    "source_row": "",
+                    "characteristic": column,
+                }
+            )
+            canonical_value_edge_keys.add(canonical_edge_key)
+            record_value_edges += 1
 
 
 print(

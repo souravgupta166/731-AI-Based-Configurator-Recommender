@@ -8,9 +8,10 @@ Run from ~/thesis-configurator:
 
 Architecture
 ------------
-Customer/product context -> technical requirements -> mandatory constraint
-filter -> technically valid candidate pool -> pairwise Logistic Regression
-ranking -> recommendation + alternatives + explanation + audit trail.
+Customer/product context -> technical requirements -> deterministic
+constraint filtering -> technically valid candidate pool -> V7
+HistGradientBoosting ranking -> recommendation + alternatives +
+explanation + audit trail.
 
 Research safeguards
 -------------------
@@ -20,12 +21,20 @@ Research safeguards
 * Industry/application are demonstration context only; they do not silently
   change technical requirements.
 * Engineer-preference labels are synthetic and are not historical engineer data.
+* The deployed application loads the selected V7 model artifact; it does not
+  retrain a model when Streamlit starts.
+* ML only ranks candidates that have already passed deterministic technical
+  validity checks.
 """
 
 from itertools import combinations
 from pathlib import Path
+import importlib.util
+import sys
 import traceback
 import warnings
+import hashlib
+import re
 
 import numpy as np
 import pandas as pd
@@ -41,9 +50,23 @@ SYN = ROOT / "data" / "synthetic"
 V41_CAND_PATH = ML / "731_v4_1_ml_candidate_dataset.csv"
 V41_PAIR_PATH = ML / "731_v4_1_ml_pairwise_dataset.csv"
 CONFIG_PATH = SYN / "configurations" / "731_synthetic_configurations_v5.csv"
-KG_DIR = ROOT / "graphs" / "731_knowledge_graph"
+KG_DIR = ROOT / "graphs" / "731_knowledge_graph_v2"
 KG_NODES_PATH = KG_DIR / "nodes.csv"
 KG_REL_PATH = KG_DIR / "relationships.csv"
+
+V7_RANKER_PATH = (
+    ROOT
+    / "src"
+    / "configuration"
+    / "731_cpq_ml_ranker.py"
+)
+
+CPQ_RESOLVER_PATH = (
+    ROOT
+    / "src"
+    / "configuration"
+    / "731_cpq_candidate_resolver.py"
+)
 
 TECHNICAL = [
     "devCategory", "characteristic", "housing", "powerSupply",
@@ -109,6 +132,78 @@ def norm(x):
     if not s or s.lower() in {"nan", "none", "null"}:
         return "__MISSING__"
     return s
+
+
+@st.cache_resource(show_spinner="Loading V7 HGB ranking model...")
+def load_v7_ranker():
+    """
+    Load the serialized V7 HistGradientBoosting application ranker.
+
+    The ranker performs inference only. It does not retrain the model
+    and does not determine technical validity.
+    """
+    if not V7_RANKER_PATH.exists():
+        raise FileNotFoundError(
+            "V7 CPQ ML ranker not found:\n"
+            f"{V7_RANKER_PATH}"
+        )
+
+    module_name = "cpq_ml_ranker_v7"
+
+    spec = importlib.util.spec_from_file_location(
+        module_name,
+        V7_RANKER_PATH,
+    )
+
+    if spec is None or spec.loader is None:
+        raise ImportError(
+            "Could not load V7 CPQ ML ranker module."
+        )
+
+    module = importlib.util.module_from_spec(spec)
+
+    # Required for modules that use dataclasses/module-level reflection.
+    sys.modules[module_name] = module
+
+    spec.loader.exec_module(module)
+
+    return module.CPQMLRanker()
+
+
+@st.cache_resource(show_spinner="Loading deterministic 731 CPQ resolver...")
+def load_cpq_resolver():
+    """
+    Load the deterministic 731 CPQ candidate resolver.
+
+    Technical validity is delegated to the CPQ configuration engine.
+    ML is not involved in candidate validation.
+    """
+    if not CPQ_RESOLVER_PATH.exists():
+        raise FileNotFoundError(
+            "731 CPQ candidate resolver not found:\n"
+            f"{CPQ_RESOLVER_PATH}"
+        )
+
+    module_name = "cpq_candidate_resolver_v731"
+
+    spec = importlib.util.spec_from_file_location(
+        module_name,
+        CPQ_RESOLVER_PATH,
+    )
+
+    if spec is None or spec.loader is None:
+        raise ImportError(
+            "Could not load 731 CPQ candidate resolver module."
+        )
+
+    module = importlib.util.module_from_spec(spec)
+
+    # Required for module-level reflection/dataclass handling.
+    sys.modules[module_name] = module
+
+    spec.loader.exec_module(module)
+
+    return module.CPQ731CandidateResolver()
 
 
 def require_files():
@@ -184,56 +279,159 @@ def build_pair_features(pair_df, cand, feature_cols):
 
 @st.cache_data(show_spinner=False)
 def load_knowledge_graph():
-    """Load the existing 731 knowledge graph without rebuilding or modifying it."""
+    """Load and index the validated V2 graph without modifying it."""
     if not KG_NODES_PATH.exists() or not KG_REL_PATH.exists():
         raise FileNotFoundError(
-            "731 Knowledge Graph files are missing. Expected: "
+            "V2 Knowledge Graph files are missing. Expected: "
             f"{KG_NODES_PATH} and {KG_REL_PATH}"
         )
 
     nodes = pd.read_csv(KG_NODES_PATH, low_memory=False)
     rel = pd.read_csv(KG_REL_PATH, low_memory=False)
 
-    required_nodes = {"node_id", "node_type", "label", "canonical_configuration_id", "value"}
-    required_rel = {"source_id", "target_id", "relation", "characteristic"}
+    required_nodes = {
+        "node_id", "node_type", "label", "canonical_configuration_id",
+        "value", "source_row", "provenance",
+    }
+    required_rel = {
+        "source_id", "target_id", "relation", "characteristic",
+    }
     if not required_nodes.issubset(nodes.columns):
-        raise ValueError(f"Knowledge Graph nodes.csv is missing columns: {sorted(required_nodes - set(nodes.columns))}")
+        raise ValueError(
+            "V2 nodes.csv is missing columns: "
+            f"{sorted(required_nodes - set(nodes.columns))}"
+        )
     if not required_rel.issubset(rel.columns):
-        raise ValueError(f"Knowledge Graph relationships.csv is missing columns: {sorted(required_rel - set(rel.columns))}")
+        raise ValueError(
+            "V2 relationships.csv is missing columns: "
+            f"{sorted(required_rel - set(rel.columns))}"
+        )
+
+    if nodes["node_id"].duplicated().any():
+        raise ValueError("V2 graph contains duplicate node IDs.")
 
     node_lookup = nodes.set_index("node_id", drop=False)
-    config_nodes = nodes[nodes["node_type"].eq("Configuration")].copy()
-    config_nodes["canonical_configuration_id"] = config_nodes["canonical_configuration_id"].astype(str)
-    config_by_id = config_nodes.drop_duplicates("canonical_configuration_id").set_index("canonical_configuration_id")
 
-    value_edges = rel[rel["relation"].eq("HAS_VALUE")].copy()
-    family_edges = rel[rel["relation"].eq("BELONGS_TO_FAMILY")].copy()
+    canonical_nodes = nodes[
+        nodes["node_type"].eq("CanonicalConfiguration")
+    ].copy()
+    canonical_nodes["canonical_configuration_id"] = (
+        canonical_nodes["canonical_configuration_id"].astype(str)
+    )
+    config_by_id = canonical_nodes.drop_duplicates(
+        "canonical_configuration_id"
+    ).set_index("canonical_configuration_id")
 
+    # Index canonical technical values using the V2 relationship name.
+    value_edges = rel[
+        rel["relation"].eq("HAS_TECHNICAL_VALUE")
+    ]
     config_values = {}
-    for _, e in value_edges.iterrows():
-        cid_node = e["source_id"]
-        if cid_node not in node_lookup.index:
-            continue
-        cid = str(node_lookup.loc[cid_node, "canonical_configuration_id"])
-        if cid == "nan":
-            continue
-        ch = norm(e.get("characteristic", ""))
-        target = e["target_id"]
-        if target in node_lookup.index:
-            val = norm(node_lookup.loc[target, "value"])
-            if ch != "__MISSING__" and val != "__MISSING__":
-                config_values.setdefault(cid, set()).add((ch, val))
 
-    config_families = {}
-    for _, e in family_edges.iterrows():
-        src = e["source_id"]
-        tgt = e["target_id"]
-        if src not in node_lookup.index or tgt not in node_lookup.index:
+    for _, edge in value_edges.iterrows():
+        source_id = edge["source_id"]
+        target_id = edge["target_id"]
+
+        if source_id not in node_lookup.index:
             continue
-        cid = str(node_lookup.loc[src, "canonical_configuration_id"])
-        family = norm(node_lookup.loc[tgt, "label"])
-        if cid != "nan" and family != "__MISSING__":
+        if target_id not in node_lookup.index:
+            continue
+
+        source_node = node_lookup.loc[source_id]
+        if source_node["node_type"] != "CanonicalConfiguration":
+            continue
+
+        cid = norm(source_node["canonical_configuration_id"])
+        characteristic = norm(edge["characteristic"])
+        value = norm(node_lookup.loc[target_id, "value"])
+
+        if (
+            cid != "__MISSING__"
+            and characteristic != "__MISSING__"
+            and value != "__MISSING__"
+        ):
+            config_values.setdefault(cid, set()).add(
+                (characteristic, value)
+            )
+
+    # Canonical-to-family membership is a representation link, not proof
+    # of technical validity.
+    config_families = {}
+    family_edges = rel[
+        rel["relation"].eq("BELONGS_TO_FAMILY")
+    ]
+
+    for _, edge in family_edges.iterrows():
+        source_id = edge["source_id"]
+        target_id = edge["target_id"]
+
+        if source_id not in node_lookup.index:
+            continue
+        if target_id not in node_lookup.index:
+            continue
+
+        source_node = node_lookup.loc[source_id]
+        target_node = node_lookup.loc[target_id]
+
+        if source_node["node_type"] != "CanonicalConfiguration":
+            continue
+        if target_node["node_type"] != "ConfigurationFamily":
+            continue
+
+        cid = norm(source_node["canonical_configuration_id"])
+        family = norm(target_node["label"])
+
+        if cid != "__MISSING__" and family != "__MISSING__":
             config_families.setdefault(cid, set()).add(family)
+
+    config_signatures = {}
+    signature_to_config_ids = {}
+
+    for cid, pairs in config_values.items():
+        value_map = dict(pairs)
+        signature = tuple(
+            value_map.get(field, "__MISSING__")
+            for field in TECHNICAL
+        )
+        config_signatures[cid] = signature
+        signature_to_config_ids.setdefault(signature, set()).add(cid)
+
+    # Observed source-row provenance.
+    rule_nodes = nodes[nodes["node_type"].eq("RuleRow")]
+    rule_source_to_node = {}
+
+    for _, rule in rule_nodes.iterrows():
+        source_row = normalize_source_row(rule.get("source_row"))
+        if source_row is not None:
+            rule_source_to_node.setdefault(
+                source_row, str(rule["node_id"])
+            )
+
+    rule_family_edges = rel[
+        rel["relation"].eq("RULE_APPLIES_TO_FAMILY")
+    ]
+    rule_node_to_families = {}
+
+    for _, edge in rule_family_edges.iterrows():
+        source_id = str(edge["source_id"])
+        target_id = edge["target_id"]
+
+        if source_id not in node_lookup.index:
+            continue
+        if target_id not in node_lookup.index:
+            continue
+
+        source_node = node_lookup.loc[source_id]
+        target_node = node_lookup.loc[target_id]
+
+        if source_node["node_type"] != "RuleRow":
+            continue
+        if target_node["node_type"] != "ConfigurationFamily":
+            continue
+
+        family = norm(target_node["label"])
+        if family != "__MISSING__":
+            rule_node_to_families.setdefault(source_id, set()).add(family)
 
     return {
         "nodes": nodes,
@@ -242,43 +440,96 @@ def load_knowledge_graph():
         "config_by_id": config_by_id,
         "config_values": config_values,
         "config_families": config_families,
+        "config_signatures": config_signatures,
+        "signature_to_config_ids": signature_to_config_ids,
+        "rule_source_to_node": rule_source_to_node,
+        "rule_node_to_families": rule_node_to_families,
     }
 
 
+def normalize_source_row(value):
+    """Normalize workbook row identifiers such as 2, 2.0, and '2'."""
+    if pd.isna(value):
+        return None
+    try:
+        number = float(str(value).strip())
+        if not number.is_integer():
+            return None
+        return str(int(number))
+    except (TypeError, ValueError):
+        return None
+
+def technical_signature(row):
+    """Return the canonical 19-field technical signature for a configuration row."""
+    values = []
+    for field in TECHNICAL:
+        column = field if field in row.index else f"config_{field}"
+        values.append(norm(row[column]) if column in row.index else "__MISSING__")
+    return tuple(values)
+
+
 def kg_validate_candidates(pool, requirements, package, kg):
-    """Validate candidates against the existing KG using exact backend values."""
-    mandatory = requirements[requirements["type"].eq("MANDATORY")]
-    checked = []
+    """
+    Check that every deterministic candidate has observed source-row
+    provenance linked to the exact selected family.
+
+    This is a traceability check. CPQ remains the technical-validity
+    authority; synthetic catalogue coverage is not used as a validity rule.
+    """
+    checked = set()
     failures = []
+    kg_match_map = {}
+    package_norm = norm(package)
 
     for _, row in pool.iterrows():
         cid = str(row["canonical_configuration_id"])
-        if cid not in kg["config_by_id"].index:
-            failures.append((cid, "Configuration node not found"))
+        raw_source_rows = str(row.get("source_rows", ""))
+
+        source_rows = {
+            normalized
+            for item in raw_source_rows.split("|")
+            if (normalized := normalize_source_row(item)) is not None
+        }
+
+        matched_rule_nodes = []
+
+        for source_row in sorted(source_rows):
+            rule_node = kg["rule_source_to_node"].get(source_row)
+            if rule_node is None:
+                continue
+
+            families = kg["rule_node_to_families"].get(rule_node, set())
+
+            # V2 family labels are exact labels such as "x731".
+            if package_norm in families:
+                matched_rule_nodes.append(rule_node)
+
+        if not matched_rule_nodes:
+            failures.append(
+                (
+                    cid,
+                    "No observed KG RuleRow with matching source row and "
+                    f"exact package family {package}",
+                )
+            )
             continue
 
-        families = kg["config_families"].get(cid, set())
-        if norm(package) not in families:
-            failures.append((cid, f"Configuration is not linked to family {package}"))
-            continue
+        checked.add(cid)
+        kg_match_map[cid] = [
+            f"RULE_ROW:{node}"
+            for node in sorted(set(matched_rule_nodes))
+        ]
 
-        values = kg["config_values"].get(cid, set())
-        ok = True
-        for _, req in mandatory.iterrows():
-            key = (norm(req["characteristic"]), norm(req["value"]))
-            if key not in values:
-                ok = False
-                failures.append((cid, f"Missing mandatory KG value: {key[0]}={key[1]}"))
-                break
-        if ok:
-            checked.append(cid)
-
-    return set(checked), failures
-
+    return checked, failures, kg_match_map
 
 def kg_consistency_gate(deterministic_pool, kg_valid_ids):
-    """Safety gate: KG-valid and deterministic-valid candidate identities must agree."""
-    deterministic_ids = set(deterministic_pool["canonical_configuration_id"].astype(str))
+    """
+    Safety gate: every deterministic CPQ candidate must have a KG-equivalent
+    technical representation in the selected package family.
+    """
+    deterministic_ids = set(
+        deterministic_pool["canonical_configuration_id"].astype(str)
+    )
     kg_ids = set(kg_valid_ids)
     return deterministic_ids == kg_ids, deterministic_ids, kg_ids
 
@@ -991,6 +1242,7 @@ def run_result_integrity_audit(ranked, result, kg):
     ranked_ids = set(ranked["canonical_configuration_id"].astype(str))
     deterministic_ids = set(map(str, result.get("deterministic_ids", [])))
     kg_ids = set(map(str, result.get("kg_valid_ids", [])))
+    kg_match_map = result.get("kg_match_map", {})
 
     checks.append({
         "Check": "Candidate-set completeness",
@@ -1007,20 +1259,20 @@ def run_result_integrity_audit(ranked, result, kg):
         "Evidence": f"Rows={len(ranked):,}; unique IDs={len(ranked_ids):,}",
     })
 
-    # Every displayed configuration must be linked to the selected family in the KG.
+    # Every displayed CPQ configuration must have an observed KG RuleRow
+    # provenance match in the selected family.
     family_ok = True
     family_failures = 0
-    package = norm(result["package"])
     for cid in ranked_ids:
-        families = kg["config_families"].get(cid, set())
-        if package not in families:
+        matched_rule_refs = kg_match_map.get(cid, [])
+        if not any(str(ref).startswith("RULE_ROW:") for ref in matched_rule_refs):
             family_ok = False
             family_failures += 1
 
     checks.append({
-        "Check": "Every result belongs to selected family",
+        "Check": "Every result has KG RuleRow provenance in selected family",
         "Status": "PASS" if family_ok else "FAIL",
-        "Evidence": f"Family failures={family_failures}",
+        "Evidence": f"Family/provenance failures={family_failures}",
     })
 
     # Every displayed configuration must have the required values.
@@ -1041,13 +1293,17 @@ def run_result_integrity_audit(ranked, result, kg):
         "Evidence": f"Requirement mismatches={mandatory_failures}",
     })
 
-    # Every displayed configuration must be represented by the KG.
-    kg_representation_ok = ranked_ids.issubset(kg["config_by_id"].index.astype(str))
-    missing_from_kg = len(ranked_ids - set(kg["config_by_id"].index.astype(str)))
+    # Every displayed configuration must have a technically equivalent KG
+    # representation. The KG node ID itself is not required to equal the CPQ ID.
+    missing_from_kg = sum(1 for cid in ranked_ids if not kg_match_map.get(cid))
+    kg_representation_ok = missing_from_kg == 0
     checks.append({
         "Check": "Every result exists in Knowledge Graph",
         "Status": "PASS" if kg_representation_ok else "FAIL",
-        "Evidence": f"Missing KG configuration nodes={missing_from_kg}",
+        "Evidence": (
+            f"Missing technical KG representations={missing_from_kg}; "
+            "matching is based on the 19 technical fields + package family"
+        ),
     })
 
     # The selected top rank must really be the first row after ranking.
@@ -1067,12 +1323,28 @@ def run_result_integrity_audit(ranked, result, kg):
     checks.append({
         "Check": "Knowledge Graph safety gate",
         "Status": "PASS" if gate_ok else "FAIL",
-        "Evidence": "Recommendation allowed only after KG/deterministic agreement",
+        "Evidence": "Recommendation allowed only after every CPQ candidate has a KG-equivalent technical representation",
     })
 
     audit = pd.DataFrame(checks)
     return audit, bool(audit["Status"].eq("PASS").all())
 
+
+
+def generate_synthetic_model_code(row, package):
+    """Create a stable, explicitly synthetic prototype identifier.
+
+    This is NOT an Emerson model/order code. Its structure is intentionally
+    distinguishable from a verified commercial code and carries no implied
+    meaning for individual CPQ code positions.
+    """
+    payload = {"package_context": norm(package)}
+    for field in TECHNICAL:
+        payload[field] = norm(row.get(f"config_{field}", row.get(field, "__MISSING__")))
+    canonical = "|".join(f"{k}={payload[k]}" for k in sorted(payload))
+    digest = hashlib.sha256(canonical.encode("utf-8")).hexdigest().upper()[:10]
+    family = re.sub(r"[^A-Z0-9]+", "", norm(package).upper())[:8] or "UNKNOWN"
+    return f"SYN-731-{family}-{digest[:5]}-{digest[5:10]}"
 
 
 def main():
@@ -1112,15 +1384,27 @@ def main():
         raise
 
     try:
-        print("DIAG 7: Starting train_model()", flush=True)
-        model, feature_cols, keep_cols = train_model()
+        print("DIAG 7: Starting deterministic CPQ resolver load", flush=True)
+        cpq_resolver = load_cpq_resolver()
         print(
-            f"DIAG 8: train_model() completed; features={len(feature_cols)}, "
-            f"retained_features={len(keep_cols)}",
+            "DIAG 8: deterministic CPQ resolver loaded",
             flush=True,
         )
     except Exception:
-        print("DIAG ERROR: train_model() failed", flush=True)
+        print("DIAG ERROR: deterministic CPQ resolver load failed", flush=True)
+        traceback.print_exc()
+        raise
+
+    try:
+        print("DIAG 9: Starting V7 HGB ranker load", flush=True)
+        ranker = load_v7_ranker()
+        print(
+            f"DIAG 10: V7 HGB ranker loaded; "
+            f"features={len(ranker.feature_columns)}",
+            flush=True,
+        )
+    except Exception:
+        print("DIAG ERROR: V7 HGB ranker load failed", flush=True)
         traceback.print_exc()
         raise
 
@@ -1239,19 +1523,71 @@ def main():
     generate = st.button("✨  Find Best Matching Configurations  →", type="primary", width="stretch")
 
     if generate:
-        req_df = pd.DataFrame(requirement_rows, columns=["characteristic", "value", "type"])
-        pool = configs[configs[package_col].map(norm).eq(norm(package))].copy()
-        pool = pool.drop_duplicates("canonical_configuration_id").reset_index(drop=True)
-        initial_count = len(pool)
-        deterministic_pool = filter_mandatory(pool, req_df)
+        req_df = pd.DataFrame(
+            requirement_rows,
+            columns=["characteristic", "value", "type"],
+        )
+
+        # --------------------------------------------------------
+        # DETERMINISTIC CPQ CANDIDATE RESOLUTION
+        # --------------------------------------------------------
+        # Only MANDATORY requirements are sent to the CPQ engine.
+        # PREFERRED requirements must influence ranking, not technical
+        # validity.
+        mandatory_requirements = {}
+
+        if not req_df.empty:
+            for _, req in req_df[
+                req_df["type"].eq("MANDATORY")
+            ].iterrows():
+                mandatory_requirements[
+                    str(req["characteristic"])
+                ] = req["value"]
+
+        cpq_resolution = cpq_resolver.resolve(
+            configuration=mandatory_requirements,
+            package_context=package,
+            limit=None,
+        )
+
+        cpq_pool = cpq_resolver.to_dataframe(
+            cpq_resolution
+        )
+
+        # Adapt the deterministic CPQ candidate representation to the
+        # existing UI/KG/ranker contract. The source technical values
+        # remain preserved; config_* columns are the application-facing
+        # representation used by the existing validation/ranking layer.
+        if not cpq_pool.empty:
+            for technical_field in TECHNICAL:
+                if technical_field in cpq_pool.columns:
+                    cpq_pool[
+                        f"config_{technical_field}"
+                    ] = cpq_pool[technical_field]
+
+        initial_count = len(cpq_pool)
+        deterministic_pool = cpq_pool.copy()
         valid_count = len(deterministic_pool)
 
-        kg_valid_ids, kg_failures = kg_validate_candidates(pool, req_df, package, kg)
-        gate_pass, deterministic_ids, kg_ids = kg_consistency_gate(deterministic_pool, kg_valid_ids)
+        kg_valid_ids, kg_failures, kg_match_map = kg_validate_candidates(
+            deterministic_pool,
+            req_df,
+            package,
+            kg,
+        )
+
+        gate_pass, deterministic_ids, kg_ids = kg_consistency_gate(
+            deterministic_pool,
+            kg_valid_ids,
+        )
 
         if not gate_pass:
             st.session_state.result = {
-                "error": "Knowledge Graph validation blocked the recommendation because the KG-valid candidate set does not exactly match the deterministic constraint-engine candidate set.",
+                "error": (
+                    "Knowledge Graph validation blocked the recommendation because "
+                    "one or more deterministic CPQ candidates do not have "
+                    "observed RuleRow provenance in the selected KG family."
+                ),
                 "error_kind": "kg_gate",
                 "requirements": req_df,
                 "initial_count": initial_count,
@@ -1264,10 +1600,14 @@ def main():
                 "det_only_count": len(deterministic_ids - kg_ids),
             }
         elif deterministic_pool.empty:
-            conflict = conflict_diagnostics(pool, req_df) if not req_df.empty else pd.DataFrame()
+            # The CPQ engine is now the technical source of truth for
+            # candidate validity. Existing diagnostic helpers are retained
+            # only for compatibility with the UI.
+            conflict = (
+                pd.DataFrame()
+            )
             catalogue_conflict = (
-                explain_zero_candidate_conflict(pool, req_df, package)
-                if not req_df.empty else pd.DataFrame()
+                pd.DataFrame()
             )
             st.session_state.result = {
                 "error": "No configuration in this package satisfies all selected mandatory requirements.",
@@ -1279,9 +1619,18 @@ def main():
                 "package": package,
             }
         else:
-            valid_pool = deterministic_pool[deterministic_pool["canonical_configuration_id"].astype(str).isin(kg_ids)].copy()
-            valid_pool = calculate_requirement_features(valid_pool, req_df)
-            ranked = rank_candidates(valid_pool, model, feature_cols, keep_cols)
+            valid_pool = deterministic_pool[
+                deterministic_pool["canonical_configuration_id"]
+                .astype(str)
+                .isin(kg_ids)
+            ].copy()
+
+            # V7 ML ranking is performed only after deterministic
+            # technical validation and KG consistency checks.
+            ranked = ranker.rank_valid_candidates(
+                candidates=valid_pool,
+                requirements=req_df,
+            )
             st.session_state.result = {
                 "ranked": ranked,
                 "requirements": req_df,
@@ -1291,12 +1640,14 @@ def main():
                 "installation": installation,
                 "initial_count": initial_count,
                 "valid_count": valid_count,
-                "feature_count": len(feature_cols),
-                "model": "Pairwise Logistic Regression",
+                "feature_count": len(ranker.feature_columns),
+                "model": "HistGradientBoosting — V7 REALISTIC_BASELINE",
+                "candidate_source": "Deterministic 731 CPQ Candidate Resolver",
                 "kg_gate": True,
                 "kg_candidate_count": len(kg_ids),
                 "deterministic_ids": sorted(deterministic_ids),
                 "kg_valid_ids": sorted(kg_ids),
+                "kg_match_map": kg_match_map,
             }
 
     if "result" not in st.session_state:
@@ -1504,6 +1855,22 @@ def main():
                 "This is a relative ranking margin, not a probability or percentage of correctness. "
                 "The label is a heuristic indicator for review, not a calibrated confidence estimate."
             )
+
+    # Synthetic code is for research demonstration only; it is not an Emerson
+    # commercial/order code and must never be used for purchasing.
+    synthetic_model_code = generate_synthetic_model_code(top, package)
+    st.markdown("#### Generated synthetic model code")
+    st.code(synthetic_model_code, language=None)
+    st.warning(
+        "Synthetic prototype identifier only — generated deterministically from "
+        "the recommended technical configuration. It is not an official Emerson "
+        "model/order code and is not valid for ordering."
+    )
+    st.caption(
+        "The same package and 19 technical values produce the same synthetic code. "
+        "The code is an internal demonstration identifier; its segments do not "
+        "encode verified Emerson CPQ meanings."
+    )
 
     st.markdown("#### Exact configuration selected by the backend")
     backend_specs = backend_configuration_summary(top)

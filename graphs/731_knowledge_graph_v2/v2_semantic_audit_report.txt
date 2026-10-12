@@ -1,0 +1,53 @@
+==============================================================================
+731 KNOWLEDGE GRAPH V2 — SEMANTIC AUDIT
+==============================================================================
+Graph directory: /home/e1546562/thesis-configurator/graphs/731_knowledge_graph_v2
+Nodes: 8,261
+Relationships: 83,409
+
+[PASS] Required node schema — missing=[]
+[PASS] Required relationship schema — missing=[]
+[PASS] Unique node IDs
+[PASS] Relationship source references — invalid=0
+[PASS] Relationship target references — invalid=0
+[PASS] No orphan nodes — orphans=0
+
+Node type counts:
+[PASS] RuleRow node count — actual=1056; expected=1056
+[PASS] ConfigurationRecord node count — actual=5000; expected=5000
+[PASS] CanonicalConfiguration node count — actual=1979; expected=1979
+[PASS] ConfigurationFamily node count — actual=9; expected=9
+[PASS] Characteristic node count — actual=28; expected=28
+[PASS] RuleRow observed provenance — non-OBSERVED_731=0
+[PASS] ConfigurationRecord synthetic provenance — non-SYNTHETIC=0
+[PASS] CanonicalConfiguration synthetic provenance — non-SYNTHETIC=0
+[PASS] Every record has canonical identity
+[PASS] Every canonical node has canonical identity
+[PASS] Canonical identities are unique
+[PASS] Record-to-canonical edge count — actual=5000; expected=5000
+[PASS] REPRESENTS sources are ConfigurationRecord nodes
+[PASS] REPRESENTS targets are CanonicalConfiguration nodes
+[PASS] Every record has exactly one representation edge — represented_records=5,000; records=5,000
+[PASS] No missing or multiply represented records
+[PASS] Record identity agrees with representation target — mismatches=0
+[PASS] HAS_TECHNICAL_VALUE sources are canonical nodes — wrong_source_type=0
+[PASS] HAS_TECHNICAL_VALUE targets are characteristic values — wrong_target_type=0
+[PASS] No duplicate technical-value edges — duplicate_rows=0
+[PASS] Every canonical configuration has technical-value edges — missing_canonicals=0
+[PASS] Exactly 19 technical-value edges per canonical configuration — canonical_nodes_with_wrong_count=0; total_edges=37601
+[PASS] Exactly 19 distinct technical characteristics per canonical configuration — canonical_nodes_with_wrong_characteristic_coverage=0
+[PASS] Total technical-value edge count — actual=37,601; expected=37,601
+[PASS] Canonical-to-family edge count — actual=1979
+[PASS] Canonical family links use correct node types
+[PASS] Rule-to-family links are valid — edges=1056; rules=1056
+[PASS] Rule-to-value links are valid — edges=29,568
+[PASS] Canonical IDs use internal CFG731 namespace
+
+Summary:
+  Canonical configurations: 1,979
+  HAS_TECHNICAL_VALUE edges: 37,601
+  Expected technical-value edges: 37,601
+  Duplicate technical-value edge rows: 0
+  Result: PASS
+
+Note: ConfigurationRecord/CanonicalConfiguration provenance is SYNTHETIC; RuleRow provenance is OBSERVED_731.
