@@ -1,0 +1,28 @@
+{
+  "experiment": "731 V7 ten-algorithm benchmark",
+  "random_state": 731,
+  "pointwise_models": [
+    "LOGISTIC_REGRESSION",
+    "DECISION_TREE",
+    "KNN",
+    "SVM",
+    "RANDOM_FOREST",
+    "EXTRA_TREES",
+    "GRADIENT_BOOSTING",
+    "HIST_GRADIENT_BOOSTING",
+    "ADABOOST"
+  ],
+  "ranking_models": [
+    "PAIRWISE_LOGISTIC_LTR"
+  ],
+  "regimes": [
+    "REALISTIC_BASELINE",
+    "PROVENANCE_AWARE",
+    "MECHANISTIC_UPPER_BOUND"
+  ],
+  "bootstrap_replicates": 2000,
+  "candidate_dataset": "/home/e1546562/thesis-configurator/data/processed/ml/731_v4_1_ml_candidate_dataset.csv",
+  "feature_manifest": "/home/e1546562/thesis-configurator/data/processed/ml/731_v4_2_1_model_feature_manifest.csv",
+  "technical_validity_decided_by_ml": false,
+  "ml_role": "Rank candidates already admitted by the configuration/constraint workflow."
+}

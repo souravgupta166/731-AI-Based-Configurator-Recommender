@@ -1,0 +1,1897 @@
+{
+  "catalogue_version": "731_CPQ_CATALOGUE_V1",
+  "source": {
+    "file": "data/raw/x731_allgemein_Rev24.xlsx",
+    "sheet": "x731_allgemein",
+    "rows": 1056,
+    "columns": 60
+  },
+  "governance": {
+    "technical_source_of_truth": "data/raw/x731_allgemein_Rev24.xlsx",
+    "deterministic_validation_required": true,
+    "ml_may_rank_only_valid_candidates": true,
+    "model_code_mapping_status": "NOT_VERIFIED",
+    "canonical_cfg_ids_are_model_codes": false
+  },
+  "technical_fields": [
+    {
+      "field_name": "devCategory",
+      "label": "Device Category",
+      "source_column": "devCategory",
+      "customer_selectable": true,
+      "backend_only": false,
+      "role": "technical_configuration",
+      "source_rows": 1056,
+      "source_non_null": 1056,
+      "source_null_count": 0,
+      "raw_unique_expression_count": 4,
+      "observed_values": [
+        "F",
+        "G",
+        "H",
+        "S"
+      ],
+      "observed_value_count": 4,
+      "source_rule_expressions": [
+        {
+          "expression": "'G'",
+          "count": 522
+        },
+        {
+          "expression": "'F'",
+          "count": 294
+        },
+        {
+          "expression": "'H'",
+          "count": 120
+        },
+        {
+          "expression": "'S'",
+          "count": 120
+        }
+      ],
+      "model_code_mapping_status": "NOT_VERIFIED"
+    },
+    {
+      "field_name": "characteristic",
+      "label": "Characteristic",
+      "source_column": "characteristic",
+      "customer_selectable": true,
+      "backend_only": false,
+      "role": "technical_configuration",
+      "source_rows": 1056,
+      "source_non_null": 1056,
+      "source_null_count": 0,
+      "raw_unique_expression_count": 7,
+      "observed_values": [
+        "CA",
+        "GP",
+        "PW",
+        "ST",
+        "TE",
+        "VG",
+        "WD"
+      ],
+      "observed_value_count": 7,
+      "source_rule_expressions": [
+        {
+          "expression": "'GP'",
+          "count": 696
+        },
+        {
+          "expression": "'ST'",
+          "count": 266
+        },
+        {
+          "expression": "'TE'",
+          "count": 26
+        },
+        {
+          "expression": "'CA'",
+          "count": 24
+        },
+        {
+          "expression": "'WD'",
+          "count": 20
+        },
+        {
+          "expression": "'PW'",
+          "count": 20
+        },
+        {
+          "expression": "'VG'",
+          "count": 4
+        }
+      ],
+      "model_code_mapping_status": "NOT_VERIFIED"
+    },
+    {
+      "field_name": "housing",
+      "label": "Housing",
+      "source_column": "housing",
+      "customer_selectable": true,
+      "backend_only": false,
+      "role": "technical_configuration",
+      "source_rows": 1056,
+      "source_non_null": 1056,
+      "source_null_count": 0,
+      "raw_unique_expression_count": 2,
+      "observed_values": [
+        "AL",
+        "ST"
+      ],
+      "observed_value_count": 2,
+      "source_rule_expressions": [
+        {
+          "expression": "in {'ST', 'AL'}",
+          "count": 766
+        },
+        {
+          "expression": "'ST'",
+          "count": 290
+        }
+      ],
+      "model_code_mapping_status": "NOT_VERIFIED"
+    },
+    {
+      "field_name": "powerSupply",
+      "label": "Power Supply",
+      "source_column": "powerSupply",
+      "customer_selectable": true,
+      "backend_only": false,
+      "role": "technical_configuration",
+      "source_rows": 1056,
+      "source_non_null": 1056,
+      "source_null_count": 0,
+      "raw_unique_expression_count": 3,
+      "observed_values": [
+        "1",
+        "4"
+      ],
+      "observed_value_count": 2,
+      "source_rule_expressions": [
+        {
+          "expression": "in {'1', '4'}",
+          "count": 756
+        },
+        {
+          "expression": "'4'",
+          "count": 290
+        },
+        {
+          "expression": "'1'",
+          "count": 10
+        }
+      ],
+      "model_code_mapping_status": "NOT_VERIFIED"
+    },
+    {
+      "field_name": "numberOfChannels",
+      "label": "Number of Channels",
+      "source_column": "numberOfChannels",
+      "customer_selectable": true,
+      "backend_only": false,
+      "role": "technical_configuration",
+      "source_rows": 1056,
+      "source_non_null": 1056,
+      "source_null_count": 0,
+      "raw_unique_expression_count": 3,
+      "observed_values": [
+        "1",
+        "2"
+      ],
+      "observed_value_count": 2,
+      "source_rule_expressions": [
+        {
+          "expression": "in {1, 2}",
+          "count": 849
+        },
+        {
+          "expression": "2",
+          "count": 174
+        },
+        {
+          "expression": "1",
+          "count": 33
+        }
+      ],
+      "model_code_mapping_status": "NOT_VERIFIED"
+    },
+    {
+      "field_name": "explosionApproval",
+      "label": "Explosion Approval",
+      "source_column": "explosionApproval",
+      "customer_selectable": true,
+      "backend_only": false,
+      "role": "technical_configuration",
+      "source_rows": 1056,
+      "source_non_null": 1056,
+      "source_null_count": 0,
+      "raw_unique_expression_count": 5,
+      "observed_values": [
+        "A",
+        "E",
+        "F",
+        "J",
+        "K",
+        "N",
+        "P",
+        "S"
+      ],
+      "observed_value_count": 8,
+      "source_rule_expressions": [
+        {
+          "expression": "'N'",
+          "count": 342
+        },
+        {
+          "expression": "in {'A', 'E', 'P', 'J', 'S'}",
+          "count": 212
+        },
+        {
+          "expression": "'K'",
+          "count": 212
+        },
+        {
+          "expression": "'F'",
+          "count": 174
+        },
+        {
+          "expression": "'A'",
+          "count": 116
+        }
+      ],
+      "model_code_mapping_status": "NOT_VERIFIED"
+    },
+    {
+      "field_name": "protectionArea",
+      "label": "Protection Area",
+      "source_column": "protectionArea",
+      "customer_selectable": true,
+      "backend_only": false,
+      "role": "technical_configuration",
+      "source_rows": 1056,
+      "source_non_null": 1056,
+      "source_null_count": 0,
+      "raw_unique_expression_count": 2,
+      "observed_values": [
+        "2",
+        "N"
+      ],
+      "observed_value_count": 2,
+      "source_rule_expressions": [
+        {
+          "expression": "'2'",
+          "count": 714
+        },
+        {
+          "expression": "'N'",
+          "count": 342
+        }
+      ],
+      "model_code_mapping_status": "NOT_VERIFIED"
+    },
+    {
+      "field_name": "certification",
+      "label": "Certification",
+      "source_column": "certification",
+      "customer_selectable": true,
+      "backend_only": false,
+      "role": "technical_configuration",
+      "source_rows": 1056,
+      "source_non_null": 1056,
+      "source_null_count": 0,
+      "raw_unique_expression_count": 6,
+      "observed_values": [
+        "CN",
+        "FN",
+        "MN",
+        "NN",
+        "WN"
+      ],
+      "observed_value_count": 5,
+      "source_rule_expressions": [
+        {
+          "expression": "in {'NN', 'WN'}",
+          "count": 344
+        },
+        {
+          "expression": "'MN'",
+          "count": 290
+        },
+        {
+          "expression": "'NN'",
+          "count": 196
+        },
+        {
+          "expression": "in {'NN', 'WN', 'FN'}",
+          "count": 176
+        },
+        {
+          "expression": "in {'NN', 'FN'}",
+          "count": 40
+        },
+        {
+          "expression": "'CN'",
+          "count": 10
+        }
+      ],
+      "model_code_mapping_status": "NOT_VERIFIED"
+    },
+    {
+      "field_name": "dataInterface",
+      "label": "Data Interface",
+      "source_column": "dataInterface",
+      "customer_selectable": true,
+      "backend_only": false,
+      "role": "technical_configuration",
+      "source_rows": 1056,
+      "source_non_null": 1056,
+      "source_null_count": 0,
+      "raw_unique_expression_count": 27,
+      "observed_values": [
+        "BM",
+        "BT",
+        "DB",
+        "FF",
+        "HS",
+        "MR",
+        "MT",
+        "NN",
+        "PA"
+      ],
+      "observed_value_count": 9,
+      "source_rule_expressions": [
+        {
+          "expression": "'HS'",
+          "count": 279
+        },
+        {
+          "expression": "in {'NN', 'PA', 'MR', 'FF', 'BM'}",
+          "count": 260
+        },
+        {
+          "expression": "'NN'",
+          "count": 160
+        },
+        {
+          "expression": "in {'NN', 'MT', 'BT'}",
+          "count": 130
+        },
+        {
+          "expression": "in {'NN', 'PA', 'MR', 'FF', 'DB', 'BM'}",
+          "count": 96
+        },
+        {
+          "expression": "in {'NN', 'PA', 'MR', 'FF'}",
+          "count": 48
+        },
+        {
+          "expression": "in {'NN', 'MT'}",
+          "count": 18
+        },
+        {
+          "expression": "in {'PA', 'MR', 'FF', 'BM', 'HS'}",
+          "count": 10
+        },
+        {
+          "expression": "in {'NN', 'PA', 'MT', 'MR', 'FF', 'DB', 'BM', 'BT'}",
+          "count": 8
+        },
+        {
+          "expression": "in {'NN', 'PA', 'MR', 'FF', 'BM', 'HS'}",
+          "count": 6
+        },
+        {
+          "expression": "in {'PA', 'MT', 'MR', 'FF', 'DB', 'BM', 'BT'}",
+          "count": 4
+        },
+        {
+          "expression": "in {'NN', 'MR', 'BM', 'FF', 'PA'}",
+          "count": 4
+        },
+        {
+          "expression": "in {'NN', 'MR', 'BM', 'FF', 'PA', 'HS'}",
+          "count": 4
+        },
+        {
+          "expression": "in {'MR', 'BM', 'FF', 'PA'}",
+          "count": 4
+        },
+        {
+          "expression": "in {'MR', 'BM', 'FF', 'PA', 'HS'}",
+          "count": 4
+        },
+        {
+          "expression": "in {'MT', 'BT', 'PA', 'MR', 'FF', 'BM', 'HS'}",
+          "count": 3
+        },
+        {
+          "expression": "in {'MT', 'BT'}",
+          "count": 2
+        },
+        {
+          "expression": "in {'NN', 'PA', 'MR', 'FF', 'DB', 'BM', 'HS'}",
+          "count": 2
+        },
+        {
+          "expression": "in {'PA', 'MR', 'FF', 'DB', 'BM', 'HS'}",
+          "count": 2
+        },
+        {
+          "expression": "in {'NN', 'MT', 'BT', 'PA', 'MR', 'FF', 'DB', 'BM'}",
+          "count": 2
+        },
+        {
+          "expression": "in {'MT', 'BT', 'PA', 'MR', 'FF', 'DB', 'BM', 'HS'}",
+          "count": 2
+        },
+        {
+          "expression": "in {'NN', 'MT', 'BT', 'PA', 'MR', 'FF', 'BM'}",
+          "count": 2
+        },
+        {
+          "expression": "in {'NN', 'MT', 'MR'}",
+          "count": 2
+        },
+        {
+          "expression": "in {'NN', 'MT', 'MR', 'BM', 'BT', 'FF', 'PA'}",
+          "count": 1
+        },
+        {
+          "expression": "in {'NN', 'MT', 'MR', 'BM', 'BT', 'FF', 'PA', 'HS'}",
+          "count": 1
+        },
+        {
+          "expression": "in {'MT', 'MR', 'BM', 'BT', 'FF', 'PA'}",
+          "count": 1
+        },
+        {
+          "expression": "in {'MT', 'MR', 'BM', 'BT', 'FF', 'PA', 'HS'}",
+          "count": 1
+        }
+      ],
+      "model_code_mapping_status": "NOT_VERIFIED"
+    },
+    {
+      "field_name": "stromSchaltbar",
+      "label": "Switchable Current",
+      "source_column": "stromSchaltbar",
+      "customer_selectable": true,
+      "backend_only": false,
+      "role": "technical_configuration",
+      "source_rows": 1056,
+      "source_non_null": 1056,
+      "source_null_count": 0,
+      "raw_unique_expression_count": 12,
+      "observed_values": [
+        "CS1",
+        "CS2",
+        "CS3",
+        "CS4",
+        "NOVALUE"
+      ],
+      "observed_value_count": 5,
+      "source_rule_expressions": [
+        {
+          "expression": "in {NOVALUE, 'CS1', 'CS2'}",
+          "count": 329
+        },
+        {
+          "expression": "in {NOVALUE, 'CS1', 'CS2', 'CS3'}",
+          "count": 238
+        },
+        {
+          "expression": "in {NOVALUE, 'CS1'}",
+          "count": 186
+        },
+        {
+          "expression": "NOVALUE",
+          "count": 164
+        },
+        {
+          "expression": "in {NOVALUE, 'CS1', 'CS2', 'CS3', 'CS4'}",
+          "count": 76
+        },
+        {
+          "expression": "'CS2'",
+          "count": 30
+        },
+        {
+          "expression": "in {'CS2', 'CS3'}",
+          "count": 11
+        },
+        {
+          "expression": "in {'CS2', 'CS4'}",
+          "count": 6
+        },
+        {
+          "expression": "in {'CS1', 'CS2', 'CS4'}",
+          "count": 5
+        },
+        {
+          "expression": "in {'CS1', 'CS2'}",
+          "count": 5
+        },
+        {
+          "expression": "in {NOVALUE, 'CS1', 'CS2', 'CS4'}",
+          "count": 5
+        },
+        {
+          "expression": "'CS1'",
+          "count": 1
+        }
+      ],
+      "model_code_mapping_status": "NOT_VERIFIED"
+    },
+    {
+      "field_name": "stromEingaenge",
+      "label": "Current Inputs",
+      "source_column": "stromEingaenge",
+      "customer_selectable": true,
+      "backend_only": false,
+      "role": "technical_configuration",
+      "source_rows": 1056,
+      "source_non_null": 1056,
+      "source_null_count": 0,
+      "raw_unique_expression_count": 9,
+      "observed_values": [
+        "IS1",
+        "IS2",
+        "IS3",
+        "IS4",
+        "NOVALUE"
+      ],
+      "observed_value_count": 5,
+      "source_rule_expressions": [
+        {
+          "expression": "NOVALUE",
+          "count": 314
+        },
+        {
+          "expression": "in {NOVALUE, 'IS1'}",
+          "count": 162
+        },
+        {
+          "expression": "in {NOVALUE, 'IS1', 'IS2'}",
+          "count": 122
+        },
+        {
+          "expression": "in {NOVALUE, 'IS1', 'IS2', 'IS3'}",
+          "count": 114
+        },
+        {
+          "expression": "'IS1'",
+          "count": 106
+        },
+        {
+          "expression": "in {'IS1', 'IS2'}",
+          "count": 88
+        },
+        {
+          "expression": "in {NOVALUE, 'IS1', 'IS2', 'IS3', 'IS4'}",
+          "count": 76
+        },
+        {
+          "expression": "in {'IS1', 'IS2', 'IS3'}",
+          "count": 72
+        },
+        {
+          "expression": "'IS2'",
+          "count": 2
+        }
+      ],
+      "model_code_mapping_status": "NOT_VERIFIED"
+    },
+    {
+      "field_name": "temperaturEingaenge",
+      "label": "Temperature Inputs",
+      "source_column": "temperaturEingaenge",
+      "customer_selectable": true,
+      "backend_only": false,
+      "role": "technical_configuration",
+      "source_rows": 1056,
+      "source_non_null": 1056,
+      "source_null_count": 0,
+      "raw_unique_expression_count": 10,
+      "observed_values": [
+        "NOVALUE",
+        "TT1",
+        "TT2",
+        "TT3",
+        "TT4"
+      ],
+      "observed_value_count": 5,
+      "source_rule_expressions": [
+        {
+          "expression": "in {NOVALUE, 'TT1', 'TT2'}",
+          "count": 228
+        },
+        {
+          "expression": "in {NOVALUE, 'TT1'}",
+          "count": 154
+        },
+        {
+          "expression": "NOVALUE",
+          "count": 154
+        },
+        {
+          "expression": "in {NOVALUE, 'TT1', 'TT2', 'TT3', 'TT4'}",
+          "count": 114
+        },
+        {
+          "expression": "in {NOVALUE, 'TT1', 'TT2', 'TT3'}",
+          "count": 114
+        },
+        {
+          "expression": "'TT1'",
+          "count": 110
+        },
+        {
+          "expression": "in {'TT1', 'TT2'}",
+          "count": 84
+        },
+        {
+          "expression": "in {'TT1', 'TT2', 'TT3'}",
+          "count": 72
+        },
+        {
+          "expression": "'TT2'",
+          "count": 13
+        },
+        {
+          "expression": "in {'TT2', 'TT4'}",
+          "count": 13
+        }
+      ],
+      "model_code_mapping_status": "NOT_VERIFIED"
+    },
+    {
+      "field_name": "binaerDigitalOpenColl_MN",
+      "label": "Binary Digital Open Collector MN",
+      "source_column": "binaerDigitalOpenColl_MN",
+      "customer_selectable": true,
+      "backend_only": false,
+      "role": "technical_configuration",
+      "source_rows": 1056,
+      "source_non_null": 1056,
+      "source_null_count": 0,
+      "raw_unique_expression_count": 7,
+      "observed_values": [
+        "MN1",
+        "MN2",
+        "MN3",
+        "MN4",
+        "NOVALUE"
+      ],
+      "observed_value_count": 5,
+      "source_rule_expressions": [
+        {
+          "expression": "in {NOVALUE, 'MN1', 'MN2', 'MN3', 'MN4'}",
+          "count": 558
+        },
+        {
+          "expression": "NOVALUE",
+          "count": 474
+        },
+        {
+          "expression": "'MN4'",
+          "count": 8
+        },
+        {
+          "expression": "in {'MN2', 'MN4'}",
+          "count": 6
+        },
+        {
+          "expression": "'MN2'",
+          "count": 4
+        },
+        {
+          "expression": "in {NOVALUE, 'MN2', 'MN4'}",
+          "count": 3
+        },
+        {
+          "expression": "in {NOVALUE, 'MN2'}",
+          "count": 3
+        }
+      ],
+      "model_code_mapping_status": "NOT_VERIFIED"
+    },
+    {
+      "field_name": "binaerOpenColl_MP",
+      "label": "Binary Open Collector MP",
+      "source_column": "binaerOpenColl_MP",
+      "customer_selectable": true,
+      "backend_only": false,
+      "role": "technical_configuration",
+      "source_rows": 1056,
+      "source_non_null": 1056,
+      "source_null_count": 0,
+      "raw_unique_expression_count": 7,
+      "observed_values": [
+        "MP1",
+        "MP2",
+        "MP3",
+        "MP4",
+        "NOVALUE"
+      ],
+      "observed_value_count": 5,
+      "source_rule_expressions": [
+        {
+          "expression": "NOVALUE",
+          "count": 608
+        },
+        {
+          "expression": "in {NOVALUE, 'MP1', 'MP2', 'MP3', 'MP4'}",
+          "count": 404
+        },
+        {
+          "expression": "'MP4'",
+          "count": 36
+        },
+        {
+          "expression": "in {'MP2', 'MP4'}",
+          "count": 2
+        },
+        {
+          "expression": "'MP2'",
+          "count": 2
+        },
+        {
+          "expression": "in {NOVALUE, 'MP2', 'MP4'}",
+          "count": 2
+        },
+        {
+          "expression": "in {NOVALUE, 'MP2'}",
+          "count": 2
+        }
+      ],
+      "model_code_mapping_status": "NOT_VERIFIED"
+    },
+    {
+      "field_name": "waveInjector",
+      "label": "Wave Injector",
+      "source_column": "waveInjector",
+      "customer_selectable": true,
+      "backend_only": false,
+      "role": "technical_configuration",
+      "source_rows": 1056,
+      "source_non_null": 1056,
+      "source_null_count": 0,
+      "raw_unique_expression_count": 3,
+      "observed_values": [
+        "FWI",
+        "FWY",
+        "NOVALUE"
+      ],
+      "observed_value_count": 3,
+      "source_rule_expressions": [
+        {
+          "expression": "in {'FWI', 'FWY', NOVALUE}",
+          "count": 576
+        },
+        {
+          "expression": "in {'FWI', NOVALUE}",
+          "count": 253
+        },
+        {
+          "expression": "NOVALUE",
+          "count": 227
+        }
+      ],
+      "model_code_mapping_status": "NOT_VERIFIED"
+    },
+    {
+      "field_name": "dev_advMeterVerification",
+      "label": "Advanced Meter Verification",
+      "source_column": "dev_advMeterVerification",
+      "customer_selectable": true,
+      "backend_only": false,
+      "role": "technical_configuration",
+      "source_rows": 1056,
+      "source_non_null": 1056,
+      "source_null_count": 0,
+      "raw_unique_expression_count": 3,
+      "observed_values": [
+        "1",
+        "NOVALUE"
+      ],
+      "observed_value_count": 2,
+      "source_rule_expressions": [
+        {
+          "expression": "in {NOVALUE, 1}",
+          "count": 679
+        },
+        {
+          "expression": "NOVALUE",
+          "count": 373
+        },
+        {
+          "expression": "1",
+          "count": 4
+        }
+      ],
+      "model_code_mapping_status": "NOT_VERIFIED"
+    },
+    {
+      "field_name": "dynamicGasMaster",
+      "label": "Dynamic Gas Master",
+      "source_column": "dynamicGasMaster",
+      "customer_selectable": true,
+      "backend_only": false,
+      "role": "technical_configuration",
+      "source_rows": 1056,
+      "source_non_null": 1056,
+      "source_null_count": 0,
+      "raw_unique_expression_count": 3,
+      "observed_values": [
+        "1",
+        "NOVALUE"
+      ],
+      "observed_value_count": 2,
+      "source_rule_expressions": [
+        {
+          "expression": "NOVALUE",
+          "count": 824
+        },
+        {
+          "expression": "in {NOVALUE, 1}",
+          "count": 228
+        },
+        {
+          "expression": "1",
+          "count": 4
+        }
+      ],
+      "model_code_mapping_status": "NOT_VERIFIED"
+    },
+    {
+      "field_name": "customUserFluid",
+      "label": "Custom User Fluid",
+      "source_column": "customUserFluid",
+      "customer_selectable": true,
+      "backend_only": false,
+      "role": "technical_configuration",
+      "source_rows": 1056,
+      "source_non_null": 1056,
+      "source_null_count": 0,
+      "raw_unique_expression_count": 2,
+      "observed_values": [
+        "1",
+        "NOVALUE"
+      ],
+      "observed_value_count": 2,
+      "source_rule_expressions": [
+        {
+          "expression": "in {NOVALUE, 1}",
+          "count": 722
+        },
+        {
+          "expression": "NOVALUE",
+          "count": 334
+        }
+      ],
+      "model_code_mapping_status": "NOT_VERIFIED"
+    },
+    {
+      "field_name": "steamApplication",
+      "label": "Steam Application",
+      "source_column": "steamApplication",
+      "customer_selectable": true,
+      "backend_only": false,
+      "role": "technical_configuration",
+      "source_rows": 1056,
+      "source_non_null": 1056,
+      "source_null_count": 0,
+      "raw_unique_expression_count": 3,
+      "observed_values": [
+        "H",
+        "N",
+        "NOVALUE"
+      ],
+      "observed_value_count": 3,
+      "source_rule_expressions": [
+        {
+          "expression": "NOVALUE",
+          "count": 790
+        },
+        {
+          "expression": "'N'",
+          "count": 133
+        },
+        {
+          "expression": "'H'",
+          "count": 133
+        }
+      ],
+      "model_code_mapping_status": "NOT_VERIFIED"
+    }
+  ],
+  "backend_fields": {
+    "packageFixed_dev": {
+      "label": "Package Context",
+      "role": "package_context",
+      "customer_selectable": false,
+      "description": "Backend package/family context used to distinguish package-specific configuration rules.",
+      "source_column_exists": true,
+      "observed_values": [
+        "F731PW",
+        "F731TE",
+        "F731WD_DualChannel",
+        "F731WD_SingleChannel",
+        "G731CA",
+        "G731ST-HT",
+        "G731ST-LT",
+        "G731VG",
+        "NOVALUE",
+        "x731"
+      ],
+      "observed_value_count": 10,
+      "model_code_mapping_status": "NOT_VERIFIED"
+    },
+    "OrgUnitAreaOfDocument": {
+      "label": "Organizational / Document Area",
+      "role": "source_metadata",
+      "customer_selectable": false,
+      "description": "Source/document metadata. Retained for provenance and auditability; not treated as a customer technical selector.",
+      "source_column_exists": true,
+      "observed_values": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "observed_value_count": 4,
+      "model_code_mapping_status": "NOT_VERIFIED"
+    }
+  },
+  "constant_metadata_fields": {
+    "marke": {
+      "role": "product_metadata",
+      "customer_selectable": false,
+      "source_column_exists": true,
+      "observed_values": [
+        "flexim"
+      ],
+      "observed_value_count": 1
+    },
+    "installationsart": {
+      "role": "product_metadata",
+      "customer_selectable": false,
+      "source_column_exists": true,
+      "observed_values": [
+        "stationaer"
+      ],
+      "observed_value_count": 1
+    },
+    "type": {
+      "role": "product_metadata",
+      "customer_selectable": false,
+      "source_column_exists": true,
+      "observed_values": [
+        "731"
+      ],
+      "observed_value_count": 1
+    },
+    "intrinsicSafety": {
+      "role": "product_metadata",
+      "customer_selectable": false,
+      "source_column_exists": true,
+      "observed_values": [
+        "N"
+      ],
+      "observed_value_count": 1
+    },
+    "inclusiveManual": {
+      "role": "product_metadata",
+      "customer_selectable": false,
+      "source_column_exists": true,
+      "observed_values": [
+        "QI"
+      ],
+      "observed_value_count": 1
+    },
+    "powerCable": {
+      "role": "product_metadata",
+      "customer_selectable": false,
+      "source_column_exists": true,
+      "observed_values": [
+        "NOVALUE"
+      ],
+      "observed_value_count": 1
+    },
+    "carryingCase": {
+      "role": "product_metadata",
+      "customer_selectable": false,
+      "source_column_exists": true,
+      "observed_values": [
+        "NOVALUE"
+      ],
+      "observed_value_count": 1
+    },
+    "measuringTape": {
+      "role": "product_metadata",
+      "customer_selectable": false,
+      "source_column_exists": true,
+      "observed_values": [
+        "NOVALUE"
+      ],
+      "observed_value_count": 1
+    }
+  },
+  "legacy_fields": {
+    "analogInput": {
+      "source_column_exists": false,
+      "observed_values": []
+    },
+    "analogInput2": {
+      "source_column_exists": false,
+      "observed_values": []
+    },
+    "analogOutput": {
+      "source_column_exists": false,
+      "observed_values": []
+    },
+    "analogOutput2": {
+      "source_column_exists": false,
+      "observed_values": []
+    },
+    "digitalInput": {
+      "source_column_exists": false,
+      "observed_values": []
+    },
+    "digitalInput2": {
+      "source_column_exists": false,
+      "observed_values": []
+    },
+    "digitalOutput": {
+      "source_column_exists": false,
+      "observed_values": []
+    },
+    "digitalOutput2": {
+      "source_column_exists": false,
+      "observed_values": []
+    },
+    "hardwareAP": {
+      "source_column_exists": true,
+      "observed_values": [
+        "NOVALUE"
+      ],
+      "observed_value_count": 1,
+      "customer_selectable": false,
+      "role": "legacy_or_unused"
+    }
+  },
+  "package_contexts": [
+    {
+      "package": "F731PW",
+      "row_count": 20,
+      "technical_fields": {
+        "devCategory": [
+          "F"
+        ],
+        "characteristic": [
+          "PW"
+        ],
+        "housing": [
+          "AL",
+          "ST"
+        ],
+        "powerSupply": [
+          "1",
+          "4"
+        ],
+        "numberOfChannels": [
+          "1",
+          "2"
+        ],
+        "explosionApproval": [
+          "A",
+          "E",
+          "F",
+          "J",
+          "K",
+          "P",
+          "S"
+        ],
+        "protectionArea": [
+          "2"
+        ],
+        "certification": [
+          "NN",
+          "WN"
+        ],
+        "dataInterface": [
+          "BM",
+          "BT",
+          "FF",
+          "HS",
+          "MR",
+          "MT",
+          "NN",
+          "PA"
+        ],
+        "stromSchaltbar": [
+          "CS1",
+          "CS2",
+          "CS4",
+          "NOVALUE"
+        ],
+        "stromEingaenge": [
+          "NOVALUE"
+        ],
+        "temperaturEingaenge": [
+          "NOVALUE"
+        ],
+        "binaerDigitalOpenColl_MN": [
+          "MN2",
+          "MN4",
+          "NOVALUE"
+        ],
+        "binaerOpenColl_MP": [
+          "MP2",
+          "MP4",
+          "NOVALUE"
+        ],
+        "waveInjector": [
+          "NOVALUE"
+        ],
+        "dev_advMeterVerification": [
+          "1",
+          "NOVALUE"
+        ],
+        "dynamicGasMaster": [
+          "NOVALUE"
+        ],
+        "customUserFluid": [
+          "NOVALUE"
+        ],
+        "steamApplication": [
+          "NOVALUE"
+        ]
+      }
+    },
+    {
+      "package": "F731TE",
+      "row_count": 26,
+      "technical_fields": {
+        "devCategory": [
+          "F"
+        ],
+        "characteristic": [
+          "TE"
+        ],
+        "housing": [
+          "AL",
+          "ST"
+        ],
+        "powerSupply": [
+          "1",
+          "4"
+        ],
+        "numberOfChannels": [
+          "1",
+          "2"
+        ],
+        "explosionApproval": [
+          "A",
+          "E",
+          "F",
+          "J",
+          "K",
+          "N",
+          "P",
+          "S"
+        ],
+        "protectionArea": [
+          "2",
+          "N"
+        ],
+        "certification": [
+          "FN",
+          "NN",
+          "WN"
+        ],
+        "dataInterface": [
+          "BM",
+          "BT",
+          "DB",
+          "FF",
+          "HS",
+          "MR",
+          "MT",
+          "NN",
+          "PA"
+        ],
+        "stromSchaltbar": [
+          "CS2",
+          "CS3",
+          "CS4",
+          "NOVALUE"
+        ],
+        "stromEingaenge": [
+          "NOVALUE"
+        ],
+        "temperaturEingaenge": [
+          "TT2",
+          "TT4"
+        ],
+        "binaerDigitalOpenColl_MN": [
+          "MN4",
+          "NOVALUE"
+        ],
+        "binaerOpenColl_MP": [
+          "MP4",
+          "NOVALUE"
+        ],
+        "waveInjector": [
+          "NOVALUE"
+        ],
+        "dev_advMeterVerification": [
+          "1",
+          "NOVALUE"
+        ],
+        "dynamicGasMaster": [
+          "NOVALUE"
+        ],
+        "customUserFluid": [
+          "NOVALUE"
+        ],
+        "steamApplication": [
+          "NOVALUE"
+        ]
+      }
+    },
+    {
+      "package": "F731WD_DualChannel",
+      "row_count": 12,
+      "technical_fields": {
+        "devCategory": [
+          "F"
+        ],
+        "characteristic": [
+          "WD"
+        ],
+        "housing": [
+          "AL",
+          "ST"
+        ],
+        "powerSupply": [
+          "1",
+          "4"
+        ],
+        "numberOfChannels": [
+          "2"
+        ],
+        "explosionApproval": [
+          "N"
+        ],
+        "protectionArea": [
+          "N"
+        ],
+        "certification": [
+          "CN",
+          "FN",
+          "NN",
+          "WN"
+        ],
+        "dataInterface": [
+          "BM",
+          "BT",
+          "DB",
+          "FF",
+          "HS",
+          "MR",
+          "MT",
+          "NN",
+          "PA"
+        ],
+        "stromSchaltbar": [
+          "CS2",
+          "CS3",
+          "CS4",
+          "NOVALUE"
+        ],
+        "stromEingaenge": [
+          "IS1",
+          "IS2",
+          "NOVALUE"
+        ],
+        "temperaturEingaenge": [
+          "NOVALUE"
+        ],
+        "binaerDigitalOpenColl_MN": [
+          "NOVALUE"
+        ],
+        "binaerOpenColl_MP": [
+          "MP4",
+          "NOVALUE"
+        ],
+        "waveInjector": [
+          "NOVALUE"
+        ],
+        "dev_advMeterVerification": [
+          "1",
+          "NOVALUE"
+        ],
+        "dynamicGasMaster": [
+          "NOVALUE"
+        ],
+        "customUserFluid": [
+          "NOVALUE"
+        ],
+        "steamApplication": [
+          "NOVALUE"
+        ]
+      }
+    },
+    {
+      "package": "F731WD_SingleChannel",
+      "row_count": 8,
+      "technical_fields": {
+        "devCategory": [
+          "F"
+        ],
+        "characteristic": [
+          "WD"
+        ],
+        "housing": [
+          "AL",
+          "ST"
+        ],
+        "powerSupply": [
+          "1",
+          "4"
+        ],
+        "numberOfChannels": [
+          "1"
+        ],
+        "explosionApproval": [
+          "N"
+        ],
+        "protectionArea": [
+          "N"
+        ],
+        "certification": [
+          "CN",
+          "FN",
+          "NN",
+          "WN"
+        ],
+        "dataInterface": [
+          "BM",
+          "BT",
+          "DB",
+          "FF",
+          "HS",
+          "MR",
+          "MT",
+          "NN",
+          "PA"
+        ],
+        "stromSchaltbar": [
+          "CS2",
+          "NOVALUE"
+        ],
+        "stromEingaenge": [
+          "IS1",
+          "IS2",
+          "NOVALUE"
+        ],
+        "temperaturEingaenge": [
+          "NOVALUE"
+        ],
+        "binaerDigitalOpenColl_MN": [
+          "NOVALUE"
+        ],
+        "binaerOpenColl_MP": [
+          "MP4",
+          "NOVALUE"
+        ],
+        "waveInjector": [
+          "NOVALUE"
+        ],
+        "dev_advMeterVerification": [
+          "1",
+          "NOVALUE"
+        ],
+        "dynamicGasMaster": [
+          "NOVALUE"
+        ],
+        "customUserFluid": [
+          "NOVALUE"
+        ],
+        "steamApplication": [
+          "NOVALUE"
+        ]
+      }
+    },
+    {
+      "package": "G731CA",
+      "row_count": 24,
+      "technical_fields": {
+        "devCategory": [
+          "G"
+        ],
+        "characteristic": [
+          "CA"
+        ],
+        "housing": [
+          "AL",
+          "ST"
+        ],
+        "powerSupply": [
+          "1",
+          "4"
+        ],
+        "numberOfChannels": [
+          "1",
+          "2"
+        ],
+        "explosionApproval": [
+          "A",
+          "E",
+          "F",
+          "J",
+          "K",
+          "N",
+          "P",
+          "S"
+        ],
+        "protectionArea": [
+          "2",
+          "N"
+        ],
+        "certification": [
+          "FN",
+          "NN",
+          "WN"
+        ],
+        "dataInterface": [
+          "BM",
+          "BT",
+          "DB",
+          "FF",
+          "HS",
+          "MR",
+          "MT",
+          "NN",
+          "PA"
+        ],
+        "stromSchaltbar": [
+          "CS2",
+          "NOVALUE"
+        ],
+        "stromEingaenge": [
+          "IS1",
+          "IS2"
+        ],
+        "temperaturEingaenge": [
+          "TT1",
+          "TT2"
+        ],
+        "binaerDigitalOpenColl_MN": [
+          "MN4",
+          "NOVALUE"
+        ],
+        "binaerOpenColl_MP": [
+          "MP4",
+          "NOVALUE"
+        ],
+        "waveInjector": [
+          "NOVALUE"
+        ],
+        "dev_advMeterVerification": [
+          "1",
+          "NOVALUE"
+        ],
+        "dynamicGasMaster": [
+          "NOVALUE"
+        ],
+        "customUserFluid": [
+          "NOVALUE"
+        ],
+        "steamApplication": [
+          "NOVALUE"
+        ]
+      }
+    },
+    {
+      "package": "G731ST-HT",
+      "row_count": 133,
+      "technical_fields": {
+        "devCategory": [
+          "G"
+        ],
+        "characteristic": [
+          "ST"
+        ],
+        "housing": [
+          "AL",
+          "ST"
+        ],
+        "powerSupply": [
+          "1",
+          "4"
+        ],
+        "numberOfChannels": [
+          "2"
+        ],
+        "explosionApproval": [
+          "A",
+          "E",
+          "F",
+          "J",
+          "K",
+          "N",
+          "P",
+          "S"
+        ],
+        "protectionArea": [
+          "2",
+          "N"
+        ],
+        "certification": [
+          "FN",
+          "NN",
+          "WN"
+        ],
+        "dataInterface": [
+          "BM",
+          "BT",
+          "DB",
+          "FF",
+          "HS",
+          "MR",
+          "MT",
+          "NN",
+          "PA"
+        ],
+        "stromSchaltbar": [
+          "CS1",
+          "CS2",
+          "CS3",
+          "CS4",
+          "NOVALUE"
+        ],
+        "stromEingaenge": [
+          "IS1",
+          "IS2",
+          "IS3",
+          "IS4",
+          "NOVALUE"
+        ],
+        "temperaturEingaenge": [
+          "NOVALUE",
+          "TT1",
+          "TT2",
+          "TT3",
+          "TT4"
+        ],
+        "binaerDigitalOpenColl_MN": [
+          "MN1",
+          "MN2",
+          "MN3",
+          "MN4",
+          "NOVALUE"
+        ],
+        "binaerOpenColl_MP": [
+          "MP1",
+          "MP2",
+          "MP3",
+          "MP4",
+          "NOVALUE"
+        ],
+        "waveInjector": [
+          "FWI",
+          "NOVALUE"
+        ],
+        "dev_advMeterVerification": [
+          "NOVALUE"
+        ],
+        "dynamicGasMaster": [
+          "NOVALUE"
+        ],
+        "customUserFluid": [
+          "1",
+          "NOVALUE"
+        ],
+        "steamApplication": [
+          "H"
+        ]
+      }
+    },
+    {
+      "package": "G731ST-LT",
+      "row_count": 133,
+      "technical_fields": {
+        "devCategory": [
+          "G"
+        ],
+        "characteristic": [
+          "ST"
+        ],
+        "housing": [
+          "AL",
+          "ST"
+        ],
+        "powerSupply": [
+          "1",
+          "4"
+        ],
+        "numberOfChannels": [
+          "1",
+          "2"
+        ],
+        "explosionApproval": [
+          "A",
+          "E",
+          "F",
+          "J",
+          "K",
+          "N",
+          "P",
+          "S"
+        ],
+        "protectionArea": [
+          "2",
+          "N"
+        ],
+        "certification": [
+          "FN",
+          "NN",
+          "WN"
+        ],
+        "dataInterface": [
+          "BM",
+          "BT",
+          "DB",
+          "FF",
+          "HS",
+          "MR",
+          "MT",
+          "NN",
+          "PA"
+        ],
+        "stromSchaltbar": [
+          "CS1",
+          "CS2",
+          "CS3",
+          "CS4",
+          "NOVALUE"
+        ],
+        "stromEingaenge": [
+          "IS1",
+          "IS2",
+          "IS3",
+          "IS4",
+          "NOVALUE"
+        ],
+        "temperaturEingaenge": [
+          "NOVALUE",
+          "TT1",
+          "TT2",
+          "TT3",
+          "TT4"
+        ],
+        "binaerDigitalOpenColl_MN": [
+          "MN1",
+          "MN2",
+          "MN3",
+          "MN4",
+          "NOVALUE"
+        ],
+        "binaerOpenColl_MP": [
+          "MP1",
+          "MP2",
+          "MP3",
+          "MP4",
+          "NOVALUE"
+        ],
+        "waveInjector": [
+          "NOVALUE"
+        ],
+        "dev_advMeterVerification": [
+          "1",
+          "NOVALUE"
+        ],
+        "dynamicGasMaster": [
+          "NOVALUE"
+        ],
+        "customUserFluid": [
+          "1",
+          "NOVALUE"
+        ],
+        "steamApplication": [
+          "N"
+        ]
+      }
+    },
+    {
+      "package": "G731VG",
+      "row_count": 4,
+      "technical_fields": {
+        "devCategory": [
+          "G"
+        ],
+        "characteristic": [
+          "VG"
+        ],
+        "housing": [
+          "AL",
+          "ST"
+        ],
+        "powerSupply": [
+          "1",
+          "4"
+        ],
+        "numberOfChannels": [
+          "2"
+        ],
+        "explosionApproval": [
+          "F"
+        ],
+        "protectionArea": [
+          "2"
+        ],
+        "certification": [
+          "NN"
+        ],
+        "dataInterface": [
+          "HS",
+          "MR",
+          "MT",
+          "NN"
+        ],
+        "stromSchaltbar": [
+          "CS1",
+          "CS2",
+          "CS3"
+        ],
+        "stromEingaenge": [
+          "IS1",
+          "IS2"
+        ],
+        "temperaturEingaenge": [
+          "NOVALUE",
+          "TT1"
+        ],
+        "binaerDigitalOpenColl_MN": [
+          "MN2",
+          "MN4"
+        ],
+        "binaerOpenColl_MP": [
+          "NOVALUE"
+        ],
+        "waveInjector": [
+          "NOVALUE"
+        ],
+        "dev_advMeterVerification": [
+          "1"
+        ],
+        "dynamicGasMaster": [
+          "1"
+        ],
+        "customUserFluid": [
+          "NOVALUE"
+        ],
+        "steamApplication": [
+          "NOVALUE"
+        ]
+      }
+    },
+    {
+      "package": "x731",
+      "row_count": 696,
+      "technical_fields": {
+        "devCategory": [
+          "F",
+          "G",
+          "H",
+          "S"
+        ],
+        "characteristic": [
+          "GP"
+        ],
+        "housing": [
+          "AL",
+          "ST"
+        ],
+        "powerSupply": [
+          "1",
+          "4"
+        ],
+        "numberOfChannels": [
+          "1",
+          "2"
+        ],
+        "explosionApproval": [
+          "A",
+          "E",
+          "F",
+          "J",
+          "K",
+          "N",
+          "P",
+          "S"
+        ],
+        "protectionArea": [
+          "2",
+          "N"
+        ],
+        "certification": [
+          "FN",
+          "MN",
+          "NN",
+          "WN"
+        ],
+        "dataInterface": [
+          "BM",
+          "BT",
+          "DB",
+          "FF",
+          "HS",
+          "MR",
+          "MT",
+          "NN",
+          "PA"
+        ],
+        "stromSchaltbar": [
+          "CS1",
+          "CS2",
+          "CS3",
+          "CS4",
+          "NOVALUE"
+        ],
+        "stromEingaenge": [
+          "IS1",
+          "IS2",
+          "IS3",
+          "IS4",
+          "NOVALUE"
+        ],
+        "temperaturEingaenge": [
+          "NOVALUE",
+          "TT1",
+          "TT2",
+          "TT3",
+          "TT4"
+        ],
+        "binaerDigitalOpenColl_MN": [
+          "MN1",
+          "MN2",
+          "MN3",
+          "MN4",
+          "NOVALUE"
+        ],
+        "binaerOpenColl_MP": [
+          "MP1",
+          "MP2",
+          "MP3",
+          "MP4",
+          "NOVALUE"
+        ],
+        "waveInjector": [
+          "FWI",
+          "FWY",
+          "NOVALUE"
+        ],
+        "dev_advMeterVerification": [
+          "1",
+          "NOVALUE"
+        ],
+        "dynamicGasMaster": [
+          "1",
+          "NOVALUE"
+        ],
+        "customUserFluid": [
+          "1",
+          "NOVALUE"
+        ],
+        "steamApplication": [
+          "NOVALUE"
+        ]
+      }
+    }
+  ]
+}

@@ -31,3 +31,8 @@ temp/
 
 # Large temporary exports
 *.html
+
+# Local recovery copies; do not commit
+src/ui/731_poc_configurator_app.py.bak
+src/ui/731_poc_configurator_app.py.pre_v7_integration
+graphs/731_knowledge_graph_v1_backup/

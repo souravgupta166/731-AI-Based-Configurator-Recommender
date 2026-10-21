@@ -25,7 +25,7 @@
     }
   },
   "relationships": {
-    "total": 140808,
+    "total": 83409,
     "by_type": {
       "HAS_CHARACTERISTIC": 28,
       "HAS_ALLOWED_VALUE": 124,
@@ -36,13 +36,13 @@
       "HAS_SYNTHETIC_PACKAGE_CONTEXT": 9,
       "REPRESENTS_CANONICAL_CONFIGURATION": 5000,
       "HAS_PACKAGE_CONTEXT": 5000,
-      "HAS_TECHNICAL_VALUE": 95000,
+      "HAS_TECHNICAL_VALUE": 37601,
       "HAS_CANONICAL_CONFIGURATION": 1979,
       "BELONGS_TO_FAMILY": 1979
     },
     "by_provenance": {
-      "OBSERVED_731": 59886,
-      "SYNTHETIC": 80922
+      "OBSERVED_731": 42782,
+      "SYNTHETIC": 40627
     }
   },
   "configuration_model": {

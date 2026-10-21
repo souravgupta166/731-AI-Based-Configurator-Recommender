@@ -3,7 +3,7 @@
 ===========================================================================
 
 Nodes: 8,261
-Relationships: 140,808
+Relationships: 83,409
 
 NODE TYPES
 ----------------------------------------
@@ -31,15 +31,15 @@ HAS_OBSERVED_EXPRESSION                      9
 HAS_PACKAGE_CONTEXT                      5,000
 HAS_RULE_ROW                             1,056
 HAS_SYNTHETIC_PACKAGE_CONTEXT                9
-HAS_TECHNICAL_VALUE                     95,000
+HAS_TECHNICAL_VALUE                     37,601
 REPRESENTS_CANONICAL_CONFIGURATION       5,000
 RULE_APPLIES_TO_FAMILY                   1,056
 RULE_SPECIFIES                          29,568
 
 RELATIONSHIP PROVENANCE
 ----------------------------------------
-OBSERVED_731                            59,886
-SYNTHETIC                               80,922
+OBSERVED_731                            42,782
+SYNTHETIC                               40,627
 
 CONFIGURATION RECORD PRESERVATION
 ----------------------------------------

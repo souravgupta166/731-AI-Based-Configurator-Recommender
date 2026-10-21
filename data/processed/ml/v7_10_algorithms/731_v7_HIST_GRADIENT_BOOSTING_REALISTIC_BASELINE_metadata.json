@@ -1,0 +1,33 @@
+{
+  "experiment": "731 V7 ten-algorithm benchmark",
+  "artifact_type": "inference model",
+  "model": "HIST_GRADIENT_BOOSTING",
+  "feature_regime": "REALISTIC_BASELINE",
+  "random_state": 731,
+  "estimator_parameters": {
+    "max_iter": 300,
+    "learning_rate": 0.05,
+    "max_leaf_nodes": 31,
+    "l2_regularization": 1.0,
+    "random_state": 731
+  },
+  "training": {
+    "dataset": "/home/e1546562/thesis-configurator/data/processed/ml/731_v4_1_ml_candidate_dataset.csv",
+    "manifest": "/home/e1546562/thesis-configurator/data/processed/ml/731_v4_2_1_model_feature_manifest.csv",
+    "train_rows": 12083,
+    "train_rfqs": 3534,
+    "validation_rows": 2598,
+    "validation_rfqs": 734,
+    "test_rows": 2472,
+    "test_rfqs": 732
+  },
+  "governance": {
+    "technical_validity_decided_by_ml": false,
+    "ml_role": "Rank candidates already admitted by the configuration/constraint workflow.",
+    "model_code_generation": "NOT_IMPLEMENTED"
+  },
+  "files": {
+    "model": "/home/e1546562/thesis-configurator/data/processed/ml/v7_10_algorithms/731_v7_HIST_GRADIENT_BOOSTING_REALISTIC_BASELINE.joblib",
+    "feature_metadata": "/home/e1546562/thesis-configurator/data/processed/ml/v7_10_algorithms/731_v7_HIST_GRADIENT_BOOSTING_REALISTIC_BASELINE_features.json"
+  }
+}

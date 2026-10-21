@@ -1,0 +1,162 @@
+field_name,value,count,share
+Unnamed: 0,May,1056,1.0
+OrgUnitAreaOfDocument,"in {0, 1, 2, 3}",840,0.795455
+OrgUnitAreaOfDocument,3,216,0.204545
+marke,'flexim',1056,1.0
+packageFixed_dev,"in {NOVALUE, 'x731'}",696,0.659091
+packageFixed_dev,"in {NOVALUE, 'G731ST-LT'}",133,0.125947
+packageFixed_dev,"in {NOVALUE, 'G731ST-HT'}",133,0.125947
+packageFixed_dev,"in {NOVALUE, 'F731TE'}",26,0.024621
+packageFixed_dev,"in {NOVALUE, 'G731CA'}",24,0.022727
+packageFixed_dev,"in {NOVALUE, 'F731PW'}",20,0.018939
+packageFixed_dev,"in {NOVALUE, 'F731WD_DualChannel'}",12,0.011364
+packageFixed_dev,"in {NOVALUE, 'F731WD_SingleChannel'}",8,0.007576
+packageFixed_dev,"in {NOVALUE, 'G731VG'}",4,0.003788
+installationsart,'stationaer',1056,1.0
+devCategory,'G',522,0.494318
+devCategory,'F',294,0.278409
+devCategory,'H',120,0.113636
+devCategory,'S',120,0.113636
+type,'731',1056,1.0
+characteristic,'GP',696,0.659091
+characteristic,'ST',266,0.251894
+characteristic,'TE',26,0.024621
+characteristic,'CA',24,0.022727
+characteristic,'WD',20,0.018939
+characteristic,'PW',20,0.018939
+characteristic,'VG',4,0.003788
+housing,"in {'ST', 'AL'}",766,0.725379
+housing,'ST',290,0.274621
+powerSupply,"in {'1', '4'}",756,0.715909
+powerSupply,'4',290,0.274621
+powerSupply,'1',10,0.00947
+numberOfChannels,"in {1, 2}",849,0.803977
+numberOfChannels,2,174,0.164773
+numberOfChannels,1,33,0.03125
+explosionApproval,'N',342,0.323864
+explosionApproval,"in {'A', 'E', 'P', 'J', 'S'}",212,0.200758
+explosionApproval,'K',212,0.200758
+explosionApproval,'F',174,0.164773
+explosionApproval,'A',116,0.109848
+protectionArea,'2',714,0.676136
+protectionArea,'N',342,0.323864
+intrinsicSafety,'N',1056,1.0
+certification,"in {'NN', 'WN'}",344,0.325758
+certification,'MN',290,0.274621
+certification,'NN',196,0.185606
+certification,"in {'NN', 'WN', 'FN'}",176,0.166667
+certification,"in {'NN', 'FN'}",40,0.037879
+certification,'CN',10,0.00947
+dataInterface,'HS',279,0.264205
+dataInterface,"in {'NN', 'PA', 'MR', 'FF', 'BM'}",260,0.246212
+dataInterface,'NN',160,0.151515
+dataInterface,"in {'NN', 'MT', 'BT'}",130,0.123106
+dataInterface,"in {'NN', 'PA', 'MR', 'FF', 'DB', 'BM'}",96,0.090909
+dataInterface,"in {'NN', 'PA', 'MR', 'FF'}",48,0.045455
+dataInterface,"in {'NN', 'MT'}",18,0.017045
+dataInterface,"in {'PA', 'MR', 'FF', 'BM', 'HS'}",10,0.00947
+dataInterface,"in {'NN', 'PA', 'MT', 'MR', 'FF', 'DB', 'BM', 'BT'}",8,0.007576
+dataInterface,"in {'NN', 'PA', 'MR', 'FF', 'BM', 'HS'}",6,0.005682
+dataInterface,"in {'PA', 'MT', 'MR', 'FF', 'DB', 'BM', 'BT'}",4,0.003788
+dataInterface,"in {'NN', 'MR', 'BM', 'FF', 'PA'}",4,0.003788
+dataInterface,"in {'NN', 'MR', 'BM', 'FF', 'PA', 'HS'}",4,0.003788
+dataInterface,"in {'MR', 'BM', 'FF', 'PA'}",4,0.003788
+dataInterface,"in {'MR', 'BM', 'FF', 'PA', 'HS'}",4,0.003788
+dataInterface,"in {'MT', 'BT', 'PA', 'MR', 'FF', 'BM', 'HS'}",3,0.002841
+dataInterface,"in {'MT', 'BT'}",2,0.001894
+dataInterface,"in {'NN', 'PA', 'MR', 'FF', 'DB', 'BM', 'HS'}",2,0.001894
+dataInterface,"in {'PA', 'MR', 'FF', 'DB', 'BM', 'HS'}",2,0.001894
+dataInterface,"in {'NN', 'MT', 'BT', 'PA', 'MR', 'FF', 'DB', 'BM'}",2,0.001894
+binaerDigitalOptoRelay,NOVALUE,1056,1.0
+binaerDigitalReedRelay,NOVALUE,1056,1.0
+binaerDigitalOpenColl_MN,"in {NOVALUE, 'MN1', 'MN2', 'MN3', 'MN4'}",558,0.528409
+binaerDigitalOpenColl_MN,NOVALUE,474,0.448864
+binaerDigitalOpenColl_MN,'MN4',8,0.007576
+binaerDigitalOpenColl_MN,"in {'MN2', 'MN4'}",6,0.005682
+binaerDigitalOpenColl_MN,'MN2',4,0.003788
+binaerDigitalOpenColl_MN,"in {NOVALUE, 'MN2', 'MN4'}",3,0.002841
+binaerDigitalOpenColl_MN,"in {NOVALUE, 'MN2'}",3,0.002841
+binaerDigitalOpenCollExia_MA,NOVALUE,1056,1.0
+binaerOpenColl_MP,NOVALUE,608,0.575758
+binaerOpenColl_MP,"in {NOVALUE, 'MP1', 'MP2', 'MP3', 'MP4'}",404,0.382576
+binaerOpenColl_MP,'MP4',36,0.034091
+binaerOpenColl_MP,"in {'MP2', 'MP4'}",2,0.001894
+binaerOpenColl_MP,'MP2',2,0.001894
+binaerOpenColl_MP,"in {NOVALUE, 'MP2', 'MP4'}",2,0.001894
+binaerOpenColl_MP,"in {NOVALUE, 'MP2'}",2,0.001894
+binaerOpenColl_BC,NOVALUE,1056,1.0
+binaerOpenColl_SC,NOVALUE,1056,1.0
+binaerOpenColl30v,NOVALUE,1056,1.0
+binaerOpenCollExib,NOVALUE,1056,1.0
+binaerOpenCollNamur,NOVALUE,1056,1.0
+binaerOptoRelay_BO,NOVALUE,1056,1.0
+binaerOptoRelay_SO,NOVALUE,1056,1.0
+binaerReedRelay_BR,NOVALUE,1056,1.0
+binaerReedRelay_SR,NOVALUE,1056,1.0
+frequenz0_5khz_FO,NOVALUE,1056,1.0
+frequenz0_5khz_FC,NOVALUE,1056,1.0
+frequenz0_5khzNamur,NOVALUE,1056,1.0
+frequenz5_15HzExia,NOVALUE,1056,1.0
+spannung0_10v,NOVALUE,1056,1.0
+spannung0_1v,NOVALUE,1056,1.0
+stromAktiv,NOVALUE,1056,1.0
+stromAktiv24,NOVALUE,1056,1.0
+stromPassiv,NOVALUE,1056,1.0
+stromPassivExib,NOVALUE,1056,1.0
+StromPassivExia,NOVALUE,1056,1.0
+stromSchaltbar,"in {NOVALUE, 'CS1', 'CS2'}",329,0.311553
+stromSchaltbar,"in {NOVALUE, 'CS1', 'CS2', 'CS3'}",238,0.225379
+stromSchaltbar,"in {NOVALUE, 'CS1'}",186,0.176136
+stromSchaltbar,NOVALUE,164,0.155303
+stromSchaltbar,"in {NOVALUE, 'CS1', 'CS2', 'CS3', 'CS4'}",76,0.07197
+stromSchaltbar,'CS2',30,0.028409
+stromSchaltbar,"in {'CS2', 'CS3'}",11,0.010417
+stromSchaltbar,"in {'CS2', 'CS4'}",6,0.005682
+stromSchaltbar,"in {'CS1', 'CS2', 'CS4'}",5,0.004735
+stromSchaltbar,"in {'CS1', 'CS2'}",5,0.004735
+stromSchaltbar,"in {NOVALUE, 'CS1', 'CS2', 'CS4'}",5,0.004735
+stromSchaltbar,'CS1',1,0.000947
+binaerEingaenge,NOVALUE,1056,1.0
+spannungsEingaenge,NOVALUE,1056,1.0
+stromEingaenge,NOVALUE,314,0.297348
+stromEingaenge,"in {NOVALUE, 'IS1'}",162,0.153409
+stromEingaenge,"in {NOVALUE, 'IS1', 'IS2'}",122,0.11553
+stromEingaenge,"in {NOVALUE, 'IS1', 'IS2', 'IS3'}",114,0.107955
+stromEingaenge,'IS1',106,0.100379
+stromEingaenge,"in {'IS1', 'IS2'}",88,0.083333
+stromEingaenge,"in {NOVALUE, 'IS1', 'IS2', 'IS3', 'IS4'}",76,0.07197
+stromEingaenge,"in {'IS1', 'IS2', 'IS3'}",72,0.068182
+stromEingaenge,'IS2',2,0.001894
+stromEingaenge_passiv,NOVALUE,1056,1.0
+stromEingaengeExia,NOVALUE,1056,1.0
+temperaturEingaenge,"in {NOVALUE, 'TT1', 'TT2'}",228,0.215909
+temperaturEingaenge,"in {NOVALUE, 'TT1'}",154,0.145833
+temperaturEingaenge,NOVALUE,154,0.145833
+temperaturEingaenge,"in {NOVALUE, 'TT1', 'TT2', 'TT3', 'TT4'}",114,0.107955
+temperaturEingaenge,"in {NOVALUE, 'TT1', 'TT2', 'TT3'}",114,0.107955
+temperaturEingaenge,'TT1',110,0.104167
+temperaturEingaenge,"in {'TT1', 'TT2'}",84,0.079545
+temperaturEingaenge,"in {'TT1', 'TT2', 'TT3'}",72,0.068182
+temperaturEingaenge,'TT2',13,0.012311
+temperaturEingaenge,"in {'TT2', 'TT4'}",13,0.012311
+temperaturEingaengeExi,NOVALUE,1056,1.0
+hardwareAP,NOVALUE,1056,1.0
+steamApplication,NOVALUE,790,0.748106
+steamApplication,'N',133,0.125947
+steamApplication,'H',133,0.125947
+waveInjector,"in {'FWI', 'FWY', NOVALUE}",576,0.545455
+waveInjector,"in {'FWI', NOVALUE}",253,0.239583
+waveInjector,NOVALUE,227,0.214962
+tagPlate,"in {NOVALUE, 1}",1056,1.0
+inclusiveManual,'QI',1056,1.0
+powerCable,NOVALUE,1056,1.0
+carryingCase,NOVALUE,1056,1.0
+measuringTape,NOVALUE,1056,1.0
+dev_advMeterVerification,"in {NOVALUE, 1}",679,0.642992
+dev_advMeterVerification,NOVALUE,373,0.35322
+dev_advMeterVerification,1,4,0.003788
+dynamicGasMaster,NOVALUE,824,0.780303
+dynamicGasMaster,"in {NOVALUE, 1}",228,0.215909
+dynamicGasMaster,1,4,0.003788
+customUserFluid,"in {NOVALUE, 1}",722,0.683712
+customUserFluid,NOVALUE,334,0.316288
