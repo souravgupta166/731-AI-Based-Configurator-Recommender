@@ -26,6 +26,7 @@ from pathlib import Path
 import warnings
 import numpy as np
 import pandas as pd
+from scipy.stats import binomtest
 
 warnings.filterwarnings("ignore")
 
@@ -529,14 +530,36 @@ def main():
             boot[i] = diffs[idx].mean()
 
         lo, hi = np.quantile(boot, [.025, .975])
-        p = 2 * min(np.mean(boot <= 0), np.mean(boot >= 0))
+
+        # Exact paired test for binary Top-1 outcomes.
+        a_top1 = a.loc[common, "top1"].to_numpy(dtype=int)
+        b_top1 = b.loc[common, "top1"].to_numpy(dtype=int)
+
+        b_only = int(((a_top1 == 0) & (b_top1 == 1)).sum())
+        a_only = int(((a_top1 == 1) & (b_top1 == 0)).sum())
+        discordant = b_only + a_only
+
+        p = (
+            float(binomtest(
+                b_only,
+                n=discordant,
+                p=0.5,
+                alternative="two-sided",
+            ).pvalue)
+            if discordant > 0
+            else 1.0
+        )
+
         return {
             "comparison": f"{b_key[0]}/{b_key[1]} minus {a_key[0]}/{a_key[1]}",
             "common_rfqs": len(common),
             "observed_top1_difference": diffs.mean(),
             "ci_low": lo,
             "ci_high": hi,
-            "p_two_sided": min(1.0, p),
+            "a_only_top1_successes": a_only,
+            "b_only_top1_successes": b_only,
+            "discordant_rfqs": discordant,
+            "p_two_sided": p,
         }
 
     stat_rows = [
@@ -554,6 +577,34 @@ def main():
         ),
     ]
     stats_df = pd.DataFrame(stat_rows)
+
+    # Holm-Bonferroni correction across all reported paired comparisons.
+    # Keep raw p-values and add adjusted p-values for reproducibility.
+    raw_p = stats_df["p_two_sided"].astype(float)
+    order = raw_p.sort_values().index
+    adjusted_p = pd.Series(index=raw_p.index, dtype=float)
+    running_max = 0.0
+
+    for rank, idx in enumerate(order):
+        candidate = min(1.0, (len(raw_p) - rank) * raw_p.loc[idx])
+        running_max = max(running_max, candidate)
+        adjusted_p.loc[idx] = running_max
+
+    stats_df["p_holm"] = adjusted_p
+
+    primary_comparison = stats_df.loc[
+        stats_df["comparison"].str.startswith(
+            "PROVENANCE_AWARE/HIST_GRADIENT_BOOSTING minus "
+            "REALISTIC_BASELINE/LOGISTIC_REGRESSION"
+        )
+    ].iloc[0]
+
+    upper_comparison = stats_df.loc[
+        stats_df["comparison"].str.startswith(
+            "MECHANISTIC_UPPER_BOUND/HIST_GRADIENT_BOOSTING minus "
+            "PROVENANCE_AWARE/HIST_GRADIENT_BOOSTING"
+        )
+    ].iloc[0]
 
     # ---------------------------------------------------------
     # 8. Feature importance
@@ -708,11 +759,34 @@ over the provenance-aware model in the frozen V4.5 results.
 
 STATISTICAL INTERPRETATION
 --------------------------
-The paired bootstrap comparison between the realistic primary model and
-the provenance-aware HGB model is reported separately in the statistical
-comparison table. The provenance-aware gain should be described as
-statistically supported only according to that paired confidence interval
-and p-value.
+The paired comparison uses 732 common RFQs from the frozen V4.5
+prediction set. Provenance-aware HIST_GRADIENT_BOOSTING improved Top-1
+success over the REALISTIC_BASELINE LOGISTIC_REGRESSION model by
+3.01 percentage points.
+
+The 95% paired-bootstrap confidence interval for the Top-1 difference
+was +1.64 to +4.37 percentage points. The exact two-sided paired binomial
+test gave raw p = {primary_comparison["p_two_sided"]:.3e} and
+Holm-adjusted p = {primary_comparison["p_holm"]:.3e}. Among
+{int(primary_comparison["discordant_rfqs"])} discordant RFQs,
+provenance-aware HGB was successful at Top-1 where the baseline failed
+for {int(primary_comparison["b_only_top1_successes"])} RFQs; the reverse
+occurred for {int(primary_comparison["a_only_top1_successes"])} RFQs.
+
+The MECHANISTIC_UPPER_BOUND and PROVENANCE_AWARE HGB models had identical
+Top-1 outcomes on these test RFQs, with zero discordant outcomes and no
+observed additional Top-1 improvement. Their exact paired test gave raw
+p = {upper_comparison["p_two_sided"]:.3f} and Holm-adjusted
+p = {upper_comparison["p_holm"]:.3f}.
+
+Holm-Bonferroni correction was applied across the three reported paired
+comparisons. The primary comparison remains statistically significant at
+alpha = 0.05 after correction; the comparison between the two HGB regimes
+does not show an observed Top-1 difference.
+
+These are comparisons of frozen model predictions on a synthetic test
+set. Statistical significance does not establish generalisation to
+historical industrial RFQs or production performance.
 
 REQUIREMENT EQUIVALENCE
 -----------------------

@@ -47,11 +47,34 @@ over the provenance-aware model in the frozen V4.5 results.
 
 STATISTICAL INTERPRETATION
 --------------------------
-The paired bootstrap comparison between the realistic primary model and
-the provenance-aware HGB model is reported separately in the statistical
-comparison table. The provenance-aware gain should be described as
-statistically supported only according to that paired confidence interval
-and p-value.
+The paired comparison uses 732 common RFQs from the frozen V4.5
+prediction set. Provenance-aware HIST_GRADIENT_BOOSTING improved Top-1
+success over the REALISTIC_BASELINE LOGISTIC_REGRESSION model by
+3.01 percentage points.
+
+The 95% paired-bootstrap confidence interval for the Top-1 difference
+was +1.64 to +4.37 percentage points. The exact two-sided paired binomial
+test gave raw p = 1.049e-05 and
+Holm-adjusted p = 3.147e-05. Among
+26 discordant RFQs,
+provenance-aware HGB was successful at Top-1 where the baseline failed
+for 24 RFQs; the reverse
+occurred for 2 RFQs.
+
+The MECHANISTIC_UPPER_BOUND and PROVENANCE_AWARE HGB models had identical
+Top-1 outcomes on these test RFQs, with zero discordant outcomes and no
+observed additional Top-1 improvement. Their exact paired test gave raw
+p = 1.000 and Holm-adjusted
+p = 1.000.
+
+Holm-Bonferroni correction was applied across the three reported paired
+comparisons. The primary comparison remains statistically significant at
+alpha = 0.05 after correction; the comparison between the two HGB regimes
+does not show an observed Top-1 difference.
+
+These are comparisons of frozen model predictions on a synthetic test
+set. Statistical significance does not establish generalisation to
+historical industrial RFQs or production performance.
 
 REQUIREMENT EQUIVALENCE
 -----------------------
